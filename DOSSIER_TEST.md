@@ -71,14 +71,77 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 
 ### 3.2 Tests
 
-* Choix de partition :
+* Choix de partition : Les deux listes contenant que des entiers naturels privés de 0 peut etre chacun divisé en trois sous ensemble. A1 la liste est égale à None , A1 la liste contient un entier , A2 la liste contient deux entiers. a represente la premiére liste , b représente la deuxiéme liste.Quand a n'existe pas , b est obligé d'être None sinon il deviendrait la premiére liste.
 
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : extraitPrecond() </td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0 </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, OpenJDK 19.02, Windows 10 Professionnal </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
 
-| Etat initial | Cas testé | Acteur | Actions | Résultats Attendus |
-|:-------------|:----------|:-------|:--------|:-------------------|
+| Classe |             a             |             b             | Résultat attendu |
+|:------:|:-------------------------:|:-------------------------:|:----------------:|
+|   P0   | a = None ou ensemble vide | b = None ou ensemble vide |    [0,0,0,0]     |
+|   P1   |   a contient un entier    | b = None ou ensemble vide |    [i,0,0,0]     |
+|   P2   |   a contient un entier    |   b contient un entier    |    [i,0,y,0]     |
+|   P3   |   a contient un entier    |   b contient 2 entiers    |    [i,0,y,z]     |
+|   P4   |   a contient 2 entiers    | b = None ou ensemble vide |    [i,y,0,0]     |
+|   P5   |   a contient 2 entiers    |    b contient 1 entier    |    [i,y,z,0]     |
+|   P6   |   a contient 2 entiers    |   b contient 2 entiers    |    [i,y,z,x]     |
+
+| Classe |   a   |   b   | Résultat  |
+|:------:|:-----:|:-----:|:---------:|
+|   P0   | None  | None  | [0,0,0,0] |
+|   P1   |  (1)  | None  | [1,0,0,0] |
+|   P2   |  (1)  |  (3)  | [1,0,3,0] |
+|   P3   |  (1)  | (3,4) | [1,0,3,4] |
+|   P4   | (1,2) | None  | [1,2,0,0] |
+|   P5   | (1,2) |  (3)  | [1,2,3,0] |
+|   P6   | (1,2) | (3,4) | [1,2,3,4] |
 
 ### 3.3 Résultats
-| Test 1                       |     |
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Référence du test appliqué :</td>
+            <td style='border: 1px solid black;text-align: left'>extraitPrecond()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application :</td>
+            <td style='border: 1px solid black;text-align: left'>18/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+    </tbody>
+</table>
+
+|                              |     |
 |:-----------------------------|:----|
 | Référence du test appliqué : | d   |
 | Responsable :                | d   |
