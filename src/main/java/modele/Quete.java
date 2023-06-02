@@ -172,4 +172,12 @@ public class Quete {
     public int getDuree() {
         return duree;
     }
+    /**
+     * retourne un string qui affiche les champs des quetes
+     * @return  un string qui represente la quete
+     */
+    @Override
+    public String toString() {
+        return numero+"-"+ Arrays.toString(pos) +"-"+ Arrays.toString(precond) +"-"+duree+"-"+experience+"-"+intitule;
+    }
 }
