@@ -33,4 +33,11 @@ public class Scenario {
     public TreeSet<Quete> getTreeQuete() {
         return treeQuete;
     }
+    /**
+     * retourne le nombre de quêtes du scénario.
+     * @return
+     */
+    public int getNbQuete() {
+        return nbQuete;
+    }
 }
