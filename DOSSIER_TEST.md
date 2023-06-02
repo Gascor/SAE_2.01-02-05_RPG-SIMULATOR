@@ -81,7 +81,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, OpenJDK 19.02, Windows 10 Professionnal </td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "extraitPrecond()"</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -90,10 +90,6 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
         <tr>
             <td style='border: 1px solid black;text-align: left'>Date de création du test :</td>
             <td style='border: 1px solid black;text-align: left'>18/05/2023</td>
-        </tr>
-        <tr>
-            <td style='border: 1px solid black;text-align: left'> : </td>
-            <td style='border: 1px solid black;text-align: left'></td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
