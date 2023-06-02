@@ -9,7 +9,6 @@ public class Quete {
     private int duree;
     private int experience;
     private String intitule;
-
     /**
      * transforme la representation de la quete en forme de ligne en création d'une instance de la classe quete
      * @param ligne (String): representation de la quete en forme de ligne
@@ -27,7 +26,6 @@ public class Quete {
             this.intitule = scanner.next();
         }
     }
-
     /**
      * transforme la representation de la position de la quete en forme de ligne à un tableau de 2 de longueurs
      * @param scanner (String): la representation de la position de la quete en forme de ligne
@@ -49,7 +47,6 @@ public class Quete {
         }
         return preconditions;
     }
-
     /**
      * transforme la representation des préconditions de la quete en forme de ligne à un tableau de 4 de longueurs
      * @param scanner (String) est la representation des préconditions de la quete en forme de ligne
@@ -71,7 +68,6 @@ public class Quete {
         }
         return preconditions;
     }
-
     /**
      * permet savoir si la quete posséde aucune préconditions
      * @return false: si la quête posséde des préconditions
@@ -84,7 +80,6 @@ public class Quete {
         }
         return true;
     }
-
     /**
      * retourne la distance entre la quete actuelle this et une autre quete
      * @param parQuete :  represente La quete suivante
@@ -94,7 +89,6 @@ public class Quete {
 
         return Math.abs(this.pos[0] - parQuete.pos[0]) + Math.abs(this.pos[1] - parQuete.pos[1]) ;
     }
-
     /**
      * determine et renvoie les quetes réalisables et les plus proches de this
      * @param ensQuete : represente l'ensemble des quetes réalisables
@@ -119,7 +113,6 @@ public class Quete {
         }
         return ensQProche;
     }
-
     /**
      * permet de voir si la quete peut etre faite en regardant ses préconditions et les quetes faites
      * @param listQueteFaite: dico des quetes faite avec comme clé leur id
@@ -129,7 +122,6 @@ public class Quete {
         Set<Integer> listIDFaite = listQueteFaite.keySet();
         return (((this.precond[0] == 0 || (listIDFaite.contains(this.precond[0]))) ||listIDFaite.contains(this.precond[1]))) && (((this.precond[2] == 0 || (listIDFaite.contains(this.precond[2]))) ||listIDFaite.contains(this.precond[3])));
     }
-
     /**
      * compare les id entre les deux quetes
      * @param parquete : une autre quete
@@ -140,7 +132,6 @@ public class Quete {
     public int compareTo(Quete parquete){
         return this.numero - parquete.numero;
     }
-
     /**
      * retoune la position de la quete sur la carte
      * @return pos (int []) : position de la quete sur la carte
@@ -148,7 +139,6 @@ public class Quete {
     public int[] getPos() {
         return pos;
     }
-
     /**
      * retourne les préconditions de la quete
      * @return precond (int []): préconditions de la quete
@@ -156,7 +146,6 @@ public class Quete {
     public int[] getPrecond() {
         return precond;
     }
-
     /**
      * retoune l'id de la quete
      * @return numero (int): id de la quete
@@ -164,7 +153,6 @@ public class Quete {
     public int getNumero() {
         return numero;
     }
-
     /**
      *retourne la durée que prend la quete
      * @return duree (int): la durée de la quete
