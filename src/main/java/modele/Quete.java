@@ -10,7 +10,12 @@ public class Quete {
     private int experience;
     private String intitule;
 
-    public int [] extraitPrecond(){
+    /**
+     * transforme la representation des préconditions de la quete en forme de ligne à un tableau de 4 de longueurs
+     * @param scanner (String) est la representation des préconditions de la quete en forme de ligne
+     * @return un tableau à 4 indices qui possede les préconditions avant de faire la quête (d'autres quêtes)
+     */
+    public int [] extraitPrecond(String scanner){
         return null;
     }
 
