@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class QueteTest {
-
     @Test @Order(1)
     void extraitPos() {
         System.out.println("Test méthode extraitPos");
@@ -16,7 +16,6 @@ class QueteTest {
         assertEquals(2,quete.getPos()[0]);
         assertEquals(4,quete.getPos()[1]);
     }
-
     @Test @Order(1)
     void extraitPrecond() {
         System.out.println("Test méthode extraitPrecond");
@@ -111,5 +110,36 @@ class QueteTest {
         HashSet<Quete> t3 = quete.queteProche(ens3);
         assertEquals(1,t3.size());
         assertTrue(t3.containsAll(Arrays.asList(solution3)));
+    }
+    @Test @Order(1)
+    public void quetePossible(){
+        System.out.println("Test méthode QuetePossible");
+        LinkedHashMap<Integer,Quete> listQueteFaite = new LinkedHashMap<>();
+        Quete quete12 = new Quete("1|(0,0 )|()|2|100|explorer pic de Bhanborim");
+        Quete quete11 = new Quete("2|(1, 0)|()|2|100|explorer pic de Bhanborim");
+        Quete quete10 = new Quete("3|(1, 1)|()|2|100|explorer pic de Bhanborim");
+        Quete quete9 = new Quete("4|(1, 0)|()|2|100|explorer pic de Bhanborim");
+        listQueteFaite.put(1,quete12);
+        listQueteFaite.put(2,quete11);
+        listQueteFaite.put(3,quete10);
+        listQueteFaite.put(4,quete9);
+        Quete quete = new Quete("1|(2, 4)|((1,),(3,2)|2|100|explorer pic de Bhanborim");
+        assertTrue(quete.quetePossible(listQueteFaite));
+        Quete quete1 = new Quete("1|(2, 4)|((1,),(6,2)|2|100|explorer pic de Bhanborim");
+        assertTrue(quete1.quetePossible(listQueteFaite));
+        Quete quete2 = new Quete("1|(2, 4)|((6,1),(2,)|2|100|explorer pic de Bhanborim");
+        assertTrue(quete2.quetePossible(listQueteFaite));
+        Quete quete3 = new Quete("1|(2, 4)|((6,1),(3,2)|2|100|explorer pic de Bhanborim");
+        assertTrue(quete3.quetePossible(listQueteFaite));
+        Quete quete4 = new Quete("1|(2, 4)|((1,),(8,9)|2|100|explorer pic de Bhanborim");
+        assertFalse(quete4.quetePossible(listQueteFaite));
+        Quete quete5 = new Quete("1|(2, 4)|((6,1),(8,)|2|100|explorer pic de Bhanborim");
+        assertFalse(quete5.quetePossible(listQueteFaite));
+        Quete quete6 = new Quete("1|(2, 4)|((8,9),(6,1)|2|100|explorer pic de Bhanborim");
+        assertFalse(quete6.quetePossible(listQueteFaite));
+        Quete quete7 = new Quete("1|(2, 4)|((8,9),)|2|100|explorer pic de Bhanborim");
+        assertFalse(quete7.quetePossible(listQueteFaite));
+        Quete quete8 = new Quete("1|(2, 4)|((8,9),(6,7))|2|100|explorer pic de Bhanborim");
+        assertFalse(quete8.quetePossible(listQueteFaite));
     }
 }
