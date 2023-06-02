@@ -131,6 +131,17 @@ public class Quete {
     }
 
     /**
+     * compare les id entre les deux quetes
+     * @param parquete : une autre quete
+     * @return <0: si l'id de this est inférieur a l'id de parquete
+     *         =0: si l'id de this est égale a l'id de parquete
+     *         >0: si l'id de this est supérieure a l'id de parquete
+     */
+    public int compareTo(Quete parquete){
+        return 0;
+    }
+
+    /**
      * retoune la position de la quete sur la carte
      * @return pos (int []) : position de la quete sur la carte
      */
