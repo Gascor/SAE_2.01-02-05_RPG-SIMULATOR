@@ -6,7 +6,6 @@ public class Scenario {
     private final TreeSet<Quete> treeQuete;
     private int nbQuete;
     private final String chnom;
-
     /**
      * permet de constuire un objet de la classe Parcours
      * @param parnom (String): represente le nom du scénario
@@ -17,7 +16,6 @@ public class Scenario {
         chnom = parnom;
 
     }
-
     /**
      * ajoute une quete au scenario
      * @param chquete: Une quete qui doit etre dans ce scenario
