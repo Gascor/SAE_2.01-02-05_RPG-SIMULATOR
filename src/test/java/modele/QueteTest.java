@@ -64,4 +64,21 @@ class QueteTest {
         Quete quete2 = new Quete("1|(4, 3)|((1, 2), (3,4))|2|100|explorer pic de Bhanborim");
         assertFalse(quete2.testprecondition());
     }
+    @Test @Order(1)
+    void distanceQuete(){
+        System.out.println("Test méthode distanceQuete");
+        Quete quete = new Quete("1|(2, 2)|()|2|100|explorer pic de Bhanborim");
+        Quete quete1 = new Quete("1|(2, 1)|()|2|100|explorer pic de Bhanborim");
+        Quete quete2 = new Quete("1|(1, 2)|()|2|100|explorer pic de Bhanborim");
+        Quete quete3= new Quete("1|(1, 1)|()|2|100|explorer pic de Bhanborim");
+        assertEquals(0,quete.distanceQuete(quete));
+        assertEquals(1,quete.distanceQuete(quete1));
+        assertEquals(1,quete1.distanceQuete(quete));
+        assertEquals(1,quete.distanceQuete(quete2));
+        assertEquals(2,quete.distanceQuete(quete3));
+        assertEquals(2,quete1.distanceQuete(quete2));
+        assertEquals(1,quete2.distanceQuete(quete));
+        assertEquals(2,quete2.distanceQuete(quete1));
+        assertEquals(2,quete3.distanceQuete(quete));
+    }
 }
