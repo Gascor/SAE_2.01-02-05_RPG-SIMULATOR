@@ -101,7 +101,23 @@ public class Quete {
      * @return ensQProche qui est un ensemble des quetes les plus proches de this
      */
     public HashSet<Quete> queteProche(HashSet<Quete> ensQuete){
-        return null;
+        HashSet<Quete> ensQProche  = new HashSet<>();
+        int min = 0;
+        for(Quete q:ensQuete){
+            min = this.distanceQuete(q);
+            break;
+        }
+        for(Quete quete: ensQuete ){
+            if (min > this.distanceQuete(quete)){
+                ensQProche.clear();
+                ensQProche.add(quete);
+                min = this.distanceQuete(quete);
+            }
+            else if (min == this.distanceQuete(quete)) {
+                ensQProche.add(quete);
+            }
+        }
+        return ensQProche;
     }
 
     /**
