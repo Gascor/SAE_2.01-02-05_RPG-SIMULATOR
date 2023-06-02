@@ -74,7 +74,7 @@ public class Quete {
 
     /**
      * permet savoir si la quete posséde aucune préconditions
-     * @return false: si la quete posséde des préconditions
+     * @return false: si la quête posséde des préconditions
      *         true: si la quete possede aucunes préconditions
      */
     public boolean testprecondition(){
