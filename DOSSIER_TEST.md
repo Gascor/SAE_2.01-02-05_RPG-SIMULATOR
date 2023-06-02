@@ -534,11 +534,11 @@ liste id = {1,2,3,4}
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Résultat :</td>
-            <td style='border: 1px solid black;text-align: left'>OK</td>
+            <td style='border: 1px solid black;text-align: left'>OK </td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
-            <td style='border: 1px solid black;text-align: left'>Systèmatique</td>
+            <td style='border: 1px solid black;text-align: left'>Systèmatique </td>
         </tr>
     </tbody>
 </table>
