@@ -2,6 +2,8 @@ package modele;
 
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import java.util.Arrays;
+import java.util.HashSet;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -80,5 +82,34 @@ class QueteTest {
         assertEquals(1,quete2.distanceQuete(quete));
         assertEquals(2,quete2.distanceQuete(quete1));
         assertEquals(2,quete3.distanceQuete(quete));
+    }
+    @Test @Order(2)
+    void queteProche(){
+        System.out.println("Test méthode QueteProche");
+        Quete quete = new Quete("1|(0,0 )|()|2|100|explorer pic de Bhanborim");
+        Quete quete1 = new Quete("1|(1, 0)|()|2|100|explorer pic de Bhanborim");
+        Quete quete2 = new Quete("1|(1, 1)|()|2|100|explorer pic de Bhanborim");
+        Quete quete3 = new Quete("1|(1, 0)|()|2|100|explorer pic de Bhanborim");
+        HashSet <Quete> ens1 = new HashSet<>();
+        ens1.add(quete1);
+        ens1.add(quete2);
+        Quete[] solution = {quete1};
+        HashSet<Quete> t1 = quete.queteProche(ens1);
+        assertEquals(1,t1.size());
+        assertTrue(t1.containsAll(Arrays.asList(solution)));
+        HashSet <Quete> ens2 = new HashSet<>();
+        ens2.add(quete1);
+        ens2.add(quete3);
+        Quete[] solution2 = {quete1,quete3};
+        HashSet<Quete> t2 = quete.queteProche(ens2);
+        assertEquals(2,t2.size());
+        assertTrue(t2.containsAll(Arrays.asList(solution2)));
+        HashSet <Quete> ens3 = new HashSet<>();
+        ens3.add(quete2);
+        ens3.add(quete3);
+        Quete[] solution3 = {quete3};
+        HashSet<Quete> t3 = quete.queteProche(ens3);
+        assertEquals(1,t3.size());
+        assertTrue(t3.containsAll(Arrays.asList(solution3)));
     }
 }
