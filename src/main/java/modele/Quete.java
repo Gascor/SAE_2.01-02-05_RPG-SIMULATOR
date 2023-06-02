@@ -121,6 +121,15 @@ public class Quete {
     }
 
     /**
+     * permet de voir si la quete peut etre faite en regardant ses préconditions et les quetes faites
+     * @param listQueteFaite: dico des quetes faite avec comme clé leur id
+     * @return true si la quete peut etre faite ou false si la quete ne peut etre faite
+     */
+    public boolean quetePossible(LinkedHashMap<Integer,Quete> listQueteFaite){
+        return false;
+    }
+
+    /**
      * retoune la position de la quete sur la carte
      * @return pos (int []) : position de la quete sur la carte
      */
