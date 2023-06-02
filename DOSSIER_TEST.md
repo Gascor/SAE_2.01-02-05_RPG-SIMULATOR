@@ -317,6 +317,43 @@ liste id = {1,2,3,4}
 |   P7   |  8  |  9  |  0  |  0  |  false   |
 |   P8   |  8  |  9  |  6  |  7  |  false   |
 
+<hr>
+
+* Choix de la partition : Les ID sont des entiers positif. Il peut être partitionné en 3 parties. l'ID de this est égale a la quete pointé qui est this. l'ID de la quete this est inférieur a la quete pointé. l'ID de la quete this est supérieur a la quete pointé.
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : compareTo()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "compareTo() en utilisant la méthode des boites noires."</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |          id          | Résultat attendu |      
+|:------:|:--------------------:|:----------------:|
+|   P0   | this.id >parquete.id |        >0        |
+|   P1   | this.id =parquete.id |        =0        |
+|   P2   | this.id <parquete.id |        <0        |
+
+| Classe |        id        | Résultat attendu |      
+|:------:|:----------------:|:----------------:|
+|   P0   | this = 2 par = 1 |        1         |
+|   P1   | this = 2 par = 2 |        =0        |
+|   P2   | this= 1 par = 2  |        -1        |
+
 ### 3.3 Résultats
 
 <table>
@@ -467,6 +504,33 @@ liste id = {1,2,3,4}
         <tr>
             <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
             <td style='border: 1px solid black;text-align: left'>18/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>OK</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>Systèmatique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>compareTo()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>20/05/2023</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Résultat :</td>
