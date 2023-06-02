@@ -164,4 +164,12 @@ public class Quete {
     public int getNumero() {
         return numero;
     }
+
+    /**
+     *retourne la durée que prend la quete
+     * @return duree (int): la durée de la quete
+     */
+    public int getDuree() {
+        return duree;
+    }
 }
