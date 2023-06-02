@@ -86,6 +86,15 @@ public class Quete {
     }
 
     /**
+     * retourne la distance entre la quete actuelle this et une autre quete
+     * @param parQuete :  represente La quete suivante
+     * @return int>=0
+     */
+    public int distanceQuete(Quete parQuete){
+        return 0;
+    }
+
+    /**
      * retoune la position de la quete sur la carte
      * @return pos (int []) : position de la quete sur la carte
      */
