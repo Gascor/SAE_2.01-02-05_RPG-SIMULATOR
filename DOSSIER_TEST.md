@@ -266,6 +266,57 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 |   P1   | Q1 = 1, Q2 = 1 | (Q1,Q2)  |
 |   P2   | Q1 = 2, Q2 = 1 |   (Q2)   |
 
+<hr>
+
+* Choix de la partition : I0, I1, I2 et I3 représente chacun un indice du tableau précondition. On considère dans ce choix de partition que true veut dire que l'id de la quête necessaire est faite.
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : quetePossible()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "quetePossible() en utilisant la méthode des boites noires."</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |            I0            |            I1            |            I2            |            I3            | Résultat attendu |
+|:------:|:------------------------:|:------------------------:|:------------------------:|:------------------------:|:----------------:|
+|   P0   |           true           | ensemble de la partition |           true           | ensemble de la partition |       true       |
+|   P1   |           true           | ensemble de la partition | ensemble de la partition |           true           |       true       |
+|   P2   | ensemble de la partition |           true           |           true           | ensemble de la partition |       true       |
+|   P3   | ensemble de la partition |           true           | ensemble de la partition |           true           |       true       |
+|   P4   |           true           | ensemble de la partition |          false           |          false           |      false       |
+|   P5   | ensemble de la partition |           true           |          false           |          false           |      false       |
+|   P6   |          false           |          false           | ensemble de la partition |           true           |      false       |
+|   P7   |          false           |          false           |           true           | ensemble de la partition |      false       |
+|   P8   |          false           |          false           |          false           |          false           |      false       |
+
+liste id = {1,2,3,4}
+
+| Classe | I0  | I1  | I2  | I3  | Résultat |
+|:------:|:---:|:---:|:---:|:---:|:--------:|
+|   P0   |  1  |  0  |  3  |  2  |   true   |
+|   P1   |  1  |  0  |  6  |  2  |   true   |
+|   P2   |  6  |  1  |  2  |  0  |   true   |
+|   P3   |  6  |  1  |  3  |  2  |   true   |
+|   P4   |  1  |  0  |  8  |  9  |  false   |
+|   P5   |  6  |  1  |  8  |  0  |  false   |
+|   P6   |  8  |  9  |  6  |  1  |  false   |
+|   P7   |  8  |  9  |  0  |  0  |  false   |
+|   P8   |  8  |  9  |  6  |  7  |  false   |
+
 ### 3.3 Résultats
 
 <table>
@@ -397,6 +448,33 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systèmatique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>quetePossible()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>18/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
