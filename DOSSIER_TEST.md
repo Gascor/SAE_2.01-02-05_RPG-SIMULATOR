@@ -71,6 +71,8 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 
 ### 3.2 Tests
 
+#### **CLASSE Quete.java :**
+
 * Choix de partition : Les deux listes contenant que des entiers naturels privés de 0 peut etre chacun divisé en trois sous ensemble. A1 la liste est égale à None , A1 la liste contient un entier , A2 la liste contient deux entiers. a represente la premiére liste , b représente la deuxiéme liste.Quand a n'existe pas , b est obligé d'être None sinon il deviendrait la premiére liste.
 
 <table>
@@ -354,7 +356,11 @@ liste id = {1,2,3,4}
 |   P1   | this = 2 par = 2 |        =0        |
 |   P2   | this= 1 par = 2  |        -1        |
 
+#### **CLASSE Parcours.java :**
+
 ### 3.3 Résultats
+
+#### **CLASSE Quete.java :**
 
 <table>
     <tbody>
@@ -542,5 +548,7 @@ liste id = {1,2,3,4}
         </tr>
     </tbody>
 </table>
+
+#### **CLASSE Parcours.java :**
 
 ### 3.4 Conclusions
