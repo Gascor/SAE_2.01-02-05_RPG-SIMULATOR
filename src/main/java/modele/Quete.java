@@ -138,7 +138,7 @@ public class Quete {
      *         >0: si l'id de this est supérieure a l'id de parquete
      */
     public int compareTo(Quete parquete){
-        return 0;
+        return this.numero - parquete.numero;
     }
 
     /**
