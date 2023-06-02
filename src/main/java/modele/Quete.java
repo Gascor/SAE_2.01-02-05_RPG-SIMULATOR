@@ -126,7 +126,8 @@ public class Quete {
      * @return true si la quete peut etre faite ou false si la quete ne peut etre faite
      */
     public boolean quetePossible(LinkedHashMap<Integer,Quete> listQueteFaite){
-        return false;
+        Set<Integer> listIDFaite = listQueteFaite.keySet();
+        return (((this.precond[0] == 0 || (listIDFaite.contains(this.precond[0]))) ||listIDFaite.contains(this.precond[1]))) && (((this.precond[2] == 0 || (listIDFaite.contains(this.precond[2]))) ||listIDFaite.contains(this.precond[3])));
     }
 
     /**
