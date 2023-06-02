@@ -11,6 +11,16 @@ public class Quete {
     private String intitule;
 
     /**
+     * transforme la representation de la position de la quete en forme de ligne à un tableau de 2 de longueurs
+     * @param scanner (String): la representation de la position de la quete en forme de ligne
+     * @return un tableau à 2 indice. O indice est x et 1er indice est y
+     */
+
+    public int [] extraitPos(String scanner){
+        return null;
+    }
+
+    /**
      * transforme la representation des préconditions de la quete en forme de ligne à un tableau de 4 de longueurs
      * @param scanner (String) est la representation des préconditions de la quete en forme de ligne
      * @return un tableau à 4 indices qui possede les préconditions avant de faire la quête (d'autres quêtes)
