@@ -73,6 +73,15 @@ public class Quete {
     }
 
     /**
+     * permet savoir si la quete posséde aucune préconditions
+     * @return false: si la quete posséde des préconditions
+     *         true: si la quete possede aucunes préconditions
+     */
+    public boolean testprecondition(){
+        return false;
+    }
+
+    /**
      * retoune la position de la quete sur la carte
      * @return pos (int []) : position de la quete sur la carte
      */

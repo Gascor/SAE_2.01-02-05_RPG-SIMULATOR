@@ -54,4 +54,14 @@ class QueteTest {
         assertEquals(3,quete6.getPrecond()[2]);
         assertEquals(4,quete6.getPrecond()[3]);
     }
+    @Test @Order(1)
+    void testprecondition() {
+        System.out.println("Test méthode precondition");
+        Quete quete = new Quete("1|(4, 3)|()|2|100|explorer pic de Bhanborim");
+        assertTrue(quete.testprecondition());
+        Quete quete1 = new Quete("1|(4, 3)|((1,),)|2|100|explorer pic de Bhanborim");
+        assertFalse(quete1.testprecondition());
+        Quete quete2 = new Quete("1|(4, 3)|((1, 2), (3,4))|2|100|explorer pic de Bhanborim");
+        assertFalse(quete2.testprecondition());
+    }
 }
