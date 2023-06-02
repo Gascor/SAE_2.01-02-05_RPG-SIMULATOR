@@ -142,4 +142,13 @@ class QueteTest {
         Quete quete8 = new Quete("1|(2, 4)|((8,9),(6,7))|2|100|explorer pic de Bhanborim");
         assertFalse(quete8.quetePossible(listQueteFaite));
     }
+    @Test @Order(1)
+    public void compareTo(){
+        System.out.println("Test méthode CompareTo");
+        Quete quete = new Quete("1|(2, 4)|((1,),(3,2)|2|100|explorer pic de Bhanborim");
+        Quete quete1 = new Quete("2|(2, 4)|((1,),(3,2)|2|100|explorer pic de Bhanborim");
+        assertEquals(1,quete1.compareTo(quete));
+        assertEquals(0,quete1.compareTo(quete1));
+        assertEquals(-1,quete.compareTo(quete1));
+    }
 }
