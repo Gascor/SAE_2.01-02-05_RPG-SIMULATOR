@@ -56,7 +56,20 @@ public class Quete {
      * @return un tableau à 4 indices qui possede les préconditions avant de faire la quête (d'autres quêtes)
      */
     public int [] extraitPrecond(String scanner){
-        return null;
+        String precond = scanner;
+        int [] preconditions = new int[4];
+        precond = precond.replace("(","");
+        precond = precond.replace(")","");
+        precond = precond.replace(" ","");
+        Scanner scanPrecondition = new Scanner(precond).useDelimiter(",");
+        int i= 0;
+        while(scanPrecondition.hasNext()){
+            String extrait = scanPrecondition.next();
+            if(!extrait.equals(""))
+                preconditions[i]=Integer.parseInt(extrait);
+            i++;
+        }
+        return preconditions;
     }
 
     /**
