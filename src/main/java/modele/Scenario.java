@@ -17,4 +17,13 @@ public class Scenario {
         chnom = parnom;
 
     }
+
+    /**
+     * ajoute une quete au scenario
+     * @param chquete: Une quete qui doit etre dans ce scenario
+     */
+    public void ajout(Quete chquete){
+        treeQuete.add(chquete);
+        nbQuete = nbQuete + 1;
+    }
 }
