@@ -156,4 +156,12 @@ public class Quete {
     public int[] getPrecond() {
         return precond;
     }
+
+    /**
+     * retoune l'id de la quete
+     * @return numero (int): id de la quete
+     */
+    public int getNumero() {
+        return numero;
+    }
 }
