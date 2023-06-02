@@ -78,7 +78,11 @@ public class Quete {
      *         true: si la quete possede aucunes préconditions
      */
     public boolean testprecondition(){
-        return false;
+        for(int e:precond){
+            if (e!=0)
+                return false;
+        }
+        return true;
     }
 
     /**
