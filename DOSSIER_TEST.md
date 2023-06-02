@@ -120,6 +120,41 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 
 <hr>
 
+* Choix de partition : l'ensemble des entiers naturels n'a pas besoin d'être partitionné.
+* 
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : extraitPos()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "extraitPos()"</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date de création du test :</td>
+            <td style='border: 1px solid black;text-align: left'>18/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe | extraitPos | Résultat attendu |      
+|:------:|:----------:|:----------------:|
+|   P0   |  "(i,y)"   |      [i,y]       |
+
+| Classe |    a    | Résultat |
+|:------:|:-------:|:--------:|
+|   P0   | "(2,4)" |  [2,4]   |
+
 ### 3.3 Résultats
 
 <table>
@@ -148,5 +183,30 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 </table>
 
 <hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>extraitPos()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>18/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+    </tbody>
+</table>
 
 ### 3.4 Conclusions

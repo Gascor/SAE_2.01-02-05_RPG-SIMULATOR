@@ -11,6 +11,24 @@ public class Quete {
     private String intitule;
 
     /**
+     * transforme la representation de la quete en forme de ligne en création d'une instance de la classe quete
+     * @param ligne:  representation de la quete en forme de ligne
+     */
+    public Quete(String ligne){
+        Scanner scanner = new Scanner(ligne).useDelimiter("\\|");
+        while (scanner.hasNext()){
+            this.numero = scanner.nextInt();
+            String strpos = scanner.next();
+            this.pos = extraitPos(strpos);
+            String strprecond = scanner.next();
+            this.precond = extraitPrecond(strprecond);
+            this.duree = scanner.nextInt();
+            this.experience = scanner.nextInt();
+            this.intitule = scanner.next();
+        }
+    }
+
+    /**
      * transforme la representation de la position de la quete en forme de ligne à un tableau de 2 de longueurs
      * @param scanner (String): la representation de la position de la quete en forme de ligne
      * @return un tableau à 2 indice. O indice est x et 1er indice est y
