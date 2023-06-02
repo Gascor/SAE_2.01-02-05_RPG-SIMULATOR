@@ -35,7 +35,7 @@ public class Scenario {
     }
     /**
      * retourne le nombre de quêtes du scénario.
-     * @return
+     * @return nbQuete (int): représente le nombre de quêtes dans le scénario
      */
     public int getNbQuete() {
         return nbQuete;
