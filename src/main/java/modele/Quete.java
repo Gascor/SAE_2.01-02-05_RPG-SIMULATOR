@@ -180,4 +180,11 @@ public class Quete {
     public String toString() {
         return numero+"-"+ Arrays.toString(pos) +"-"+ Arrays.toString(precond) +"-"+duree+"-"+experience+"-"+intitule;
     }
+    /**
+     * retourne l'expérience donnée de la quete
+     * @return experience(int) : expérience donné de la quete
+     */
+    public int getExperience() {
+        return experience;
+    }
 }
