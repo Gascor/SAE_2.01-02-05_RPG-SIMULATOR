@@ -91,7 +91,8 @@ public class Quete {
      * @return int>=0
      */
     public int distanceQuete(Quete parQuete){
-        return 0;
+
+        return Math.abs(this.pos[0] - parQuete.pos[0]) + Math.abs(this.pos[1] - parQuete.pos[1]) ;
     }
 
     /**
