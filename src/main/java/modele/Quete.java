@@ -12,7 +12,7 @@ public class Quete {
 
     /**
      * transforme la representation de la quete en forme de ligne en création d'une instance de la classe quete
-     * @param ligne:  representation de la quete en forme de ligne
+     * @param ligne (String): representation de la quete en forme de ligne
      */
     public Quete(String ligne){
         Scanner scanner = new Scanner(ligne).useDelimiter("\\|");
@@ -33,9 +33,21 @@ public class Quete {
      * @param scanner (String): la representation de la position de la quete en forme de ligne
      * @return un tableau à 2 indice. O indice est x et 1er indice est y
      */
-
     public int [] extraitPos(String scanner){
-        return null;
+        String precond = scanner;
+        int [] preconditions = new int [2];
+        precond = precond.replace("(","");
+        precond = precond.replace(")","");
+        precond = precond.replace(" ","");
+        Scanner scanPrecondition = new Scanner(precond).useDelimiter(",");
+        int i= 0;
+        while(scanPrecondition.hasNext()){
+            String extrait = scanPrecondition.next();
+            if(!extrait.equals(""))
+                preconditions[i]=Integer.parseInt(extrait);
+            i++;
+        }
+        return preconditions;
     }
 
     /**
