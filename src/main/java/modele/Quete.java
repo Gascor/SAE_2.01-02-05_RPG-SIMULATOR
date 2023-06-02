@@ -96,6 +96,15 @@ public class Quete {
     }
 
     /**
+     * determine et renvoie les quetes réalisables et les plus proches de this
+     * @param ensQuete : represente l'ensemble des quetes réalisables
+     * @return ensQProche qui est un ensemble des quetes les plus proches de this
+     */
+    public HashSet<Quete> queteProche(HashSet<Quete> ensQuete){
+        return null;
+    }
+
+    /**
      * retoune la position de la quete sur la carte
      * @return pos (int []) : position de la quete sur la carte
      */
