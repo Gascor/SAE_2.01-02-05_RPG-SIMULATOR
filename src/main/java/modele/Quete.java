@@ -1,5 +1,6 @@
 package modele;
 
+import java.util.*;
 public class Quete {
 
     private int numero;
@@ -8,6 +9,10 @@ public class Quete {
     private int duree;
     private int experience;
     private String intitule;
+
+    public int [] extraitPrecond(){
+        return null;
+    }
 
     /**
      * retoune la position de la quete sur la carte
