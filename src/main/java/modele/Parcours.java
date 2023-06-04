@@ -30,4 +30,12 @@ public class Parcours {
         queteFin = chScenario.getTreeQuete().first();
         ensQuetePossible = new HashSet<>();
     }
+    /**
+     * crée un Treeset des quetes sans la quete 0
+     * @param treeq (TreeSet<Quete>) : est le treeSet de toutes les quetes du scénario
+     * @return treeQueteNonFaite ((TreeSet<Quete>): est l'ensemble des quetes non faites au début
+     */
+    public TreeSet <Quete> extraitQuete(TreeSet<Quete> treeq){
+        return null;
+    }
 }
