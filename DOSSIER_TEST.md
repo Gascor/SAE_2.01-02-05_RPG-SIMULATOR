@@ -358,6 +358,39 @@ liste id = {1,2,3,4}
 
 #### **CLASSE Parcours.java :**
 
+* Choix de la partition : Une TreeSet de toute les quetes du Scénario.
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : extraitQuete()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "extraitQuete() en utilisant la méthode des boites noires."</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |   tree set   | Résultat attendu |
+|:------:|:------------:|:----------------:|
+|   P0   | "(qi,qy,qz)" |     (qy,qz)      |
+
+quete 0 = quete fin
+
+| Classe |   tree set   | Résultat |
+|:------:|:------------:|:--------:|
+|   P0   | "(q0,q1,q2)" | (q1,q2)  |
+
 ### 3.3 Résultats
 
 #### **CLASSE Quete.java :**
@@ -550,5 +583,30 @@ liste id = {1,2,3,4}
 </table>
 
 #### **CLASSE Parcours.java :**
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>extraitQuete()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>20/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+    </tbody>
+</table>
 
 ### 3.4 Conclusions
