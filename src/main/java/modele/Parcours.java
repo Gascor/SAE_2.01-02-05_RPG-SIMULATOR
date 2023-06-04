@@ -36,7 +36,9 @@ public class Parcours {
      * @return treeQueteNonFaite ((TreeSet<Quete>): est l'ensemble des quetes non faites au début
      */
     public TreeSet <Quete> extraitQuete(TreeSet<Quete> treeq){
-        return null;
+        TreeSet<Quete> treeQueteNonFaite = new TreeSet<>(treeq);
+        treeQueteNonFaite.pollFirst();
+        return treeQueteNonFaite;
     }
     /**
      * retoune les quetes non faites actuelles du parcours
