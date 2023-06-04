@@ -1,7 +1,7 @@
 package modele;
 
 import java.util.*;
-public class Quete {
+public class Quete implements Comparable <Quete> {
 
     private int numero;
     private int [] pos = new int[2] ;
