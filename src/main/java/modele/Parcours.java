@@ -38,4 +38,19 @@ public class Parcours {
     public TreeSet <Quete> extraitQuete(TreeSet<Quete> treeq){
         return null;
     }
+    /**
+     * retoune les quetes non faites actuelles du parcours
+     * @return quetesNonFaite (TreeSet<Quete>): represenle les quetes non faites du parcours
+     */
+    public TreeSet<Quete> getQuetesNonFaite() {
+        return quetesNonFaite;
+    }
+
+    /**
+     * retoune les quetes non faites actuelles du parcours
+     * @return chQuetesFaite (LinkedHashMap<Integer,Quete>): represente les quetes faites du parcours
+     */
+    public LinkedHashMap<Integer,Quete> getQuetesFaite() {
+        return chQuetesFaite;
+    }
 }
