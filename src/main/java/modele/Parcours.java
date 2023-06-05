@@ -63,7 +63,13 @@ public class Parcours {
      * vérifie les quêtes toujours non réalisables et les ajoutes dans les quetes possibles si elles sont maintenant réalisables
      */
     public void quetesPossibles(){
-        ;
+        HashSet <Quete> ensNonPossible = new HashSet<>(quetesNonFaite);
+        ensNonPossible.removeAll(ensQuetePossible);
+        for(Quete q :ensNonPossible){
+            if (q.quetePossible(chQuetesFaite)){
+                ensQuetePossible.add(q);
+            }
+        }
     }
     /**
      * retoune les quetes non faites actuelles du parcours
