@@ -57,7 +57,7 @@ public class Parcours {
      *         true: si la quete peut etre réalisé
      */
     public boolean queteFinPossibleEfficace(){
-        return false;
+        return ((chexp >= queteFin.getExperience()) && ((queteFin.quetePossible(chQuetesFaite))));
     }
     /**
      * retoune les quetes non faites actuelles du parcours
