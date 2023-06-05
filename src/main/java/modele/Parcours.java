@@ -132,6 +132,13 @@ public class Parcours {
         return chduree;
     }
     /**
+     * retourne les quetes qui sont possibles à faire pour le parcours
+     * @return ensQuetePossible ( HashSet<Quete>): les quetes possibles à faire pour le parcours
+     */
+    public HashSet<Quete> getQuetePossible() {
+        return ensQuetePossible;
+    }
+    /**
      * retourne la quete 0 (quete finale) du parcours
      * @return queteFin(Quete): quete finale du parcours
      */
