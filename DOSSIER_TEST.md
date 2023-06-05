@@ -585,6 +585,49 @@ Ancienne duree = 10
 |   P0   |     ensemble vide     |       -10        |
 |   P1   | chQueteFaite = {1.Q1} |        1         |
 
+<hr>
+
+* Choix de la partition : Analyse en fonction de l'experience si la quete est possible.
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : queteFinPossibleExhaustive()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "queteFinPossibleExhaustive()" en utilisant la méthode des boites noires.</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |           NbQueteFaite           | Quete Possible |    Experience    | Résultat Attendu |
+|:------:|:--------------------------------:|:--------------:|:----------------:|:----------------:|
+|   P0   | (NbQueteScenario-1)=NbQueteFaite |      True      | pfinexp>=qfinexp |       True       |
+|   P1   | (NbQueteScenario-1)=NbQueteFaite |      True      | pfinexp<qfinexp  |      False       |
+|   P2   | (NbQueteScenario-1)>NbQueteFaite |      True      | pfinexp>=qfinexp |      False       |
+|   P3   | (NbQueteScenario-1)>NbQueteFaite |      True      | pfinexp<qfinexp  |      False       |
+|   P4   | (NbQueteScenario-1)>NbQueteFaite |     False      | pfinexp>=qfinexp |      False       |
+|   P5   | (NbQueteScenario-1)>NbQueteFaite |     False      | pfinexp<qfinexp  |      False       |
+
+| Classe |                     NbQueteFaite                      | Quete Possible |         Experience          | Résultat Attendu |
+|:------:|:-----------------------------------------------------:|:--------------:|:---------------------------:|:----------------:|
+|   P0   | 4=NbQueteFaite = NbQueteScenario, NbQueteScenario = 5 |      True      | pfinexp = 350,qfinexp = 350 |       True       |
+|   P1   | 4=NbQueteFaite = NbQueteScenario, NbQueteScenario = 5 |      True      | pfinexp = 300,qfinexp = 350 |      False       |
+|   P2   |          5=NbQueteScenario,3 = NbQueteFaite           |     False      | pfinexp = 350,qfinexp = 350 |      False       |
+|   P3   |          5=NbQueteScenario,3 = NbQueteFaite           |      True      | pfinexp = 300,qfinexp = 350 |      False       |
+|   P4   |          5=NbQueteScenario,3 = NbQueteFaite           |     False      | pfinexp = 350,qfinexp = 350 |      False       |
+|   P5   |          5=NbQueteScenario,3 = NbQueteFaite           |     False      | pfinexp = 300,qfinexp = 350 |      False       |
+
 ### 3.3 Résultats
 
 #### **CLASSE Quete.java :**
@@ -918,6 +961,33 @@ Ancienne duree = 10
         <tr>
             <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
             <td style='border: 1px solid black;text-align: left'>getQueteActuelle()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>26/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>OK</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>queteFinPossibleExhaustive()</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Responsable :</td>
