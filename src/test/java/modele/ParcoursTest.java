@@ -136,4 +136,29 @@ import static org.junit.jupiter.api.Assertions.*;
         System.out.println(parcours2.getQuetePossible());
         Assertions.assertEquals(parcours2.getQuetePossible(), expectedSet1);
     }
+    @Test @Order(1)
+    public void ajouteDuree(){
+        System.out.println("Test méthode ajouteDuree");
+        Scenario scenario = new Scenario("test1");
+        Quete quete1 = new Quete("1|(2, 2)|()|10|100|explorer pic de Bhanborim");
+        Quete quete2 = new Quete("2|(1, 0)|()|2|100|explorer pic de Bhanborim");
+        Quete quete3 = new Quete("3|(4, 1)|((4,),)|2|100|explorer pic de Bhanborim");
+        Quete quete4 = new Quete("4|(1, 0)|((5,),)|6|100|explorer pic de Bhanborim");
+        scenario.ajout(quete1);
+        scenario.ajout(quete2);
+        scenario.ajout(quete3);
+        scenario.ajout(quete4);
+        Parcours parcours = new Parcours(scenario,"duree");
+        parcours.ajouteDuree(quete1);
+        assertEquals( 14,parcours.getduree());
+        LinkedHashMap<Integer,Quete> QueteFaite = new LinkedHashMap<>();
+        QueteFaite.put(1,quete4);
+        QueteFaite.put(2,quete2);
+        QueteFaite.put(3,quete3);
+        //probleme
+        Parcours parcours1 = new Parcours(scenario,10,10,0,"duree",QueteFaite,new TreeSet<Quete>(),new HashSet<Quete>());
+        parcours1.ajouteDuree(quete1);
+        assertEquals(23,parcours1.getduree());
+
+    }
 }
