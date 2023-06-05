@@ -81,4 +81,45 @@ public class Parcours {
     public void setChexp(int chexp) {
         this.chexp = chexp;
     }
+    /**
+     * retourne un string qui affiche un parcours selon sa clé et les quetes faites
+     * @return String: un string qui represente le parcours
+     */
+    @Override
+    public String toString(){
+        int cle;
+        if(getComparatif().equals("duree")){
+            cle = getduree();
+        } else if (getComparatif().equals("nbQuete")){
+            cle = getQuetesFaite().keySet().size();
+        }
+        else {
+            cle = getDeplacements();
+        }
+        String str ="";
+        for (Integer key : chQuetesFaite.keySet()){
+            str = str + key + " ";
+        }
+        return cle + " ---> " + str;
+    }
+    /**
+     * retourne la durée du parcours
+     * @return chduree(int) : la durée du parcours
+     */
+    public int getduree() {
+        return chduree;
+    }
+    /**
+     * retourne la quete 0 (quete finale) du parcours
+     * @return queteFin(Quete): quete finale du parcours
+     */
+    public Quete getQueteFin() {
+        return queteFin;
+    }
+    public String getComparatif(){
+        return chComparatif;
+    }
+    public int getDeplacements(){
+        return chdeplacements;
+    }
 }
