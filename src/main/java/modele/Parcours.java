@@ -41,6 +41,14 @@ public class Parcours {
         return treeQueteNonFaite;
     }
     /**
+     * permet de savoir la quete O peut etre réalisé de facon efficace
+     * @return false: si la quete ne peut etre réalisé
+     *         true: si la quete peut etre réalisé
+     */
+    public boolean queteFinPossibleEfficace(){
+        return false;
+    }
+    /**
      * retoune les quetes non faites actuelles du parcours
      * @return quetesNonFaite (TreeSet<Quete>): represenle les quetes non faites du parcours
      */
