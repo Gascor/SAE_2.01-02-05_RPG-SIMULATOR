@@ -115,6 +115,13 @@ public class Parcours {
         return cle + " ---> " + str;
     }
     /**
+     * ajoute la duree de la quete à faire et le déplacement pour atteindre cette quete
+     * @param parquete la quete à faire
+     */
+    public void ajouteDuree(Quete parquete){
+        ;
+    }
+    /**
      * compare les durées entre deux parcours
      * @param parparcours : un autre parcours
      * @return <0: si la duree de this est inférieur a la duree de parparcours
