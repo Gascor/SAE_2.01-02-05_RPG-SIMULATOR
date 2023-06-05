@@ -510,6 +510,46 @@ ensQueteNonFaite = (Quete3,Quete4,Quete2)
 |   P1   |       (Quete4)        |    (Quete2,Quete4)     |
 |   P2   |    (Quete4,Quete3)    | (Quete2,Quete4,Quete3) |
 
+<hr>
+
+* Choix de la partition : On ajoute le temps de la quete en terme de distance par rapport a la quete precedente et de durée.
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : ajouteDuree()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "ajouteDuree() en utilisant la méthode des boites noires."</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |       chQuetesFaites       |                                Résultat attendu                                 |
+|:------:|:--------------------------:|:-------------------------------------------------------------------------------:|
+|   P0   |       ensemble vide        |                    parquete(pos y + pos x + duree parquete)                     |
+|   P1   | possède une quete actuelle | abs(parquete(actuelle(pos x + pos y)-ancienne(pos x + pos y) + duree parquete)) |
+
+Parquete position = (2,2)
+Parquete duree = 10
+Queteactuelle position = (4,1)
+Ancienne duree = 10
+
+| Classe |     chQuetesFaites     | Résultat attendu |
+|:------:|:----------------------:|:----------------:|
+|   P0   |     ensemble vide      |        14        |
+|   P1   | possède quete actuelle |        23        | 
+
 ### 3.3 Résultats
 
 #### **CLASSE Quete.java :**
@@ -805,6 +845,33 @@ ensQueteNonFaite = (Quete3,Quete4,Quete2)
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>ajouteDuree()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>24/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
