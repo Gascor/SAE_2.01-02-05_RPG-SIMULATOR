@@ -103,6 +103,16 @@ public class Parcours {
         return cle + " ---> " + str;
     }
     /**
+     * compare les durées entre deux parcours
+     * @param parparcours : un autre parcours
+     * @return <0: si la duree de this est inférieur a la duree de parparcours
+     *         =0: si la duree de this est égale a la duree de parparcours
+     *         >0: si la duree de this est supérieure a la duree de parparcours
+     */
+    public int compareTo(Parcours parparcours) {
+        return 0;
+    }
+    /**
      * retourne la durée du parcours
      * @return chduree(int) : la durée du parcours
      */
