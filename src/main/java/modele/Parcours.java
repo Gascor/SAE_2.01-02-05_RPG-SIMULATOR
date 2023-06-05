@@ -63,4 +63,11 @@ public class Parcours {
     public LinkedHashMap<Integer,Quete> getQuetesFaite() {
         return chQuetesFaite;
     }
+    /**
+     * change l'expérience du parcours
+     * @param chexp (int): l'expérience qui qu'on veut mettre
+     */
+    public void setChexp(int chexp) {
+        this.chexp = chexp;
+    }
 }
