@@ -30,6 +30,17 @@ public class Parcours {
         queteFin = chScenario.getTreeQuete().first();
         ensQuetePossible = new HashSet<>();
     }
+    public Parcours(Scenario parScenario,int parexp ,int parduree,int pardeplacement, String parComparatif,LinkedHashMap<Integer,Quete> parQueteFaites,TreeSet<Quete> parQuetesNonFaites,HashSet<Quete> parQuetesPossibles){
+        chScenario = parScenario;
+        chexp = parexp;
+        chduree = parduree;
+        chdeplacements = pardeplacement;
+        chComparatif = parComparatif;
+        chQuetesFaite =  new LinkedHashMap<> (parQueteFaites);
+        quetesNonFaite = new TreeSet<> (parQuetesNonFaites);
+        queteFin = chScenario.getTreeQuete().first();
+        ensQuetePossible =  new HashSet<>(parQuetesPossibles);
+    }
     /**
      * crée un Treeset des quetes sans la quete 0
      * @param treeq (TreeSet<Quete>) : est le treeSet de toutes les quetes du scénario
