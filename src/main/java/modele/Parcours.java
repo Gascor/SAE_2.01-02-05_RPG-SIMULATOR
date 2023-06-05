@@ -119,7 +119,13 @@ public class Parcours {
      * @param parquete la quete à faire
      */
     public void ajouteDuree(Quete parquete){
-        ;
+        Quete queteActuelle = getQueteActuelle();
+        if (queteActuelle.getNumero() == -10){
+            chduree = parquete.getPos()[0] + parquete.getPos()[1]+parquete.getDuree();
+        }
+        else{
+            chduree = chduree + queteActuelle.distanceQuete(parquete) + parquete.getDuree();
+        }
     }
     /**
      * compare les durées entre deux parcours
