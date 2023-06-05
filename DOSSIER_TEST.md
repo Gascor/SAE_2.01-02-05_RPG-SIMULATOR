@@ -800,11 +800,11 @@ ensQueteNonFaite = (Quete3,Quete4,Quete2)
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Résultat :</td>
-            <td style='border: 1px solid black;text-align: left'>non fait</td>
+            <td style='border: 1px solid black;text-align: left'>OK</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
-            <td style='border: 1px solid black;text-align: left'>non fait</td>
+            <td style='border: 1px solid black;text-align: left'>Systématique</td>
         </tr>
     </tbody>
 </table>
