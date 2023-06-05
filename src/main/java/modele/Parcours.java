@@ -60,6 +60,12 @@ public class Parcours {
         return ((chexp >= queteFin.getExperience()) && ((queteFin.quetePossible(chQuetesFaite))));
     }
     /**
+     * vérifie les quêtes toujours non réalisables et les ajoutes dans les quetes possibles si elles sont maintenant réalisables
+     */
+    public void quetesPossibles(){
+        ;
+    }
+    /**
      * retoune les quetes non faites actuelles du parcours
      * @return quetesNonFaite (TreeSet<Quete>): represenle les quetes non faites du parcours
      */
