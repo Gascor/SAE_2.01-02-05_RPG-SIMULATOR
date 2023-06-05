@@ -125,7 +125,7 @@ import static org.junit.jupiter.api.Assertions.*;
         queteNonFaite2.add(quete6);
         queteNonFaite2.add(quete5);
         Parcours parcours2 = new Parcours(scenario2,0,0,0,"duree",queteFaites,queteNonFaite2,quetePossible);
-
+        // Test 3
         HashSet<Quete> expectedSet1 = new HashSet<>();
         expectedSet1.add(quete2);
         expectedSet1.add(quete5);
