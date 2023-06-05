@@ -110,7 +110,13 @@ public class Parcours {
      *         >0: si la duree de this est supérieure a la duree de parparcours
      */
     public int compareTo(Parcours parparcours) {
-        return 0;
+        if (chComparatif.equals("duree")) {
+            return this.chduree - parparcours.chduree;
+        } else if (chComparatif.equals("nbQuete")) {
+            return this.chQuetesFaite.keySet().size() - parparcours.chQuetesFaite.keySet().size();
+        } else {
+            return this.chdeplacements - parparcours.chdeplacements;
+        }
     }
     /**
      * retourne la durée du parcours
