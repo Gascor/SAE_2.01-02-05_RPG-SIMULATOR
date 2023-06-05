@@ -469,6 +469,46 @@ liste id = {1,2,3}
 |    P1    |           this = 20 par = 20           |                =0                |
 |    P2    |           this= 10 par = 20            |               -10                |
 
+<hr>
+
+* Choix de la partition : On regarde les quêtes réalisables et on regarde s'il sont rajouter dans les quêtes possibles
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : quetesPossibles()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "quetesPossibles() en utilisant la méthode des boites noires."</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe | nbQuetesRéalisables |         Résultat attendu         |
+|:------:|:-------------------:|:--------------------------------:|
+|   P0   |          0          |      ensemble ne change pas      |
+|   P1   |          1          |  ensemble ajoute la dite quete   |
+|   P2   |      plusieurs      | ensemble ajoute les dites quetes |
+
+queteFaite = 1,Quete1
+quetePossible = (Quete2)
+ensQueteNonFaite = (Quete3,Quete4,Quete2)
+
+| Classe | 	nbQuetesRéalisables	 |    Résultat attendu    |
+|:------:|:---------------------:|:----------------------:|
+|   P0   |           0           |        (Quete2)        |
+|   P1   |       (Quete4)        |    (Quete2,Quete4)     |
+|   P2   |    (Quete4,Quete3)    | (Quete2,Quete4,Quete3) |
 
 ### 3.3 Résultats
 
@@ -738,6 +778,33 @@ liste id = {1,2,3}
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>quetesPossibles()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>24/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
