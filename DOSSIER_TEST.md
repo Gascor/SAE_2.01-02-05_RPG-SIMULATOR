@@ -432,6 +432,44 @@ liste id = {1,2,3}
 |   P2   | p = 150, qFin =200 | precond [4,0,3,0] |  false   |
 |   P3   | p = 200, qFin =200 | precond [4,0,3,0] |  false   |
 
+<hr>
+
+* Choix de la partition : comparaison de durée, this inférieur a la durée du parcours, this égale a la duree du parcours et this supérieur a la durée du parcours.
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : compareTo()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "compareTo() en utilisant la méthode des boites noires."</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |            duree             | Résultat attendu |      
+|:------:|:----------------------------:|:----------------:|
+|   P0   | this.duree>parparcours.duree |        >0        |
+|   P1   | this.duree=parparcours.duree |        =0        |
+|   P2   | this.duree<parparcours.duree |        <0        |
+
+|  Classe  |                 duree                  |         Résultat attendu         |      
+|:--------:|:--------------------------------------:|:--------------------------------:|
+|    P0    |           this = 20 par = 10           |                10                |
+|    P1    |           this = 20 par = 20           |                =0                |
+|    P2    |           this= 10 par = 20            |               -10                |
+
+
 ### 3.3 Résultats
 
 #### **CLASSE Quete.java :**
@@ -650,6 +688,8 @@ liste id = {1,2,3}
     </tbody>
 </table>
 
+<hr>
+
 <table>
     <tbody>
         <tr>
@@ -671,6 +711,33 @@ liste id = {1,2,3}
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>compareTo()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>23/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
