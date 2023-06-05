@@ -9,7 +9,6 @@ import java.util.TreeSet;
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder( MethodOrderer.OrderAnnotation.class) public class ParcoursTest {
-
     @Test @Order(1)
     void extraitQuete(){
         System.out.println("Test méthode ExtraitQuete");
@@ -76,7 +75,6 @@ import static org.junit.jupiter.api.Assertions.*;
     public void quetesPossibles(){
         System.out.println("Test méthode quetesPossible");
         // Test 0
-
         Scenario scenario = new Scenario("test1");
         Quete quete1 = new Quete("1|(1, 1)|()|2|100|explorer pic de Bhanborim"); // Faite
         Quete quete2 = new Quete("2|(1, 0)|()|2|100|explorer pic de Bhanborim"); // Possible
@@ -159,6 +157,24 @@ import static org.junit.jupiter.api.Assertions.*;
         Parcours parcours1 = new Parcours(scenario,10,10,0,"duree",QueteFaite,new TreeSet<Quete>(),new HashSet<Quete>());
         parcours1.ajouteDuree(quete1);
         assertEquals(23,parcours1.getduree());
-
+    }
+    @Test @Order(1)
+    public void getQueteActuelle(){
+        System.out.println("Test méthode getQueteActuelle");
+        Scenario scenario = new Scenario("test1");
+        Quete quete1 = new Quete("1|(2, 2)|()|10|100|explorer pic de Bhanborim");
+        Quete quete2 = new Quete("2|(1, 0)|()|2|100|explorer pic de Bhanborim");
+        Quete quete3 = new Quete("3|(4, 1)|((4,),)|2|100|explorer pic de Bhanborim");
+        Quete quete4 = new Quete("4|(1, 0)|((5,),)|6|100|explorer pic de Bhanborim");
+        scenario.ajout(quete1);
+        scenario.ajout(quete2);
+        scenario.ajout(quete3);
+        scenario.ajout(quete4);
+        Parcours p1 = new Parcours(scenario,0,0,0,"duree",new LinkedHashMap<>(),new TreeSet<Quete>(),new HashSet<Quete>());
+        assertEquals(-10,p1.getQueteActuelle().getNumero());
+        LinkedHashMap<Integer,Quete> LHM1 = new LinkedHashMap();
+        LHM1.put(quete1.getNumero(),quete1);
+        Parcours p2 = new Parcours(scenario,0,0,0,"duree",LHM1,new TreeSet<Quete>(),new HashSet<Quete>());
+        assertEquals(1,p2.getQueteActuelle().getNumero());
     }
 }
