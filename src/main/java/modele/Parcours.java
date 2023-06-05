@@ -131,6 +131,18 @@ public class Parcours {
         }
     }
     /**
+     *
+     * retourne la derniere quete qui vient d'etre faites
+     * @return QueteActuelle (Quete): la derniére quete qui vient d'être faite
+     */
+    public Quete getQueteActuelle(){
+        Quete queteActuelle = chQuetesFaite.values().stream().reduce((first, second) -> second).orElse(null);
+        if (queteActuelle == null){
+            return new Quete("-10|(0, 0)|()|0|0|oui");
+        }
+        return queteActuelle;
+    }
+    /**
      * retourne la durée du parcours
      * @return chduree(int) : la durée du parcours
      */
