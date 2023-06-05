@@ -63,4 +63,16 @@ import static org.junit.jupiter.api.Assertions.*;
         parcours1.setChexp(200);
         assertFalse(parcours1.queteFinPossibleEfficace());
     }
+    @Test @Order(1)
+    public void compareTo(){
+        System.out.println("Test méthode compareTo");
+        Scenario scenario = new Scenario("test");
+        Quete quete0 = new Quete("0|(1, 0)|((1,),(3,))|2|200|explorer pic de Bhanborim");
+        scenario.ajout(quete0);
+        Parcours parcours = new Parcours(scenario, 300,20,0, "duree", new LinkedHashMap<Integer, Quete>(), new TreeSet<Quete>(), new HashSet<Quete>());
+        Parcours parcours1 = new Parcours(scenario, 300, 10,0, "duree", new LinkedHashMap<Integer, Quete>(), new TreeSet<Quete>(), new HashSet<Quete>());
+        assertEquals(10,parcours.compareTo(parcours1));
+        assertEquals(0,parcours.compareTo(parcours));
+        assertEquals(-10,parcours1.compareTo(parcours));
+    }
 }
