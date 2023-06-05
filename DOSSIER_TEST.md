@@ -391,6 +391,47 @@ quete 0 = quete fin
 |:------:|:------------:|:--------:|
 |   P0   | "(q0,q1,q2)" | (q1,q2)  |
 
+<hr>
+
+* Choix de la partition : l'experience acqueri par le joueur et une liste de quete possible. Une partie ou l'experience est infèrieure au prérequis de la quete, un ou elle est égale et une autre ou elle est supérieure. Avec des parties ou des quetes sont possibles ou non.
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : queteFinPossibleEfficace()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "queteFinPossibleEfficace() en utilisant la méthode des boites noires."</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |   Experience   | Quete Possible | Résultat attendu |
+|:------:|:--------------:|:--------------:|:----------------:|
+|   P0   | p.exp>qFin.exp |      true      |       true       |
+|   P1   | p.exp=qFin.exp |      true      |       true       |
+|   P2   | p.exp<qFin.exp |  peu importe   |      false       |
+|   P3   |  peu importe   |     false      |      false       |
+
+liste id = {1,2,3}
+
+| Classe |     Experience     |  Quete Possible   | Résultat |
+|:------:|:------------------:|:-----------------:|:--------:|
+|   P0   | p = 300, qFin =200 | precond [1,0,3,0] |   true   |
+|   P1   | p = 200, qFin =200 | precond [1,0,3,0] |   true   |
+|   P2   | p = 150, qFin =200 | precond [4,0,3,0] |  false   |
+|   P3   | p = 200, qFin =200 | precond [4,0,3,0] |  false   |
+
 ### 3.3 Résultats
 
 #### **CLASSE Quete.java :**
@@ -605,6 +646,31 @@ quete 0 = quete fin
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>queteFinPossibleEfficace()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>20/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
