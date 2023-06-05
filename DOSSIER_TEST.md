@@ -550,6 +550,41 @@ Ancienne duree = 10
 |   P0   |     ensemble vide      |        14        |
 |   P1   | possède quete actuelle |        23        | 
 
+<hr>
+
+* Choix de la partition : On ajoute le temps de la quete en terme de distance par rapport a la quete precedente et de durée.
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : getQueteActuelle()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "getQueteActuelle() en utilisant la méthode des boites noires."</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |          chQueteFaite          |   Résultat attendu    |
+|:------:|:------------------------------:|:---------------------:|
+|   P0   |         ensemble vide          | IDQueteActuelle = -10 |
+|   P1   | possède un ou plusieurs quètes | IDQueteActuelle >= 0  |
+
+| Classe |     chQueteFaite      | Résultat attendu |
+|:------:|:---------------------:|:----------------:|
+|   P0   |     ensemble vide     |       -10        |
+|   P1   | chQueteFaite = {1.Q1} |        1         |
+
 ### 3.3 Résultats
 
 #### **CLASSE Quete.java :**
@@ -856,6 +891,33 @@ Ancienne duree = 10
         <tr>
             <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
             <td style='border: 1px solid black;text-align: left'>ajouteDuree()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>24/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>OK</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>getQueteActuelle()</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Responsable :</td>
