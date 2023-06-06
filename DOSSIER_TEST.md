@@ -628,6 +628,43 @@ Ancienne duree = 10
 |   P4   |          5=NbQueteScenario,3 = NbQueteFaite           |     False      | pfinexp = 350,qfinexp = 350 |      False       |
 |   P5   |          5=NbQueteScenario,3 = NbQueteFaite           |     False      | pfinexp = 300,qfinexp = 350 |      False       |
 
+#### **CLASSE Classement.java :**
+
+* Choix de la partition : Les clés ne sont que des entiers positifs. Et on peut les partitionnés en deux, soit la clé du parcours est deja dans le classement sois il n'est pas déja présent.
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : ajout()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "ajout()" en utilisant la méthode des boites noires.</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe | ContainsKey |                          Résultat Attendu                          |
+|:------:|:-----------:|:------------------------------------------------------------------:|
+|   P0   |    True     |                           ajout parcours                           |
+|   P1   |    False    | création d'une nouvelle liste avec une nouvelle clé et le parcours |
+
+clé_parcours = 20
+
+| Classe |                ContainsKey                |                     Résultat Attendu                     |
+|:------:|:-----------------------------------------:|:--------------------------------------------------------:|
+|   P0   |      clé_parcours dans le classement      |             Ajout du parcours dans la clé 20             |
+|   P1   | clé_parcours n'est pas dans le classement | Création d'une nouvelle liste avec la clé et le parcours |
+
 ### 3.3 Résultats
 
 #### **CLASSE Quete.java :**
@@ -1004,6 +1041,33 @@ Ancienne duree = 10
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+#### **CLASSE Classement.java :**
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>ajout()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>27/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
