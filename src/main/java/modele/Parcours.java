@@ -94,6 +94,15 @@ public class Parcours {
         this.chexp = chexp;
     }
     /**
+     * permet de savoir la quete O peut etre réalisé de facon exhaustive
+     *
+     * @return false: si la quete ne peut etre réalisé
+     *         true: si la quete peut etre réalisé
+     */
+    public boolean queteFinPossibleExhaustive(){
+        return false;
+    }
+    /**
      * retourne un string qui affiche un parcours selon sa clé et les quetes faites
      * @return String: un string qui represente le parcours
      */
