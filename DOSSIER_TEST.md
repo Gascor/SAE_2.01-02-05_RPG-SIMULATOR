@@ -732,6 +732,39 @@ clé_parcours = 20
 |   P0   | Scenario0 |   Parcours(1,2,4,0)   |
 |   P1   | Scenario1 | parcours(1,4,3,2,5,0) |
 
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : solutionGloutonneExhaustive()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "solutionGloutonneExhaustive()" en utilisant la méthode des boites noires.</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |                        Scenario                        |     Résultat attendu      |
+|:------:|:------------------------------------------------------:|:-------------------------:|
+|   P0   |  Plusieur possibilités de parcours gloutonExhaustive   |         Parcours          |
+|   P1   | Qu'une seule possibilité de parcours gloutonExhaustive | Parcours distance minimal |
+
+| Classe | Scenario  |   Résultat attendu    |
+|:------:|:---------:|:---------------------:|
+|   P0   | Scenario0 |  Parcours(1,2,4,3,0)  |
+|   P1   | Scenario1 | Parcours(1,4,3,2,5,0) |
+
 ### 3.3 Résultats
 
 #### **CLASSE Quete.java :**
@@ -1189,6 +1222,33 @@ clé_parcours = 20
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>solutionGloutonneExhaustive()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>28/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
