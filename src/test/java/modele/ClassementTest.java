@@ -36,6 +36,7 @@ class ClassementTest {
         System.out.println("Test de la méthode afficherClassement()");
         Scenario scenario = new Scenario("test1");
         Quete quete1 = new Quete("1|(2, 2)|()|10|100|explorer pic de Bhanborim");
+        scenario.ajout(quete1);
         Parcours parcours1 = new Parcours(scenario,10,20,0,"duree",new LinkedHashMap<>(),new TreeSet<Quete>(),new HashSet<Quete>());
         Parcours parcours2 = new Parcours(scenario,10,25,0,"duree",new LinkedHashMap<>(),new TreeSet<Quete>(),new HashSet<Quete>());
         Classement.ajout(parcours2);
