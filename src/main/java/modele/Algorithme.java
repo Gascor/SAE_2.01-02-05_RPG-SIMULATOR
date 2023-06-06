@@ -60,13 +60,47 @@ public class Algorithme {
      * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
      */
     public static void recursiviteGlutonneExhaustive(Scenario parScenario,ArrayList<Parcours> listparcours){
-        ;
+        Parcours parparcours = listparcours.get(listparcours.size() -1);
+        if ((parparcours.queteFinPossibleExhaustive())){
+            parparcours.ajouteDuree(parparcours.getQueteFin());
+            parparcours.ajouteQueteFaite(parparcours.getQueteFin());
+            //if(((Classement.getChTreeParcours().isEmpty()) ||(Classement.getChTreeParcours().firstKey() > parparcours.getduree()))) {
+            Classement.ajout(parparcours);
+            //}
+
+        }
+        else{
+            Quete QueteActuelle = parparcours.getQueteActuelle();
+            parparcours.quetesPossibles();
+            HashSet<Quete> ensQueteProche= QueteActuelle.queteProche(parparcours.getQuetePossible());
+            for (Quete q: ensQueteProche){
+                parparcours.ajouteDuree(q);
+                parparcours.ajoutexp(q.getExperience());
+                parparcours.ajouteQueteFaite(q);
+                Algorithme.recursiviteGlutonneExhaustive(parScenario,listparcours);
+                parparcours = listparcours.get(listparcours.size() - 1);
+                listparcours.add(new Parcours(parScenario, parparcours.getChexp(), parparcours.getduree(),0, "duree", parparcours.getQuetesFaite(), parparcours.getQuetesNonFaite(), new HashSet<>()));
+                listparcours.remove(listparcours.size()-2);
+                parparcours = listparcours.get(listparcours.size() - 1);
+                if(parparcours.getQuetesFaite().containsKey(0)) {
+                    parparcours.enleverQueteFaite(parparcours.getQueteFin());
+                    parparcours.enleverDuree(parparcours.getQueteFin());
+                }
+                parparcours.enleverQueteFaite(q);
+                parparcours.enleverDuree(q);
+                parparcours.ajoutexp(-q.getExperience());
+            }
+
+        }
     }
     /**
      * permet de lancer l'algorithme gluton exhaustive
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
      */
     public static void solutionGloutonneExhaustive(Scenario parScenario){
-        ;
+        ArrayList<Parcours> listparcours = new ArrayList<>();
+        listparcours.add(new Parcours(parScenario,"duree"));
+        Algorithme.recursiviteGlutonneExhaustive(parScenario,listparcours);
+        Classement.afficherClassement();
     }
 }
