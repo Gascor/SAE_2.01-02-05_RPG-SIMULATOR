@@ -628,6 +628,47 @@ Ancienne duree = 10
 |   P4   |          5=NbQueteScenario,3 = NbQueteFaite           |     False      | pfinexp = 350,qfinexp = 350 |      False       |
 |   P5   |          5=NbQueteScenario,3 = NbQueteFaite           |     False      | pfinexp = 300,qfinexp = 350 |      False       |
 
+<hr>
+
+* Choix de la partition : parComparatif est un string. On peut le partionné en 3. Soit parCompartif est égal à "duree", soit "nbQuete" ou soit "deplacements".
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : getCle()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "getCle()" en utilisant la méthode des boites noires.</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |         parComparatif         |    Résultat attendu     |
+|:------:|:-----------------------------:|:-----------------------:|
+|   P0   |    parcomparatif="duree "     |       this.duree        |
+|   P1   |   parcomparatif="nbQuete "    | this.quetefaites.size() |
+|   P2   | parcomparatif ="deplacements" |    this.deplacements    |
+
+parcours.duree = 30
+parcours.deplacements = 20
+parcours.quetesfaites.size() = 5
+
+| Classe |         parComparatif         | Résultat |
+|:------:|:-----------------------------:|:--------:|
+|   P0   |    parcomparatif="duree "     |    30    |
+|   P1   |   parcomparatif="nbQuete "    |    5     |
+|   P2   | parcomparatif ="deplacements" |    20    |
+
 #### **CLASSE Classement.java :**
 
 * Choix de la partition : Les clés ne sont que des entiers positifs. Et on peut les partitionnés en deux, soit la clé du parcours est deja dans le classement sois il n'est pas déja présent.
@@ -1176,6 +1217,33 @@ clé_parcours = 20
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>getCle()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>30/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
