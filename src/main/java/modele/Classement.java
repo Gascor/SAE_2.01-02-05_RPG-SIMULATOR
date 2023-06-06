@@ -28,4 +28,10 @@ public class Classement {
     public static TreeMap<Integer, ArrayList<Parcours>> getChTreeParcours() {
         return chTreeParcours;
     }
+    /**
+     * affiche la durée des et les parcours par ordre croissant sur la durée
+     */
+    public static void afficherClassement(int nbSolutions,int parChoix) {
+        ;
+    }
 }
