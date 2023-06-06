@@ -1,6 +1,7 @@
 package modele;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Algorithme {
     /**
@@ -9,7 +10,38 @@ public class Algorithme {
      * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
      */
     public static void recursiviteGloutonneEfficace(Scenario parScenario,ArrayList<Parcours> listparcours){
-        ;
+        Parcours parparcours = listparcours.get(listparcours.size() -1);
+        if ((parparcours.queteFinPossibleEfficace())){
+            parparcours.ajouteDuree(parparcours.getQueteFin());
+            parparcours.ajouteQueteFaite(parparcours.getQueteFin());
+            Classement.ajout(parparcours);
+        }
+        else{
+            Quete QueteActuelle = parparcours.getQueteActuelle();
+            parparcours.quetesPossibles();
+            HashSet<Quete> ensQueteProche= QueteActuelle.queteProche(parparcours.getQuetePossible());
+            for (Quete q: ensQueteProche){
+                parparcours.ajouteDuree(q);
+                parparcours.ajoutexp(q.getExperience());
+                parparcours.ajouteQueteFaite(q);
+                Algorithme.recursiviteGloutonneEfficace(parScenario,listparcours);
+                parparcours = listparcours.get(listparcours.size() - 1);
+                listparcours.add(new Parcours(parScenario, parparcours.getChexp(), parparcours.getduree(),0, "duree", parparcours.getQuetesFaite(), parparcours.getQuetesNonFaite(), new HashSet<>()));
+                listparcours.remove(listparcours.size()-2);
+                parparcours = listparcours.get(listparcours.size() - 1);
+                if(parparcours.getQuetesFaite().containsKey(0)) {
+                    parparcours.enleverQueteFaite(parparcours.getQueteFin());
+                    parparcours.enleverDuree(parparcours.getQueteFin());
+                }
+                parparcours.enleverQueteFaite(q);
+                parparcours.enleverDuree(q);
+                parparcours.ajoutexp(-q.getExperience());
+
+
+            }
+
+
+        }
     }
     /**
      * permet de lancer l'algorithme gluton efficace
