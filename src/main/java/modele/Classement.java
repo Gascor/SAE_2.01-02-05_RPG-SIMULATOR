@@ -31,7 +31,7 @@ public class Classement {
     /**
      * affiche la durée des et les parcours par ordre croissant sur la durée
      */
-    public static void afficherClassement(int nbSolutions,int parChoix) {
+    public static void afficherClassement() {
         ;
     }
 }
