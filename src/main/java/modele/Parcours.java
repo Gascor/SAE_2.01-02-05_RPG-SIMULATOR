@@ -131,9 +131,9 @@ public class Parcours {
     /**
      * compare les durées entre deux parcours
      * @param parparcours : un autre parcours
-     * @return <0: si la duree de this est inférieur a la duree de parparcours
-     *         =0: si la duree de this est égale a la duree de parparcours
-     *         >0: si la duree de this est supérieure a la duree de parparcours
+     * @return <0: si la duree (ou nbQuete ou deplacements) de this est inférieur a la duree (ou nbQuete ou deplacements) de parparcours
+     *         =0: si la duree (ou nbQuete ou deplacements) de this est égale a la duree (ou nbQuete ou deplacements) de parparcours
+     *         >0: si la duree (ou nbQuete ou deplacements) de this est supérieure a la duree (ou nbQuete ou deplacements) de parparcours
      */
     public int compareTo(Parcours parparcours) {
         if (chComparatif.equals("duree")) {
