@@ -239,6 +239,15 @@ public class Parcours {
      *                  :retourne les déplacements du parcours: si this.parComparatif = deplacements
      */
     public int getCle(){
-        return 0;
+        int cle;
+        if(getComparatif().equals("duree")){
+            cle = getduree();
+        } else if (getComparatif().equals("nbQuete")){
+            cle = getQuetesFaite().keySet().size();
+        }
+        else {
+            cle = getDeplacements();
+        }
+        return cle;
     }
 }
