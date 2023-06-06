@@ -13,10 +13,13 @@ public class Algorithme {
     }
     /**
      * permet de lancer l'algorithme gluton efficace
-     *
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
      */
-    public static void solutionGloutonneEfficace(Scenario parScenario) {
-        ;
+    public static void solutionGloutonneEfficace(Scenario parScenario){
+        ArrayList<Parcours> listparcours = new ArrayList<>();
+        listparcours.add(new Parcours(parScenario,"duree"));
+        Algorithme.recursiviteGloutonneEfficace(parScenario,listparcours);
+        Classement.afficherClassement();
+
     }
 }
