@@ -64,12 +64,28 @@ import static org.junit.jupiter.api.Assertions.*;
         System.out.println("Test méthode compareTo");
         Scenario scenario = new Scenario("test");
         Quete quete0 = new Quete("0|(1, 0)|((1,),(3,))|2|200|explorer pic de Bhanborim");
+        Quete quete1 = new Quete("1|(1, 1)|()|2|100|explorer pic de Bhanborim");
         scenario.ajout(quete0);
-        Parcours parcours = new Parcours(scenario, 300,20,0, "duree", new LinkedHashMap<Integer, Quete>(), new TreeSet<Quete>(), new HashSet<Quete>());
-        Parcours parcours1 = new Parcours(scenario, 300, 10,0, "duree", new LinkedHashMap<Integer, Quete>(), new TreeSet<Quete>(), new HashSet<Quete>());
+        LinkedHashMap <Integer,Quete> quetefaite1 = new LinkedHashMap<>();
+        quetefaite1.put(quete0.getNumero(),quete0);
+        quetefaite1.put(quete1.getNumero(),quete1);
+        LinkedHashMap <Integer,Quete> quetefaite2 = new LinkedHashMap<>();
+        quetefaite2.put(quete0.getNumero(),quete0);
+        Parcours parcours = new Parcours(scenario, 300,20,10, "duree", quetefaite1, new TreeSet<Quete>(), new HashSet<Quete>());
+        Parcours parcours1 = new Parcours(scenario, 300, 10,5, "duree", quetefaite2, new TreeSet<Quete>(), new HashSet<Quete>());
         assertEquals(10,parcours.compareTo(parcours1));
         assertEquals(0,parcours.compareTo(parcours));
         assertEquals(-10,parcours1.compareTo(parcours));
+        Parcours parcours2 = new Parcours(scenario, 300,20,10, "nbQuete", quetefaite1, new TreeSet<Quete>(), new HashSet<Quete>());
+        Parcours parcours3 = new Parcours(scenario, 300, 10,5, "nbQuete", quetefaite2, new TreeSet<Quete>(), new HashSet<Quete>());
+        assertEquals(1,parcours2.compareTo(parcours3));
+        assertEquals(0,parcours2.compareTo(parcours2));
+        assertEquals(-1,parcours3.compareTo(parcours2));
+        Parcours parcours4 = new Parcours(scenario, 300,20,10, "deplacements", quetefaite1, new TreeSet<Quete>(), new HashSet<Quete>());
+        Parcours parcours5 = new Parcours(scenario, 300, 10,5, "deplacements", quetefaite2, new TreeSet<Quete>(), new HashSet<Quete>());
+        assertEquals(5,parcours4.compareTo(parcours5));
+        assertEquals(0,parcours4.compareTo(parcours4));
+        assertEquals(-5,parcours5.compareTo(parcours4));
     }
     @Test @Order(1)
     public void quetesPossibles(){
