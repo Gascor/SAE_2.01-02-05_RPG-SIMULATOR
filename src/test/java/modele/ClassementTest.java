@@ -42,5 +42,9 @@ class ClassementTest {
         Classement.ajout(parcours1);
         System.out.println("Doit afficher ci dessous le parcours d'une durée de 20");
         Classement.afficherClassement();
+        Parcours parcours3 = new Parcours(scenario,10,20,0,"duree",new LinkedHashMap<>(),new TreeSet<Quete>(),new HashSet<Quete>());
+        Classement.ajout(parcours3);
+        System.out.println("Doit afficher ci dessous les 2 parcours d'une durée de 20");
+        Classement.afficherClassement();
     }
 }
