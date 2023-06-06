@@ -729,7 +729,7 @@ clé_parcours = 20
 
 | Classe | Scenario  |   Résultat attendu    |
 |:------:|:---------:|:---------------------:|
-|   P0   | Scenario0 |   Parcours(1,2,4,0)   |
+|   P0   | Scenario0 |  Parcours(1,2,4,3,0)  |
 |   P1   | Scenario1 | parcours(1,4,3,2,5,0) |
 
 <hr>
