@@ -51,7 +51,7 @@ public class Algorithme {
         ArrayList<Parcours> listparcours = new ArrayList<>();
         listparcours.add(new Parcours(parScenario,"duree"));
         Algorithme.recursiviteGloutonneEfficace(parScenario,listparcours);
-        Classement.afficherClassement();
+        //Classement.afficherClassement();
 
     }
     /**
@@ -64,9 +64,7 @@ public class Algorithme {
         if ((parparcours.queteFinPossibleExhaustive())){
             parparcours.ajouteDuree(parparcours.getQueteFin());
             parparcours.ajouteQueteFaite(parparcours.getQueteFin());
-            //if(((Classement.getChTreeParcours().isEmpty()) ||(Classement.getChTreeParcours().firstKey() > parparcours.getduree()))) {
             Classement.ajout(parparcours);
-            //}
 
         }
         else{
@@ -101,6 +99,6 @@ public class Algorithme {
         ArrayList<Parcours> listparcours = new ArrayList<>();
         listparcours.add(new Parcours(parScenario,"duree"));
         Algorithme.recursiviteGlutonneExhaustive(parScenario,listparcours);
-        Classement.afficherClassement();
+        //Classement.afficherClassement();
     }
 }
