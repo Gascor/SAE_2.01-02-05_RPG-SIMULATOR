@@ -228,4 +228,31 @@ import static org.junit.jupiter.api.Assertions.*;
         Parcours p6 = new Parcours(s2,300,0,0,"duree",qf3,new TreeSet<>(),new HashSet<>());
         assertFalse(p6.queteFinPossibleExhaustive());
     }
+    @Test @Order(1)
+    public void getCle(){
+        System.out.println("Test méthode getCle");
+        Quete q1 = new Quete("1|(4, 3)|()|2|100|explorer pic de Bhanborim");
+        Quete q2 = new Quete("2|(3, 1)|((1,),)|1|150|dialoguer avec Kaela la chaman des esprits");
+        Quete q3 = new Quete("3|(0, 4)|((2,),)|3|200|explorer palais de Ahehona");
+        Quete q4 = new Quete("4|(3, 2)|((2,),)|6|100|vaincre Loup Géant");
+        Quete q5 = new Quete("0|(1,1)|((3,4),)|4|350|vaincre Araignée lunaire");
+        Scenario s1= new Scenario("Scenario.txt");
+        s1.ajout(q1);
+        s1.ajout(q2);
+        s1.ajout(q3);
+        s1.ajout(q4);
+        s1.ajout(q5);
+        LinkedHashMap<Integer,Quete> quetefaite = new LinkedHashMap<>();
+        quetefaite.put(q1.getNumero(), q1);
+        quetefaite.put(q2.getNumero(), q2);
+        quetefaite.put(q3.getNumero(), q3);
+        quetefaite.put(q4.getNumero(), q4);
+        quetefaite.put(q5.getNumero(), q5);
+        Parcours p1 = new Parcours(s1,0,30,20,"duree",quetefaite,new TreeSet<>(),new HashSet<>());
+        assertEquals(30,p1.getCle());
+        Parcours p2 = new Parcours(s1,0,30,20,"nbQuete",quetefaite,new TreeSet<>(),new HashSet<>());
+        assertEquals(5,p2.getCle());
+        Parcours p3 = new Parcours(s1,0,30,20,"deplacements",quetefaite,new TreeSet<>(),new HashSet<>());
+        assertEquals(20,p3.getCle());
+    }
 }
