@@ -224,4 +224,12 @@ public class Parcours {
             quetesNonFaite.add(parquete);
         }
     }
+    /**
+     * enlève la duree de la quete qui à été faite et le déplacement pour atteindre cette dernière
+     * @param parquete la quete qui à été faite
+     */
+    public void enleverDuree(Quete parquete){
+        Quete queteActuelle = getQueteActuelle();
+        chduree = chduree - queteActuelle.distanceQuete(parquete) - parquete.getDuree();
+    }
 }
