@@ -697,6 +697,41 @@ clé_parcours = 20
 
 - **/!\ abscence de tableau de données, ceci est un test visuel! /!\**
 
+#### **CLASSE Algorithme.java :**
+
+* Choix de la partition : Il y a deux partitions, soit il y a plusieurs possibilités de parcours glouton, soit il n'y en a qu'un.
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : solutionGloutonneEfficace()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "solutionGloutonneEfficace()" en utilisant la méthode des boites noires.</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |                   Scenario                   |     Résultat attendu      |
+|:------:|:--------------------------------------------:|:-------------------------:|
+|   P0   |  Plusieur possibilités de parcours glouton   |         Parcours          |
+|   P1   | Qu'une seule possibilité de parcours glouton | Parcours distance minimal |
+
+| Classe | Scenario  |   Résultat attendu    |
+|:------:|:---------:|:---------------------:|
+|   P0   | Scenario0 |   Parcours(1,2,4,0)   |
+|   P1   | Scenario1 | parcours(1,4,3,2,5,0) |
+
 ### 3.3 Résultats
 
 #### **CLASSE Quete.java :**
@@ -1127,6 +1162,33 @@ clé_parcours = 20
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+#### **CLASSE Algorithme.java :**
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>solutionGloutonneEfficace()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>28/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
