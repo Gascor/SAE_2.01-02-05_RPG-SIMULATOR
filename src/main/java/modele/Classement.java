@@ -37,6 +37,7 @@ public class Classement {
     public static void afficherClassement(int nbSolutions,int parChoix) throws ClassementException {
         int parcoursaffiche = 0;
         if (parChoix == 2){
+            // inverse l'ordre des valeurs de chTreeParcours
             TreeMap<Integer, ArrayList<Parcours>> mapinverse = new TreeMap<>(Collections.reverseOrder());
             mapinverse.putAll(chTreeParcours);
             chTreeParcours = mapinverse;
