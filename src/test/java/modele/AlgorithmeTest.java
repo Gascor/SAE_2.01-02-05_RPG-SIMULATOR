@@ -73,6 +73,8 @@ class AlgorithmeTest {
     }
     @Test
     void solutionGloutonneExhaustive() {
+        // restart le classement
+        Classement.getChTreeParcours().clear();
         System.out.println("solution gloutonne exhaustive");
         Quete q1 = new Quete("1|(4, 3)|()|2|100|explorer pic de Bhanborim");
         Quete q2 = new Quete("2|(3, 1)|((1,),)|1|150|dialoguer avec Kaela la chaman des esprits");

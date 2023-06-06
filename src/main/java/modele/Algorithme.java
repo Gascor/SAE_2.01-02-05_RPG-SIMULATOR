@@ -51,7 +51,6 @@ public class Algorithme {
         ArrayList<Parcours> listparcours = new ArrayList<>();
         listparcours.add(new Parcours(parScenario,"duree"));
         Algorithme.recursiviteGloutonneEfficace(parScenario,listparcours);
-        //Classement.afficherClassement();
 
     }
     /**
@@ -99,6 +98,5 @@ public class Algorithme {
         ArrayList<Parcours> listparcours = new ArrayList<>();
         listparcours.add(new Parcours(parScenario,"duree"));
         Algorithme.recursiviteGlutonneExhaustive(parScenario,listparcours);
-        //Classement.afficherClassement();
     }
 }
