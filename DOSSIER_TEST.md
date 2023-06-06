@@ -669,6 +669,55 @@ parcours.quetesfaites.size() = 5
 |   P1   |   parcomparatif="nbQuete "    |    5     |
 |   P2   | parcomparatif ="deplacements" |    20    |
 
+<hr>
+
+* Choix de la partition : comparaison de durée, this inférieur a la durée du parcours, this égale a la duree du parcours et this supérieur a la durée du parcours.
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : compareTo()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 2.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "compareTo() en utilisant la méthode des boites noires."</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |           nbduree            |                nbQueteFaite                |                nbDeplacement                 | parComparatif | Résultat attendu |      
+|:------:|:----------------------------:|:------------------------------------------:|:--------------------------------------------:|:--------------|:----------------:|
+|   P0   | this.duree>parparcours.duree |          ensemble de la partition          |           ensemble de la partition           | duree         |        >0        |
+|   P1   | this.duree=parparcours.duree |          ensemble de la partition          |           ensemble de la partition           | duree         |        =0        |
+|   P2   | this.duree<parparcours.duree |          ensemble de la partition          |           ensemble de la partition           | duree         |        <0        |
+|   P3   |   ensemble de la partition   | this.nbQueteFaite>parparcours.nbQueteFaite |           ensemble de la partition           | nbQuete       |        >0        |
+|   P4   |   ensemble de la partition   | this.nbQueteFaite=parparcours.nbQueteFaite |           ensemble de la partition           | nbQuete       |        =0        |
+|   P5   |   ensemble de la partition   | this.nbQueteFaite<parparcours.nbQueteFaite |           ensemble de la partition           | nbQuete       |        <0        |
+|   P6   |   ensemble de la partition   |          ensemble de la partition          | this.nbDeplacement>parparcours.nbDeplacement | deplacements  |        >0        |
+|   P7   |   ensemble de la partition   |          ensemble de la partition          | this.nbDeplacement=parparcours.nbDeplacement | deplacements  |        =0        |
+|   P8   |   ensemble de la partition   |          ensemble de la partition          | this.nbDeplacement<parparcours.nbDeplacement | deplacements  |        <0        |
+
+| Classe |      nbduree       |   nbQueteFaite   |   nbDeplacement    | parComparatif | Résultat attendu |      
+|:------:|:------------------:|:----------------:|:------------------:|:--------------|:----------------:|
+|   P0   | this = 20 par = 10 | this = 2 par = 1 | this = 10 par = 5  | duree         |        10        |
+|   P1   | this = 20 par = 20 | this = 2 par = 2 | this = 10 par = 10 | duree         |        0         |
+|   P2   | this = 10 par = 20 | this = 1 par = 2 | this = 5 par = 10  | duree         |       -10        |
+|   P3   | this = 20 par = 10 | this = 2 par = 1 | this = 10 par = 5  | nbQuete       |        1         |
+|   P4   | this = 20 par = 20 | this = 2 par = 2 | this = 10 par = 10 | nbQuete       |        0         |
+|   P5   | this = 10 par = 20 | this = 1 par = 2 | this = 5 par = 10  | nbQuete       |        -1        |
+|   P6   | this = 20 par = 10 | this = 2 par = 1 | this = 10 par = 5  | deplacements  |        5         |
+|   P7   | this = 20 par = 20 | this = 2 par = 2 | this = 10 par = 10 | deplacements  |        0         |
+|   P8   | this = 10 par = 20 | this = 1 par = 2 | this = 5 par = 10  | deplacements  |        -5        |
+
 #### **CLASSE Classement.java :**
 
 * Choix de la partition : Les clés ne sont que des entiers positifs. Et on peut les partitionnés en deux, soit la clé du parcours est deja dans le classement sois il n'est pas déja présent.
@@ -1244,6 +1293,33 @@ clé_parcours = 20
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>compareTo()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>30/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
