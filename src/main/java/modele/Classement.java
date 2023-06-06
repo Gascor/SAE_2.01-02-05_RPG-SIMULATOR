@@ -1,6 +1,7 @@
 package modele;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.TreeMap;
 
 public class Classement {
@@ -34,11 +35,28 @@ public class Classement {
      * @param nbSolutions (int) représente le nombre de solutions qu'on veut afficher.
      */
     public static void afficherClassement(int nbSolutions,int parChoix) throws ClassementException {
+        int parcoursaffiche = 0;
+        if (parChoix == 2){
+            TreeMap<Integer, ArrayList<Parcours>> mapinverse = new TreeMap<>(Collections.reverseOrder());
+            mapinverse.putAll(chTreeParcours);
+            chTreeParcours = mapinverse;
+        }
         for (ArrayList<Parcours> listeParcours : chTreeParcours.values()) {
-            for (Parcours parcours : listeParcours) {
-                System.out.println( parcours.toString());
+            if (parcoursaffiche == nbSolutions){
+                break;
             }
-            break;
+            for (Parcours parcours : listeParcours) {
+                if (parcoursaffiche == nbSolutions) {
+                    break;
+                }
+                parcoursaffiche ++;
+                System.out.println( parcours.toString());
+
+            }
+        }
+        if (parcoursaffiche !=nbSolutions) {
+            throw new ClassementException(0);
         }
     }
+
 }
