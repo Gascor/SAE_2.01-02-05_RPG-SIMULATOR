@@ -191,4 +191,37 @@ public class Parcours {
     public int getDeplacements(){
         return chdeplacements;
     }
+    /**
+     * ajoute l'expérience de la quete faites au parcours
+     * @param parQueteExp (int): représente l'expérience de la quete faite
+     */
+    public void ajoutexp(int parQueteExp){
+        this.chexp = chexp + parQueteExp;
+    }
+    /**
+     * retourne l'expérience du parcours
+     * @return chQuetesFaites (int): l'expérience du parcours
+     */
+    public int getChexp() {
+        return chexp;
+    }
+    /**
+     * ajoute la quete qui vient d'etre fait et l'enleve des quetes possibles et des quetes non faites
+     * @param parquete (Quete) est la quete qui vient d'etre fait
+     */
+    public void ajouteQueteFaite(Quete parquete){
+        chQuetesFaite.put(parquete.getNumero(),parquete);
+        quetesNonFaite.remove(parquete);
+        ensQuetePossible.remove(parquete);
+    }
+    /**
+     * enleve la quete qui a été fait et l'a rajoute aux quetes possibles et aux quetes non faites
+     * @param parquete (Quete) est la quete qui a été fait
+     */
+    public void enleverQueteFaite(Quete parquete) {
+        chQuetesFaite.remove(parquete.getNumero());
+        if (parquete.getNumero() != 0) {
+            quetesNonFaite.add(parquete);
+        }
+    }
 }
