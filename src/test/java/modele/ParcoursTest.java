@@ -177,4 +177,55 @@ import static org.junit.jupiter.api.Assertions.*;
         Parcours p2 = new Parcours(scenario,0,0,0,"duree",LHM1,new TreeSet<Quete>(),new HashSet<Quete>());
         assertEquals(1,p2.getQueteActuelle().getNumero());
     }
+    @Test @Order(1)
+    public void queteFinPossibleExhaustive(){
+        System.out.println("Test méthode queteFinPossibleExhaustive");
+        Quete q1 = new Quete("1|(4, 3)|()|2|100|explorer pic de Bhanborim");
+        Quete q2 = new Quete("2|(3, 1)|((1,),)|1|150|dialoguer avec Kaela la chaman des esprits");
+        Quete q3 = new Quete("3|(0, 4)|((2,),)|3|200|explorer palais de Ahehona");
+        Quete q4 = new Quete("4|(3, 2)|((2,),)|6|100|vaincre Loup Géant");
+        Quete q5 = new Quete("0|(1,1)|((3,4),)|4|350|vaincre Araignée lunaire");
+        Scenario s1= new Scenario("Scenario.txt");
+        s1.ajout(q1);
+        s1.ajout(q2);
+        s1.ajout(q3);
+        s1.ajout(q4);
+        s1.ajout(q5);
+        LinkedHashMap<Integer,Quete> qf1 = new LinkedHashMap<>();
+        qf1.put(q1.getNumero(),q1);
+        qf1.put(q2.getNumero(),q2);
+        qf1.put(q4.getNumero(),q4);
+        qf1.put(q3.getNumero(),q3);
+        Parcours p1 = new Parcours(s1,350,0,0,"duree",qf1,new TreeSet<>(),new HashSet<>());
+        assertTrue(p1.queteFinPossibleExhaustive());
+        Parcours p2 = new Parcours(s1,300,0,0,"duree",qf1,new TreeSet<>(),new HashSet<>());
+        assertFalse(p2.queteFinPossibleExhaustive());
+        LinkedHashMap<Integer,Quete> qf2 = new LinkedHashMap<>();
+        qf2.put(q1.getNumero(),q1);
+        qf2.put(q2.getNumero(),q2);
+        qf2.put(q4.getNumero(),q4);
+        Parcours p3 = new Parcours(s1,350,0,0,"duree",qf2,new TreeSet<>(),new HashSet<>());
+        assertFalse(p3.queteFinPossibleExhaustive());
+        Parcours p4 = new Parcours(s1,300,0,0,"duree",qf2,new TreeSet<>(),new HashSet<>());
+        assertFalse(p4.queteFinPossibleExhaustive());
+        Quete q6 = new Quete("1|(4, 3)|()|2|100|explorer pic de Bhanborim");
+        Quete q7 = new Quete("2|(3, 1)|((1,),)|1|150|dialoguer avec Kaela la chaman des esprits");
+        Quete q8 = new Quete("3|(0, 4)|((2,),)|3|200|explorer palais de Ahehona");
+        Quete q9 = new Quete("4|(3, 2)|((2,),)|6|100|vaincre Loup Géant");
+        Quete q10 = new Quete("0|(1,1)|((3,),)|4|350|vaincre Araignée lunaire");
+        Scenario s2= new Scenario("Scenario.txt");
+        s2.ajout(q6);
+        s2.ajout(q7);
+        s2.ajout(q8);
+        s2.ajout(q9);
+        s2.ajout(q10);
+        LinkedHashMap<Integer,Quete> qf3 = new LinkedHashMap<>();
+        qf1.put(q6.getNumero(),q6);
+        qf1.put(q7.getNumero(),q7);
+        qf1.put(q9.getNumero(),q9);
+        Parcours p5 = new Parcours(s2,350,0,0,"duree",qf3,new TreeSet<>(),new HashSet<>());
+        assertFalse(p5.queteFinPossibleExhaustive());
+        Parcours p6 = new Parcours(s2,300,0,0,"duree",qf3,new TreeSet<>(),new HashSet<>());
+        assertFalse(p6.queteFinPossibleExhaustive());
+    }
 }
