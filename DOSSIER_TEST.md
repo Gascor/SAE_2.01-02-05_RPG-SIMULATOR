@@ -671,7 +671,6 @@ parcours.quetesfaites.size() = 5
 
 <hr>
 
-* Choix de la partition : comparaison de durée, this inférieur a la durée du parcours, this égale a la duree du parcours et this supérieur a la durée du parcours.
 
 <table>
     <tbody>
@@ -693,6 +692,7 @@ parcours.quetesfaites.size() = 5
         </tr>
     </tbody>
 </table>
+Choix de la partition: nbduree ,nbQueteFaite, nbDeplacements sont tous des entiers positifs. durée peut etre partionné en 3, this inférieur a la durée du parcours, this égale a la duree du parcours et this supérieur a la durée du parcours.( meme chose pour nbQueteFaite et Deplacements) et pour parComparatif c'est un string. Il peut etre partionné en 3: Soit parCompartif est égal à "duree", soit "nbQuete" ou soit "deplacements".
 
 | Classe |           nbduree            |                nbQueteFaite                |                nbDeplacement                 | parComparatif | Résultat attendu |      
 |:------:|:----------------------------:|:------------------------------------------:|:--------------------------------------------:|:--------------|:----------------:|
