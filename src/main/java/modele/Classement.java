@@ -12,14 +12,14 @@ public class Classement {
      * @param parparcours (Parcours) est un parcours finis
      */
     public static void ajout(Parcours parparcours) {
-
-        if (chTreeParcours.containsKey(parparcours.getduree())) {
-            ArrayList<Parcours> listeParcours = chTreeParcours.get(parparcours.getduree());
+        int cle = parparcours.getCle();
+        if (chTreeParcours.containsKey(cle)) {
+            ArrayList<Parcours> listeParcours = chTreeParcours.get(cle);
             listeParcours.add(parparcours);
         } else {
             ArrayList<Parcours> listeParcours = new ArrayList<>();
             listeParcours.add(parparcours);
-            chTreeParcours.put(parparcours.getduree(), listeParcours);
+            chTreeParcours.put(cle, listeParcours);
         }
     }
     /**

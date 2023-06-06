@@ -108,15 +108,7 @@ public class Parcours {
      */
     @Override
     public String toString(){
-        int cle;
-        if(getComparatif().equals("duree")){
-            cle = getduree();
-        } else if (getComparatif().equals("nbQuete")){
-            cle = getQuetesFaite().keySet().size();
-        }
-        else {
-            cle = getDeplacements();
-        }
+        int cle = getCle();
         String str ="";
         for (Integer key : chQuetesFaite.keySet()){
             str = str + key + " ";
