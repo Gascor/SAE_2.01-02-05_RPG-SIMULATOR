@@ -667,7 +667,7 @@ clé_parcours = 20
 
 <hr>
 
-* Choix de la partition :
+* Choix de la partition : un ou des parcours qui on la plus petite clé
 
 <table>
     <tbody>
@@ -694,6 +694,41 @@ clé_parcours = 20
 |:------:|:-----------------------------------------:|:----------------------------------------------------:|
 |   P0   |    un parcours possède la plus petite     | affiche un seul parcours avec la clé la plus petite  |
 |   P1   | plusieurs parcours possède la plus petite | affiche tout les parcours avec la clé la plus petite |
+
+- **/!\ abscence de tableau de données, ceci est un test visuel! /!\**
+
+<hr>
+
+* Choix de la partition : un ou des parcours qui on la plus petite clé. parchoix == 1 ou 2.
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : afficherClassement()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 2.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "afficherClassement()" en utilisant la méthode des boites noires.</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |                   parcours                    | parchoix      | nbSolution                  |                   Résultat Attendu                   |
+|:------:|:---------------------------------------------:|:--------------|:----------------------------|:----------------------------------------------------:|
+|   P0   |      un parcours possède la plus petite       | 1             | nbsolution<=parcourAfficher | affiche un seul parcours avec la clé la plus petite  |
+|   P1   |   plusieurs parcours possède la plus petite   | 1             | nbsolution<=parcourAfficher | affiche tout les parcours avec la clé la plus petite |
+|   P2   |    un parcours possède la plus grande clé     | 2             | nbsolution<=parcourAfficher | affiche un seul parcours avec la clé la plus grande  |
+|   P3   | plusieurs parcours possède la plus grande clé | 2             | nbsolution<=parcourAfficher | affiche tout les parcours avec la clé la plus grande |
+|   P4   |           ensemble de la partition            | ens. de la p. | nbsolution>parcourAfficher  |  affiche le ou les parcours mais lève une exception  |
 
 - **/!\ abscence de tableau de données, ceci est un test visuel! /!\**
 
@@ -1178,7 +1213,34 @@ clé_parcours = 20
     <tbody>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
-            <td style='border: 1px solid black;text-align: left'>afficherClassement()</td>
+            <td style='border: 1px solid black;text-align: left'>afficherClassement() VERSION 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>27/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>OK</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>afficherClassement() VERSION 2.0</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Responsable :</td>
