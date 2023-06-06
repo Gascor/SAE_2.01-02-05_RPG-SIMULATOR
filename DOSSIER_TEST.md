@@ -665,6 +665,38 @@ clé_parcours = 20
 |   P0   |      clé_parcours dans le classement      |             Ajout du parcours dans la clé 20             |
 |   P1   | clé_parcours n'est pas dans le classement | Création d'une nouvelle liste avec la clé et le parcours |
 
+<hr>
+
+* Choix de la partition :
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : afficherClassement()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "afficherClassement()" en utilisant la méthode des boites noires.</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |                 parcours                  |                   Résultat Attendu                   |
+|:------:|:-----------------------------------------:|:----------------------------------------------------:|
+|   P0   |    un parcours possède la plus petite     | affiche un seul parcours avec la clé la plus petite  |
+|   P1   | plusieurs parcours possède la plus petite | affiche tout les parcours avec la clé la plus petite |
+
+- **/!\ abscence de tableau de données, ceci est un test visuel! /!\**
+
 ### 3.3 Résultats
 
 #### **CLASSE Quete.java :**
@@ -1068,6 +1100,33 @@ clé_parcours = 20
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>afficherClassement()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>27/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
