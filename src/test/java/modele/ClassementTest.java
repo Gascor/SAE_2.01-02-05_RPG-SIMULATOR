@@ -33,7 +33,7 @@ class ClassementTest {
     }
     @Test @Order(1)
     public void afficherClassement(){
-        System.out.println("Test de la méthode afficherClassement() VERSION 1.0");
+        System.out.println("Test de la méthode afficherClassement() VERSION 2.0");
         Scenario scenario = new Scenario("test1");
         Quete quete1 = new Quete("1|(2, 2)|()|10|100|explorer pic de Bhanborim");
         scenario.ajout(quete1);
