@@ -100,7 +100,7 @@ public class Parcours {
      *         true: si la quete peut etre réalisé
      */
     public boolean queteFinPossibleExhaustive(){
-        return false;
+        return ((chexp >= queteFin.getExperience()) && ((queteFin.quetePossible(chQuetesFaite))) &&(((chScenario.getNbQuete() -1) == chQuetesFaite.keySet().size())));
     }
     /**
      * retourne un string qui affiche un parcours selon sa clé et les quetes faites
