@@ -32,6 +32,11 @@ public class Classement {
      * affiche la durée des et les parcours par ordre croissant sur la durée
      */
     public static void afficherClassement() {
-        ;
+        for (ArrayList<Parcours> listeParcours : chTreeParcours.values()) {
+            for (Parcours parcours : listeParcours) {
+                System.out.println( parcours.toString());
+            }
+            break;
+        }
     }
 }
