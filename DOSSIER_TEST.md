@@ -587,7 +587,7 @@ Ancienne duree = 10
 
 <hr>
 
-* Choix de la partition : Analyse en fonction de l'experience si la quete est possible.
+* Choix de la partition : Analyse en fonction de l'experience si la quete est possible. L'expérience est divisé en 3 partition d'équivalence. La situation ou l'expérience actuelle est supérieur a la quete de fin. Celle ou elle est égale ou celle ou elle est inférieure. Elle regarde si la quete est possible ou non et regarde si le nombre de quete du scénario moins un est supérieur ou égale au nombre de quete deja faite.
 
 <table>
     <tbody>
