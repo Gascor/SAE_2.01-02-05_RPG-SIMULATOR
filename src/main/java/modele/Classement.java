@@ -30,8 +30,10 @@ public class Classement {
     }
     /**
      * affiche la durée des et les parcours par ordre croissant sur la durée
+     * @param parChoix (int) représente le choix entre les meilleures ou pires solutions, si parChoix=1 alors on prend les meilleures solutions, sinon si c'est égale a 2 c'est les pires.
+     * @param nbSolutions (int) représente le nombre de solutions qu'on veut afficher.
      */
-    public static void afficherClassement() {
+    public static void afficherClassement(int nbSolutions,int parChoix) throws ClassementException {
         for (ArrayList<Parcours> listeParcours : chTreeParcours.values()) {
             for (Parcours parcours : listeParcours) {
                 System.out.println( parcours.toString());

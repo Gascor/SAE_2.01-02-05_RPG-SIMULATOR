@@ -33,7 +33,7 @@ class ClassementTest {
     }
     @Test @Order(1)
     public void afficherClassement(){
-        System.out.println("Test de la méthode afficherClassement()");
+        System.out.println("Test de la méthode afficherClassement() VERSION 1.0");
         Scenario scenario = new Scenario("test1");
         Quete quete1 = new Quete("1|(2, 2)|()|10|100|explorer pic de Bhanborim");
         scenario.ajout(quete1);
@@ -42,10 +42,38 @@ class ClassementTest {
         Classement.ajout(parcours2);
         Classement.ajout(parcours1);
         System.out.println("Doit afficher ci dessous le parcours d'une durée de 20");
-        Classement.afficherClassement();
+        try{
+            Classement.afficherClassement(1,1);
+        } catch (ClassementException e){
+            System.out.println(e.getCodeErreur());
+        }
         Parcours parcours3 = new Parcours(scenario,10,20,0,"duree",new LinkedHashMap<>(),new TreeSet<Quete>(),new HashSet<Quete>());
         Classement.ajout(parcours3);
+        Parcours parcours4 = new Parcours(scenario,10,25,0,"duree",new LinkedHashMap<>(),new TreeSet<Quete>(),new HashSet<Quete>());
+        Classement.ajout(parcours4);
         System.out.println("Doit afficher ci dessous les 2 parcours d'une durée de 20");
-        Classement.afficherClassement();
+        try{
+            Classement.afficherClassement(2,1);
+        } catch (ClassementException e){
+            System.out.println(e.getCodeErreur());
+        }
+        System.out.println("Doit afficher ci dessous le parcours d'une durée de 25");
+        try{
+            Classement.afficherClassement(1,2);
+        } catch (ClassementException e){
+            System.out.println(e.getCodeErreur());
+        }
+        System.out.println("Doit afficher ci dessous les 2 parcours d'une durée de 25");
+        try{
+            Classement.afficherClassement(2,2);
+        } catch (ClassementException e){
+            System.out.println(e.getCodeErreur());
+        }
+        System.out.println("Doit afficher ci dessous les 2 parcours d'une durée de 25 et dois provoquer une exception");
+        try{
+            Classement.afficherClassement(50,2);
+        } catch (ClassementException e){
+            System.out.println(e.getCodeErreur());
+        }
     }
 }
