@@ -69,7 +69,7 @@ class ClassementTest {
         } catch (ClassementException e){
             System.out.println(e.getCodeErreur());
         }
-        System.out.println("Doit afficher ci dessous les 2 parcours d'une durée de 25 et dois provoquer une exception");
+        System.out.println("Doit afficher tout les parcours dans l'ordre décroissant et dois provoquer une exception");
         try{
             Classement.afficherClassement(50,2);
         } catch (ClassementException e){
