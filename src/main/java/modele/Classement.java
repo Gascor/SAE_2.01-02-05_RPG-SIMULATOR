@@ -11,7 +11,15 @@ public class Classement {
      * @param parparcours (Parcours) est un parcours finis
      */
     public static void ajout(Parcours parparcours) {
-        ;
+
+        if (chTreeParcours.containsKey(parparcours.getduree())) {
+            ArrayList<Parcours> listeParcours = chTreeParcours.get(parparcours.getduree());
+            listeParcours.add(parparcours);
+        } else {
+            ArrayList<Parcours> listeParcours = new ArrayList<>();
+            listeParcours.add(parparcours);
+            chTreeParcours.put(parparcours.getduree(), listeParcours);
+        }
     }
     /**
      * retourne les parcours triées selon une caractériqtique précise
