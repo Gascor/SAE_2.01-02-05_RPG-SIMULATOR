@@ -54,4 +54,19 @@ public class Algorithme {
         Classement.afficherClassement();
 
     }
+    /**
+     * permet de déterminer le chemin le plus court en faisant toutes les quêtes
+     * @param parScenario (Scenario): scenario qu'utilise les parcours
+     * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     */
+    public static void recursiviteGlutonneExhaustive(Scenario parScenario,ArrayList<Parcours> listparcours){
+        ;
+    }
+    /**
+     * permet de lancer l'algorithme gluton exhaustive
+     * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
+     */
+    public static void solutionGloutonneExhaustive(Scenario parScenario){
+        ;
+    }
 }
