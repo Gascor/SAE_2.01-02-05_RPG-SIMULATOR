@@ -38,4 +38,12 @@ public class Scenario {
     public int getNbQuete() {
         return nbQuete;
     }
+    /**
+     * Retourne le nom du scénario.
+     *
+     * @return Le nom du scénario.
+     */
+    public String getNom() {
+        return chnom;
+    }
 }
