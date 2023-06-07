@@ -161,7 +161,9 @@ public class Algorithme {
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
      */
     public static void solutionSpeedrunEfficace(Scenario parScenario){
-        ;
+        ArrayList<Parcours> listparcours = new ArrayList<>();
+        listparcours.add(new Parcours(parScenario, "duree"));
+        Algorithme.recursiviteSpeedrunEfficace(parScenario, listparcours);
     }
 
 }
