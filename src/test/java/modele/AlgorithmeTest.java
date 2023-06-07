@@ -138,4 +138,44 @@ class AlgorithmeTest {
         }
         assertTrue(p2.getQuetesFaite().equals(soluce2));
     }
+    @Test
+    void solutionSpeedrunEfficace() {
+        //réinitialise le classement
+        Classement.getChTreeParcours().clear();
+        Scenario s0 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_0" + ".txt"));
+        Algorithme.solutionSpeedrunEfficace(s0);
+        int firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(27, firstKey);
+
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(30, firstKey);
+        Classement.getChTreeParcours().clear();
+        Scenario s1 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_1" + ".txt"));
+        Algorithme.solutionSpeedrunEfficace(s1);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(34, firstKey);
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(40, firstKey);
+        Classement.getChTreeParcours().clear();
+        Scenario s2 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_2" + ".txt"));
+        Algorithme.solutionSpeedrunEfficace(s2);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(80, firstKey);
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(106, firstKey);
+        Classement.getChTreeParcours().clear();
+        Scenario s3 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_3" + ".txt"));
+        Algorithme.solutionSpeedrunEfficace(s3);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(53, firstKey);
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(72, firstKey);
+        Classement.getChTreeParcours().clear();
+        Scenario s4 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_4" + ".txt"));
+        Algorithme.solutionSpeedrunEfficace(s4);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(95, firstKey);
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(167, firstKey);
+    }
 }
