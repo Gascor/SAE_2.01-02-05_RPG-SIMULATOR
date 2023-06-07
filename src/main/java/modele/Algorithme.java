@@ -416,4 +416,15 @@ public class Algorithme {
         listparcours.add(new Parcours(parScenario, "deplacements"));
         Algorithme.recursiviteDeplacementExhaustive(parScenario, listparcours);
     }
+
+    /**
+     * Choix de l'algorithme de résolution en fonction des paramètres spécifiés.
+     *
+     * @param parScenario         Le scénario pour lequel l'algorithme doit être appliqué.
+     * @param typesolution        Le type de solution (1 pour efficace, autre valeur pour exhaustive).
+     * @param objectifsolution    L'objectif de la solution (1 pour speedrun, 2 pour déplacement efficace, 3 pour nombre de quêtes).
+     */
+    public static void choixAlgo(Scenario parScenario,int typesolution, int objectifsolution) {
+        ;
+    }
 }
