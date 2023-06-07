@@ -1,5 +1,7 @@
 package vue;
 
-public class VBoxRoot {
+import javafx.scene.layout.VBox;
+
+public class VBoxRoot extends VBox {
 
 }
