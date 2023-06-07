@@ -20,7 +20,7 @@ author: Lucas DA SILVA FERREIRA & Baptiste FOURNIE
     </tbody>
 </table>
 
-## Sommaire<!-- omit in toc -->
+## <a id=home></a>Sommaire<!-- omit in toc -->
 - [Dossier de tests](#dossier-de-tests)
     - [1. Introduction](#1-introduction)
     - [2. Description de la procédure de test](#2-description-de-la-procédure-de-test)
@@ -154,6 +154,8 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 |   P5   | (1,2) |  (3)  | [1,2,3,0] |
 |   P6   | (1,2) | (3,4) | [1,2,3,4] |
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=test01></a>**METHODE "extraitPos()" :**
@@ -189,6 +191,8 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 |:------:|:-------:|:--------:|
 |   P0   | "(2,4)" |  [2,4]   |
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=test02></a>**METHODE "testprecondition()" :**
@@ -223,6 +227,8 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 | Classe |    a    | Résultat |
 |:------:|:-------:|:--------:|
 |   P0   | "(2,4)" |  [2,4]   |
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -275,6 +281,8 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 |   P7   | x1=1,x2=2 | y1=2,y2=1 |        2         |
 |   P8   | x1=1,x2=2 | y1=1,y2=2 |        2         |
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=test04></a>**METHODE "queteProche()" :**
@@ -313,6 +321,8 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 |   P0   | Q1 = 1, Q2 =2  |   (Q1)   |
 |   P1   | Q1 = 1, Q2 = 1 | (Q1,Q2)  |
 |   P2   | Q1 = 2, Q2 = 1 |   (Q2)   |
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -367,6 +377,8 @@ liste id = {1,2,3,4}
 |   P7   |  8  |  9  |  0  |  0  |  false   |
 |   P8   |  8  |  9  |  6  |  7  |  false   |
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=test06></a>**METHODE "compareTo()" :**
@@ -406,6 +418,8 @@ liste id = {1,2,3,4}
 |   P1   | this = 2 par = 2 |        =0        |
 |   P2   | this= 1 par = 2  |        -1        |
 
+<a href="#home">retour au sommaire</a>
+
 #### <a id=classtest1></a><p style="font-weight: bold">*CLASSE "Parcours.java" :*</p>
 
 ##### <a id=test07></a>**METHODE "extraitQuete()" :**
@@ -442,6 +456,8 @@ quete 0 = quete fin
 | Classe |   tree set   | Résultat |
 |:------:|:------------:|:--------:|
 |   P0   | "(q0,q1,q2)" | (q1,q2)  |
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -486,6 +502,8 @@ liste id = {1,2,3}
 |   P2   | p = 150, qFin =200 | precond [4,0,3,0] |  false   |
 |   P3   | p = 200, qFin =200 | precond [4,0,3,0] |  false   |
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=test09></a>**METHODE "compareTo()" :**
@@ -524,6 +542,8 @@ liste id = {1,2,3}
 |    P0    |           this = 20 par = 10           |                10                |
 |    P1    |           this = 20 par = 20           |                =0                |
 |    P2    |           this= 10 par = 20            |               -10                |
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -568,6 +588,8 @@ ensQueteNonFaite = (Quete3,Quete4,Quete2)
 |   P1   |       (Quete4)        |    (Quete2,Quete4)     |
 |   P2   |    (Quete4,Quete3)    | (Quete2,Quete4,Quete3) |
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 * Choix de la partition : On ajoute le temps de la quete en terme de distance par rapport a la quete precedente et de durée.
@@ -610,6 +632,8 @@ Ancienne duree = 10
 |   P0   |     ensemble vide      |        14        |
 |   P1   | possède quete actuelle |        23        | 
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=test12></a>**METHODE "getQueteActuelle()" :**
@@ -646,6 +670,8 @@ Ancienne duree = 10
 |:------:|:---------------------:|:----------------:|
 |   P0   |     ensemble vide     |       -10        |
 |   P1   | chQueteFaite = {1.Q1} |        1         |
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -692,6 +718,8 @@ Ancienne duree = 10
 |   P4   |          5=NbQueteScenario,3 = NbQueteFaite           |     False      | pfinexp = 350,qfinexp = 350 |      False       |
 |   P5   |          5=NbQueteScenario,3 = NbQueteFaite           |     False      | pfinexp = 300,qfinexp = 350 |      False       |
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=test14></a>**METHODE "getCle()" :**
@@ -734,6 +762,8 @@ parcours.quetesfaites.size() = 5
 |   P0   |    parcomparatif="duree "     |    30    |
 |   P1   |   parcomparatif="nbQuete "    |    5     |
 |   P2   | parcomparatif ="deplacements" |    20    |
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -786,6 +816,8 @@ parcours.quetesfaites.size() = 5
 |   P7   | this = 20 par = 20 | this = 2 par = 2 | this = 10 par = 10 | deplacements  |        0         |
 |   P8   | this = 10 par = 20 | this = 1 par = 2 | this = 5 par = 10  | deplacements  |        -5        |
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=test16></a>**METHODE "ajouterDeplacement()" :**
@@ -827,6 +859,8 @@ ancien dépalcement = 4
 |   P0   |     ensemble vide      |        4         |
 |   P1   | possède quete actuelle |        7         |
 
+<a href="#home">retour au sommaire</a>
+
 #### <a id=classtest2></a><p style="font-weight: bold">*CLASSE "Classement.java" :*</p>
 
 ##### <a id=test17></a>**METHODE "ajout()" :**
@@ -866,6 +900,8 @@ clé_parcours = 20
 |   P0   |      clé_parcours dans le classement      |             Ajout du parcours dans la clé 20             |
 |   P1   | clé_parcours n'est pas dans le classement | Création d'une nouvelle liste avec la clé et le parcours |
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=test18></a>**METHODE "afficherClassement()" :**
@@ -899,6 +935,8 @@ clé_parcours = 20
 |   P1   | plusieurs parcours possède la plus petite | affiche tout les parcours avec la clé la plus petite |
 
 - **/!\ abscence de tableau de données, ceci est un test visuel! /!\**
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -937,6 +975,8 @@ clé_parcours = 20
 
 - **/!\ abscence de tableau de données, ceci est un test visuel! /!\**
 
+<a href="#home">retour au sommaire</a>
+
 #### <a id=classtest3></a><p style="font-weight: bold">*CLASSE "Algorithme.java" :*</p>
 
 ##### <a id=test20></a>**METHODE "solutionGloutonneEfficace()" :**
@@ -973,6 +1013,8 @@ clé_parcours = 20
 |:------:|:---------:|:---------------------:|
 |   P0   | Scenario0 |  Parcours(1,2,4,3,0)  |
 |   P1   | Scenario1 | parcours(1,4,3,2,5,0) |
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1011,6 +1053,8 @@ clé_parcours = 20
 |   P0   | Scenario0 |  Parcours(1,2,4,3,0)  |
 |   P1   | Scenario1 | Parcours(1,4,3,2,5,0) |
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=test22></a>**METHODE "solutionSpeedrunEfficace()" :**
@@ -1045,6 +1089,8 @@ clé_parcours = 20
 |   P2   | scenario 2 | minduree = 80 , maxduree = 106 |
 |   P3   | scenario 3 | minduree = 53 , maxduree = 72  |
 |   P4   | scenario 4 | minduree = 95 , maxduree =167  | 
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1081,6 +1127,8 @@ clé_parcours = 20
 |   P3   | scenario 3 | minduree = 64 , maxduree = 74  |
 |   P4   | scenario 4 | minduree = 115 , maxduree =171 |
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=test24></a>**METHODE "SolutionEfficaceNbQuete()" :**
@@ -1115,6 +1163,8 @@ clé_parcours = 20
 |   P2   | scenario 2 | minnbQuete = 9 ,  maxnbQuete= 9  |
 |   P3   | scenario 3 | minnbQuete = 6 ,  maxnbQuete = 8 |
 |   P4   | scenario 4 | minnbQuete = 7 ,  maxnbQuete =10 | 
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1151,6 +1201,8 @@ clé_parcours = 20
 |   P3   | scenario 3 | minnbQuete = 8 ,  maxnbQuete = 8  |
 |   P4   | scenario 4 | minnbQuete = 10 ,  maxnbQuete =10 |
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=test26></a>**METHODE "SolutionDeplacementEfficace()" :**
@@ -1186,6 +1238,8 @@ clé_parcours = 20
 |   P3   | scenario 3 | minDeplacements = 26 ,  maxDeplacements = 36 |
 |   P4   | scenario 4 | minDeplacements = 49 ,  maxDeplacements =107 |
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=test27></a>**METHODE "SolutionDeplacementExhaustive()" :**
@@ -1220,6 +1274,8 @@ clé_parcours = 20
 |   P2   | scenario 2 | minDeplacements = 39 ,  maxDeplacements= 65  |
 |   P3   | scenario 3 | minDeplacements = 28 ,  maxDeplacements = 38 |
 |   P4   | scenario 4 | minDeplacements = 55 ,  maxDeplacements =111 |
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1257,8 +1313,9 @@ clé_parcours = 20
 |   P4   |      2       |        2         | solutionDeplacementExhaustive(parScenario) |
 |   P5   |      2       |        3         |   solutionExhaustiveNbQuete(parScenario)   |
 
-### 3.3. Résultats
+<a href="#home">retour au sommaire</a>
 
+### 3.3. Résultats
 
 #### <a id=classresult0></a><p style="font-weight: bold">*CLASSE "Quete.java" :*</p>
 
@@ -1289,6 +1346,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=result01></a>**METHODE "extraitPos()" :**
@@ -1317,6 +1376,8 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1347,6 +1408,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=result03></a>**METHODE "distanceQuete()" :**
@@ -1375,6 +1438,8 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1405,6 +1470,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=result05></a>**METHODE "quetePossible()" :**
@@ -1433,6 +1500,8 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1463,6 +1532,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 #### <a id=classresult1></a><p style="font-weight: bold">*CLASSE "Parcours.java" :*</p>
 
 ##### <a id=result07></a>**METHODE "extraitQuete()" :**
@@ -1491,6 +1562,8 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1521,6 +1594,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=result09></a>**METHODE "compareTo()" :**
@@ -1549,6 +1624,8 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1579,6 +1656,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=result11></a>**METHODE "ajouteDuree()" :**
@@ -1607,6 +1686,8 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1637,6 +1718,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=result13></a>**METHODE "queteFinPossibleExhaustive()" :**
@@ -1665,6 +1748,8 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1695,6 +1780,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=result15></a>**METHODE "compareTo()" :**
@@ -1723,6 +1810,8 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1753,6 +1842,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 #### <a id=classresult2></a><p style="font-weight: bold">*CLASSE "Classement.java" :*</p>
 
 ##### <a id=result17></a>**METHODE "ajout()" :**
@@ -1781,6 +1872,8 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1811,6 +1904,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=result19></a>**METHODE "afficherClassement()" :**
@@ -1839,6 +1934,8 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<a href="#home">retour au sommaire</a>
 
 #### <a id=classresult3></a><p style="font-weight: bold">*CLASSE "Algorithme.java" :*</p>
 
@@ -1869,6 +1966,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=result21></a>**METHODE "solutionGloutonneExhaustive()" :**
@@ -1897,6 +1996,8 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1927,6 +2028,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=result23></a>**METHODE "SolutionSpeedrunExhaustive()" :**
@@ -1955,6 +2058,8 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -1985,6 +2090,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=result25></a>**METHODE "SolutionExhaustiveNbQuete()" :**
@@ -2013,6 +2120,8 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<a href="#home">retour au sommaire</a>
 
 <hr>
 
@@ -2043,6 +2152,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=result27></a>**METHODE "SolutionDeplacementExhaustive()" :**
@@ -2072,6 +2183,8 @@ clé_parcours = 20
     </tbody>
 </table>
 
+<a href="#home">retour au sommaire</a>
+
 <hr>
 
 ##### <a id=result28></a>**METHODE "choixAlgo()" :**
@@ -2100,5 +2213,7 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<a href="#home">retour au sommaire</a>
 
 ### 3.4. Conclusions
