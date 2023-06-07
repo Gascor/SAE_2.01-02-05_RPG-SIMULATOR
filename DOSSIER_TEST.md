@@ -85,6 +85,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
                     <li><a href="#test17">Test</a> unitaire sur la méthode "ajout()" en utilisant la méthode des boites noires. <a href="#result17">Résultat ici</a></li>
                     <li><a href="#test18">Test</a> unitaire sur la méthode "afficherClassement()" en utilisant la méthode des boites noires. <a href="#result18">Résultat ici</a></li>
                     <li><a href="#test19">Test</a> unitaire sur la méthode "afficherClassement()" en utilisant la méthode des boites noires. VERSION 2.0<a href="#result19">Résultat ici</a></li>
+                    <li><a href="#test29">Test</a> unitaire sur la méthode "regulationParcours()" en utilisant la méthode des boites noires. <a href="#result29">Résultat ici</a></li>
                     <h4 style="font-weight: bold">CLASSE Algorithme.java <a href="#classTest3"> TESTS </a> / <a href="#classResult3">RESULTATS</a></h4>
                     <li><a href="#test20">Test</a> unitaire sur la méthode "solutionGloutonneEfficace()" en utilisant la méthode des boites noires. <a href="#result20">Résultat ici</a></li>
                     <li><a href="#test21">Test</a> unitaire sur la méthode "solutionGloutonneExhaustive()" en utilisant la méthode des boites noires. <a href="#result21">Résultat ici</a></li>
@@ -975,7 +976,52 @@ clé_parcours = 20
 
 - **/!\ abscence de tableau de données, ceci est un test visuel! /!\**
 
-<a href="#home">retour au sommaire</a>
+<a href="#home">retour au sommaire
+
+<hr>
+
+##### <a id=test29></a>**METHODE "regulationClassement()" :**
+
+* Choix de la partition : SolutionParcours est un int positif comme nbSolutionsTotale. SolutionParcours est partionné en 2 : soit SolutionTotale <parsolutions ou  SolutionTotale =parsolution; Le parChoix est un int et peut etre partionné en 2: parChoix = 1 (meilleurs choix) ou parChoix = 2 (pires choix).parcoursgetCle est un int positif. il peut etre partionné en 2 :  parcours est plus petit que un autre parcours dans le Classement ou soit parcours est plus grand que un autre parcours dans le Classement
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : regulationParcours()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "regulationParcours()" en utilisant la méthode des boites noires.</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |       solutionsTotale        |  par choix  |                         parcours.getCle                          |                     Résultat Attendu                     |
+|:------:|:----------------------------:|:-----------:|:----------------------------------------------------------------:|:--------------------------------------------------------:|
+|   P0   | SolutionTotale <parsolutions | peu importe |                           peu importe                            |                 classementajouteparcours                 |
+|   P1   | SolutionTotale =parsolutions |      1      | parcours est plus petit que un autre parcours dans le Classement | Classement ajoute parcours et vire un parcours moins bon |
+|   P2   | SolutionTotale =parsolutions |      1      | parcours est plus grand que un autre parcours dans le Classement |                 Classement ne change pas                 |
+|   P3   | SolutionTotale =parsolutions |      2      | parcours est plus petit que un autre parcours dans le Classement |                 Classement e change pas                  |
+|   P4   | SolutionTotale =parsolutions |      2      | parcours est plus grand que un autre parcours dans le Classement | Classement ajoute parcours et vire un parcours meilleure | 
+
+parcours dans le classement se nommera parcoursClass
+
+| Classe |           solutionsTotale           | par choix |                         parcours.getCle                          |                     Résultat Attendu                     |
+|:------:|:-----------------------------------:|:---------:|:----------------------------------------------------------------:|:--------------------------------------------------------:|
+|   P0   | SolutionTotale = 2 par solution = 1 |     2     |              parcours.getCle = 10 parcoursClass = 8              |                classement.ajout(Parcours)                |
+|   P1   | SolutionTotale = 1 par solution = 2 |     1     |              parcours.getCle = 8 parcoursClass = 10              | Classement ajoute parcours et vire un parcours moins bon |
+|   P2   | SolutionTotale = 1 par solution = 2 |     1     |              parcours.getCle = 10 parcoursClass = 8              |                 Classement ne change pas                 |
+|   P3   | SolutionTotale = 1 par solution = 2 |     2     |              parcours.getCle = 8 parcoursClass = 10              |                 Classement ne change pas                 |
+|   P4   | SolutionTotale = 1 par solution = 2 |     2     | parcours est plus grand que un autre parcours dans le Classement |          parcours.getCle = 10 parcoursClass = 8          |
 
 #### <a id=classtest3></a><p style="font-weight: bold">*CLASSE "Algorithme.java" :*</p>
 
@@ -1931,6 +1977,35 @@ clé_parcours = 20
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="#home">retour au sommaire</a>
+
+##### <a id=result29></a>**METHODE "regulationClassement()" :**
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>regulationClassement() VERSION 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>03/06/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
