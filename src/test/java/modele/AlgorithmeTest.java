@@ -304,12 +304,12 @@ class AlgorithmeTest {
         assertEquals(10,firstKey);
     }
     @Test
-    void solutionSpeedrunDeplacement() {
+    void solutionDeplacementEfficace() {
         //réinitialise le classement
-        System.out.println("Test de la méthode solution Speedrun deplacement");
+        System.out.println("Test de la méthode solution deplacement efficace");
         Classement.getChTreeParcours().clear();
         Scenario s0 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_0" + ".txt"));
-        Algorithme.solutionSpeedrunDeplacement(s0);
+        Algorithme.solutionDeplacementEfficace(s0);
         int firstKey = Classement.getChTreeParcours().firstKey();
         assertEquals(14,firstKey);
 
@@ -317,28 +317,28 @@ class AlgorithmeTest {
         assertEquals(20,firstKey);
         Classement.getChTreeParcours().clear();
         Scenario s1 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_1" + ".txt"));
-        Algorithme.solutionSpeedrunDeplacement(s1);
+        Algorithme.solutionDeplacementEfficace(s1);
         firstKey = Classement.getChTreeParcours().firstKey();
         assertEquals(17,firstKey);
         firstKey = Classement.getChTreeParcours().lastKey();
         assertEquals(23,firstKey);
         Classement.getChTreeParcours().clear();
         Scenario s2 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_2" + ".txt"));
-        Algorithme.solutionSpeedrunDeplacement(s2);
+        Algorithme.solutionDeplacementEfficace(s2);
         firstKey = Classement.getChTreeParcours().firstKey();
         assertEquals(35,firstKey);
         firstKey = Classement.getChTreeParcours().lastKey();
         assertEquals(57,firstKey);
         Classement.getChTreeParcours().clear();
         Scenario s3 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_3" + ".txt"));
-        Algorithme.solutionSpeedrunDeplacement(s3);
+        Algorithme.solutionDeplacementEfficace(s3);
         firstKey = Classement.getChTreeParcours().firstKey();
         assertEquals(26,firstKey);
         firstKey = Classement.getChTreeParcours().lastKey();
         assertEquals(36,firstKey);
         Classement.getChTreeParcours().clear();
         Scenario s4 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_4" + ".txt"));
-        Algorithme.solutionSpeedrunDeplacement(s4);
+        Algorithme.solutionDeplacementEfficace(s4);
         firstKey = Classement.getChTreeParcours().firstKey();
         assertEquals(49,firstKey);
         firstKey = Classement.getChTreeParcours().lastKey();

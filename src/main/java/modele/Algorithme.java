@@ -316,14 +316,14 @@ public class Algorithme {
      * @param parScenario (Scenario): scenario qu'utilise les parcours
      * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
      */
-    public static void recursiviteSpeedrunDeplacement(Scenario parScenario,ArrayList<Parcours> listparcours){
+    public static void recursiviteDeplacementEfficace(Scenario parScenario,ArrayList<Parcours> listparcours){
         ;
     }
     /**
      * permet de lancer l'algorithme deplacement efficace.
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
      */
-    public static void solutionSpeedrunDeplacement(Scenario parScenario){
+    public static void solutionDeplacementEfficace(Scenario parScenario){
         ;
     }
 }
