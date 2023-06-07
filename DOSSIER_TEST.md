@@ -104,12 +104,9 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 
 ### 3.2 Tests
 
-<p>Some Markdown text with <span style="color:blue">some <em>blue</em> text</span>.</p>
-<span style="color:red">some **This is Red Bold.** text</span>
 
-#### <a id=class0></a><span style="color:blue">*CLASSE "Quete.java" :*</span>
 
-#### <a id=class0></a>**CLASSE "Quete.java" :**
+#### <a id=class0></a><p style="font-weight: bold">*CLASSE "Quete.java" :*</p>
 
 ##### <a id=test00></a>**METHODE "extraitPrecond()" :**
 
