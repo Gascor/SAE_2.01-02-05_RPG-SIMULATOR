@@ -44,4 +44,12 @@ public class VBoxRoot extends VBox {
     public static ScenarioBox getScenarioBox() {
         return scenarioBox;
     }
+    /**
+     * Retourne le formulaire de l'interface utilisateur.
+     *
+     * @return L'instance de Formulaire utilisée dans l'interface utilisateur.
+     */
+    public static Formulaire getFormulaire() {
+        return formulaire;
+    }
 }
