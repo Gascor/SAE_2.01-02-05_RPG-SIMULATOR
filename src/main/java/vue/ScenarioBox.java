@@ -16,6 +16,20 @@ public class ScenarioBox extends VBox implements ConstantesScenario {
 
     private Scenario scenarioActuelle;
     /**
+     * Configuration d'une colonne de la table des quêtes.
+     *
+     * @param col    La colonne à configurer.
+     * @param getter Le nom de la propriété correspondante dans la classe Quete.
+     * @param width  La largeur préférée de la colonne.
+     */
+    public static void setupColumn(TableColumn col, String getter, int width) {
+        col.setCellValueFactory(new PropertyValueFactory<>(getter));
+        col.setPrefWidth(width);
+        col.setResizable(false);
+        col.setSortable(false);
+        col.setReorderable(false);
+    }
+    /**
      * Affiche les quêtes du scénario spécifié.
      *
      * @param scenarioNumero Le numéro du scénario.
