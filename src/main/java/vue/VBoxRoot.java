@@ -28,4 +28,12 @@ public class VBoxRoot extends VBox {
         getChildren().addAll(menuBarre, hBox);
         hBox.getChildren().addAll(scenarioBox, formulaire, classementBox);
     }
+    /**
+     * Retourne le contrôleur de l'application.
+     *
+     * @return L'instance du Controleur utilisée dans l'application.
+     */
+    public static Controleur getControleur() {
+        return controleur;
+    }
 }
