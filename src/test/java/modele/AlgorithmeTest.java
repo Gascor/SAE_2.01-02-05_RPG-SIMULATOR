@@ -387,6 +387,31 @@ class AlgorithmeTest {
     }
     @Test
     void choixAlgo(){
-        ;
+        System.out.println("Test de la méthode choix algorithme");
+        Classement.getChTreeParcours().clear();
+        Scenario s0 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_0" + ".txt"));
+        Algorithme.choixAlgo(s0,1,1);
+        int firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(27,firstKey);
+        Classement.getChTreeParcours().clear();
+        Algorithme.choixAlgo(s0,1,2);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(14,firstKey);
+        Classement.getChTreeParcours().clear();
+        Algorithme.choixAlgo(s0,1,3);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(4,firstKey);
+        Classement.getChTreeParcours().clear();
+        Algorithme.choixAlgo(s0,2,1);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(36,firstKey);
+        Classement.getChTreeParcours().clear();
+        Algorithme.choixAlgo(s0,2,2);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(20,firstKey);
+        Classement.getChTreeParcours().clear();
+        Algorithme.choixAlgo(s0,2,3);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(5,firstKey);
     }
 }
