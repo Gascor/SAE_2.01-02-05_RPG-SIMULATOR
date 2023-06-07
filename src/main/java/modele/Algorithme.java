@@ -411,7 +411,7 @@ public class Algorithme {
      * permet de lancer l'algorithme deplacement exhaustive.
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
      */
-    public static void solutionSpeedrunDeplacementExhaustive(Scenario parScenario){
+    public static void solutionDeplacementExhaustive(Scenario parScenario){
         ArrayList<Parcours> listparcours = new ArrayList<>();
         listparcours.add(new Parcours(parScenario, "deplacements"));
         Algorithme.recursiviteDeplacementExhaustive(parScenario, listparcours);
