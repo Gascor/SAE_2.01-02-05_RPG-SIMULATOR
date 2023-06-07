@@ -106,6 +106,8 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 
 #### <a id=class0></a>**CLASSE "Quete.java" :**
 
+##### <a id=test00></a>**METHODE "extraitPrecond()" :**
+
 * Choix de partition : Les deux listes contenant que des entiers naturels privés de 0 peut etre chacun divisé en trois sous ensemble. A1 la liste est égale à None , A1 la liste contient un entier , A2 la liste contient deux entiers. a represente la premiére liste , b représente la deuxiéme liste.Quand a n'existe pas , b est obligé d'être None sinon il deviendrait la premiére liste.
 
 <table>
