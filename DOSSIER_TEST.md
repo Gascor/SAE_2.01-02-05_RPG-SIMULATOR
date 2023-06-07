@@ -63,7 +63,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
             <td style='border: 1px solid black;text-align: left'>
                 <ul>
                     <h4>CLASSE "Quete.java" :</h4>
-                    <li><a name="#test00">Test</A> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires.</li>
+                    <li><a href="#test00">Test</A> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires.</li>
                 </ul>
             </td>
         </tr>
