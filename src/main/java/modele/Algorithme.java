@@ -317,13 +317,44 @@ public class Algorithme {
      * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
      */
     public static void recursiviteDeplacementEfficace(Scenario parScenario,ArrayList<Parcours> listparcours){
-        ;
+        Parcours parparcours = listparcours.get(listparcours.size() -1);
+        if ((parparcours.queteFinPossibleEfficace())){
+            parparcours.ajouterDeplacement(parparcours.getQueteFin());
+            parparcours.ajouteQueteFaite(parparcours.getQueteFin());
+            //if(((Classement.getChTreeParcours().isEmpty()) ||(Classement.getChTreeParcours().firstKey() > parparcours.getduree()))) {
+            Classement.ajout(parparcours);
+            //}
+
+        }
+        else{
+            parparcours.quetesPossibles();
+            HashSet<Quete> ensQuetePossible=  new HashSet<>(parparcours.getQuetePossible());
+            for (Quete q: ensQuetePossible){
+                parparcours.ajouterDeplacement(q);
+                parparcours.ajoutexp(q.getExperience());
+                parparcours.ajouteQueteFaite(q);
+                Algorithme.recursiviteDeplacementEfficace(parScenario,listparcours);
+                parparcours = listparcours.get(listparcours.size() - 1);
+                listparcours.add(new Parcours(parScenario, parparcours.getChexp(), 0, parparcours.getDeplacements(), "deplacements", parparcours.getQuetesFaite(), parparcours.getQuetesNonFaite(), new HashSet<>()));
+                listparcours.remove(listparcours.size()-2);
+                parparcours = listparcours.get(listparcours.size() - 1);
+                if(parparcours.getQuetesFaite().containsKey(0)) {
+                    parparcours.enleverQueteFaite(parparcours.getQueteFin());
+                    parparcours.enleverDeplacement(parparcours.getQueteFin());
+                }
+                parparcours.enleverQueteFaite(q);
+                parparcours.enleverDeplacement(q);
+                parparcours.ajoutexp(-q.getExperience());
+            }
+        }
     }
     /**
      * permet de lancer l'algorithme deplacement efficace.
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
      */
     public static void solutionDeplacementEfficace(Scenario parScenario){
-        ;
+        ArrayList<Parcours> listparcours = new ArrayList<>();
+        listparcours.add(new Parcours(parScenario, "deplacements"));
+        Algorithme.recursiviteDeplacementEfficace(parScenario, listparcours);
     }
 }
