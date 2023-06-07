@@ -62,7 +62,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
             <td style='border: 1px solid black;text-align: left'>Tests à appliquer : </td>
             <td style='border: 1px solid black;text-align: left'>
                 <ul>
-                    <h4>CLASSE "Quete.java" :</h4>
+                    <h4 style="font-weight: bold">CLASSE "Quete.java" :</h4>
                     <li><a href="#test00">Test</A> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires.</li>
                 </ul>
             </td>
@@ -76,9 +76,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 
 ### 3.2 Tests
 
-#### **CLASSE Quete.java :**
-
-<h4 id=test00>CLASSE "Quete.java" :</h4>
+#### <a id=test00></a>**CLASSE "Quete.java" :**
 
 * Choix de partition : Les deux listes contenant que des entiers naturels privés de 0 peut etre chacun divisé en trois sous ensemble. A1 la liste est égale à None , A1 la liste contient un entier , A2 la liste contient deux entiers. a represente la premiére liste , b représente la deuxiéme liste.Quand a n'existe pas , b est obligé d'être None sinon il deviendrait la premiére liste.
 
