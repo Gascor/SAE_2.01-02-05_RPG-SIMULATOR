@@ -59,5 +59,14 @@ public class Classement {
             throw new ClassementException(0);
         }
     }
-
+    /**
+     * permet d'enlever des parcours au Classement s'ils ne correspondent plus à nos critéres
+     * @param parsolutions (int): Le nombre de solutions qui doit etre présente à la fin du classement
+     * @param parparcours (int): parcours qu'on veut rajouter
+     * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
+     *                                                                                                         : 2 represente les pires solutions
+     */
+    public static void regulationParcours(int parsolutions,Parcours parparcours,int parChoix){
+        ;
+    }
 }
