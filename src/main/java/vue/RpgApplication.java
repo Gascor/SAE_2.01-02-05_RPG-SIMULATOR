@@ -1,10 +1,11 @@
 package vue;
 
+import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class RpgApplication {
+public class RpgApplication extends Application {
     public void start(Stage stage) {
         VBoxRoot root = new VBoxRoot();
         Scene scene = new Scene(root, 1300, 300);
