@@ -217,4 +217,19 @@ public class Algorithme {
         listparcours.add(new Parcours(parScenario, "duree"));
         Algorithme.recursiviteSpeedrunExhaustive(parScenario, listparcours);
     }
+    /**
+     * permet de determiner tout les parcours les plus optimales en terme de nombre de quete de manière efficace.
+     * @param parScenario (Scenario): scenario qu'utilise les parcours
+     * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     */
+    public static void recursiviteEfficaceNbquete(Scenario parScenario,ArrayList<Parcours> listparcours){
+        ;
+    }
+    /**
+     * permet de lancer l'algorithme efficace nbquete.
+     * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
+     */
+    public static void solutionEfficaceNbQuete(Scenario parScenario) {
+        ;
+    }
 }
