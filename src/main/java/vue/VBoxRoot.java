@@ -36,4 +36,12 @@ public class VBoxRoot extends VBox {
     public static Controleur getControleur() {
         return controleur;
     }
+    /**
+     * Retourne la boîte de scénario de l'interface utilisateur.
+     *
+     * @return L'instance de ScenarioBox utilisée dans l'interface utilisateur.
+     */
+    public static ScenarioBox getScenarioBox() {
+        return scenarioBox;
+    }
 }
