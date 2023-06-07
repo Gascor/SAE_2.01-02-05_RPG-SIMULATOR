@@ -311,4 +311,19 @@ public class Algorithme {
         listparcours.add(new Parcours(parScenario, "nbQuete"));
         Algorithme.recursiviteExhaustiveNbquete(parScenario, listparcours);
     }
+    /**
+     * permet de determiner tout les parcours les plus optimales en terme de nombre de deplacement de manière efficace.
+     * @param parScenario (Scenario): scenario qu'utilise les parcours
+     * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     */
+    public static void recursiviteSpeedrunDeplacement(Scenario parScenario,ArrayList<Parcours> listparcours){
+        ;
+    }
+    /**
+     * permet de lancer l'algorithme deplacement efficace.
+     * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
+     */
+    public static void solutionSpeedrunDeplacement(Scenario parScenario){
+        ;
+    }
 }
