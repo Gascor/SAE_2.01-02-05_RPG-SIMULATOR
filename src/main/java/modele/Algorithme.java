@@ -100,10 +100,19 @@ public class Algorithme {
         Algorithme.recursiviteGlutonneExhaustive(parScenario,listparcours);
     }
     /**
+     * permet de determiner tout les parcours les plus optimale en terme de durée de manière efficace.
+     * @param parScenario (Scenario): scenario qu'utilise les parcours
+     * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     */
+    public static void recursiviteSpeedrunEfficace(Scenario parScenario,ArrayList<Parcours> listparcours){
+        ;
+    }
+    /**
      * permet de lancer l'algorithme speedrun efficace
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
      */
     public static void solutionSpeedrunEfficace(Scenario parScenario){
         ;
     }
+
 }
