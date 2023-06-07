@@ -385,4 +385,8 @@ class AlgorithmeTest {
         firstKey = Classement.getChTreeParcours().lastKey();
         assertEquals(111,firstKey);
     }
+    @Test
+    void choixAlgo(){
+        ;
+    }
 }
