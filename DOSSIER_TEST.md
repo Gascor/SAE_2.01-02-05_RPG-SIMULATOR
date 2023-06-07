@@ -62,8 +62,36 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
             <td style='border: 1px solid black;text-align: left'>Tests à appliquer : </td>
             <td style='border: 1px solid black;text-align: left'>
                 <ul>
-                    <h4 style="font-weight: bold">CLASSE "Quete.java" :</h4>
-                    <li><a href="#test00">Test</A> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires.</li>
+                    <h4 style="font-weight: bold">CLASSE <a href="#classTest0">Quete.java </a> / <a href="#classResult0">Resultats de la classe</a></h4>
+                    <li><a href="#test00">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result00">Résultat ici</a></li>
+                    <li><a href="#test01">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result01">Résultat ici</a></li>
+                    <li><a href="#test02">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result02">Résultat ici</a></li>
+                    <li><a href="#test03">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result03">Résultat ici</a></li>
+                    <li><a href="#test04">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result04">Résultat ici</a></li>
+                    <li><a href="#test05">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result05">Résultat ici</a></li>
+                    <li><a href="#test06">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result06">Résultat ici</a></li>
+                    <h4 style="font-weight: bold">CLASSE <a href="#class1">Parcours.java :</a></h4>
+                    <li><a href="#test07">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result07">Résultat ici</a></li>
+                    <li><a href="#test08">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result08">Résultat ici</a></li>
+                    <li><a href="#test09">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result09">Résultat ici</a></li>
+                    <li><a href="#test10">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result10">Résultat ici</a></li>
+                    <li><a href="#test11">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result11">Résultat ici</a></li>
+                    <li><a href="#test12">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result12">Résultat ici</a></li>
+                    <li><a href="#test13">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result13">Résultat ici</a></li>
+                    <h4 style="font-weight: bold">CLASSE <a href="#class2">Classement.java :</a></h4>
+                    <li><a href="#test14">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result14">Résultat ici</a></li>
+                    <li><a href="#test15">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result15">Résultat ici</a></li>
+                    <li><a href="#test16">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result16">Résultat ici</a></li>
+                    <h4 style="font-weight: bold">CLASSE <a href="#class3">Algorithme.java :</a></h4>
+                    <li><a href="#test17">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result17">Résultat ici</a></li>
+                    <li><a href="#test18">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result18">Résultat ici</a></li>
+                    <li><a href="#test19">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result19">Résultat ici</a></li>
+                    <li><a href="#test20">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result20">Résultat ici</a></li>
+                    <li><a href="#test21">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result21">Résultat ici</a></li>
+                    <li><a href="#test22">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result22">Résultat ici</a></li>
+                    <li><a href="#test23">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result23">Résultat ici</a></li>
+                    <li><a href="#test24">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result24">Résultat ici</a></li>
+                    <li><a href="#test25">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result25">Résultat ici</a></li>
                 </ul>
             </td>
         </tr>
@@ -76,7 +104,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 
 ### 3.2 Tests
 
-#### <a id=test00></a>**CLASSE "Quete.java" :**
+#### <a id=class0></a>**CLASSE "Quete.java" :**
 
 * Choix de partition : Les deux listes contenant que des entiers naturels privés de 0 peut etre chacun divisé en trois sous ensemble. A1 la liste est égale à None , A1 la liste contient un entier , A2 la liste contient deux entiers. a represente la premiére liste , b représente la deuxiéme liste.Quand a n'existe pas , b est obligé d'être None sinon il deviendrait la premiére liste.
 
@@ -903,6 +931,8 @@ clé_parcours = 20
 |   P1   | Scenario1 | parcours(1,4,3,2,5,0) |
 
 <hr>
+
+* Choix de la partition : Il y a deux partitions, soit il y a plusieurs possibilités de parcours glouton, soit il n'y en a qu'un.
 
 <table>
     <tbody>
