@@ -19,7 +19,7 @@ public class VBoxRoot extends VBox {
      */
     public VBoxRoot() {
         HBox hBox = new HBox();
-        setSpacing(0);
+        setSpacing(20);
         controleur = new Controleur();
         scenarioBox = new ScenarioBox();
         formulaire = new Formulaire();
