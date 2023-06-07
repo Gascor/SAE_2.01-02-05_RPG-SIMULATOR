@@ -38,7 +38,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 
 ## 3. Description des informations à enregistrer pour le test
 
-* ### 3.1 Campagne de test
+* ### 3.1. Campagne de test
 
 <table>
     <tbody>
@@ -105,7 +105,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
     </tbody>
 </table>
 
-### 3.2 Tests
+### 3.2. Tests
 
 #### <a id=classTest0></a><p style="font-weight: bold">*CLASSE "Quete.java" :*</p>
 
@@ -1257,7 +1257,7 @@ clé_parcours = 20
 |   P4   |      2       |        2         | solutionDeplacementExhaustive(parScenario) |
 |   P5   |      2       |        3         |   solutionExhaustiveNbQuete(parScenario)   |
 
-### 3.3 Résultats
+### 3.3. Résultats
 
 
 #### <a id=classResult0></a><p style="font-weight: bold">*CLASSE "Quete.java" :*</p>
@@ -2101,4 +2101,4 @@ clé_parcours = 20
     </tbody>
 </table>
 
-### 3.4 Conclusions
+### 3.4. Conclusions
