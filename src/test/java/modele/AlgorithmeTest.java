@@ -347,6 +347,7 @@ class AlgorithmeTest {
     @Test
     void solutionDeplacementExhaustive() {
         //réinitialise le classement
+        System.out.println("Test de la méthode solution deplacement exhaustive");
         Classement.getChTreeParcours().clear();
         Scenario s0 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_0" + ".txt"));
         Algorithme.solutionDeplacementExhaustive(s0);
