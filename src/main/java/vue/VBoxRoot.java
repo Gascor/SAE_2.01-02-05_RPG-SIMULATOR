@@ -52,4 +52,12 @@ public class VBoxRoot extends VBox {
     public static Formulaire getFormulaire() {
         return formulaire;
     }
+    /**
+     * Retourne la boîte de classement de l'interface utilisateur.
+     *
+     * @return L'instance de ClassementBox utilisée dans l'interface utilisateur.
+     */
+    public static ClassementBox getClassementBox() {
+        return classementBox;
+    }
 }
