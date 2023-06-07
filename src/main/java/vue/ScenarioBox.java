@@ -9,6 +9,10 @@ import modele.Launcher;
 import modele.Quete;
 import modele.Scenario;
 
+/**
+ * Classe représentant la boîte de scénario dans l'interface utilisateur.
+ * Elle affiche la liste des scénarios disponibles et les quêtes associées à chaque scénario.
+ */
 public class ScenarioBox extends VBox implements ConstantesScenario {
     private Scenario[] listeScenario;
     private Label labelScenario;
