@@ -6,7 +6,17 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+/**
+ * Classe principale de l'application RPG.
+ * Elle hérite de la classe Application de JavaFX.
+ */
 public class RpgApplication extends Application {
+    /**
+     * Méthode de démarrage de l'application.
+     * Crée la scène principale de l'interface utilisateur et affiche la fenêtre.
+     *
+     * @param stage l'objet Stage représentant la fenêtre principale de l'application
+     */
     public void start(Stage stage) {
         VBoxRoot root = new VBoxRoot();
         Scene scene = new Scene(root, 1300, 300);
