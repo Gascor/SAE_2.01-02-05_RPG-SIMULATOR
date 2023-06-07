@@ -104,6 +104,8 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 
 ### 3.2 Tests
 
+<p>Some Markdown text with <span style="color:blue">some <em>blue</em> text</span>.</p>
+
 #### <a id=class0></a><span style="color:blue">*CLASSE "Quete.java" :*</span>
 
 #### <a id=class0></a>**CLASSE "Quete.java" :**
