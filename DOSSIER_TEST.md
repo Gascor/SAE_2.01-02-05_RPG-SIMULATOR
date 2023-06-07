@@ -671,6 +671,7 @@ parcours.quetesfaites.size() = 5
 
 <hr>
 
+* Choix de la partition : nbduree ,nbQueteFaite, nbDeplacements sont tous des entiers positifs. durée peut etre partionné en 3, this inférieur a la durée du parcours, this égale a la duree du parcours et this supérieur a la durée du parcours.( meme chose pour nbQueteFaite et Deplacements) et pour parComparatif c'est un string. Il peut etre partionné en 3: Soit parCompartif est égal à "duree", soit "nbQuete" ou soit "deplacements".
 
 <table>
     <tbody>
@@ -692,7 +693,6 @@ parcours.quetesfaites.size() = 5
         </tr>
     </tbody>
 </table>
-Choix de la partition: nbduree ,nbQueteFaite, nbDeplacements sont tous des entiers positifs. durée peut etre partionné en 3, this inférieur a la durée du parcours, this égale a la duree du parcours et this supérieur a la durée du parcours.( meme chose pour nbQueteFaite et Deplacements) et pour parComparatif c'est un string. Il peut etre partionné en 3: Soit parCompartif est égal à "duree", soit "nbQuete" ou soit "deplacements".
 
 | Classe |           nbduree            |                nbQueteFaite                |                nbDeplacement                 | parComparatif | Résultat attendu |      
 |:------:|:----------------------------:|:------------------------------------------:|:--------------------------------------------:|:--------------|:----------------:|
@@ -717,6 +717,46 @@ Choix de la partition: nbduree ,nbQueteFaite, nbDeplacements sont tous des entie
 |   P6   | this = 20 par = 10 | this = 2 par = 1 | this = 10 par = 5  | deplacements  |        5         |
 |   P7   | this = 20 par = 20 | this = 2 par = 2 | this = 10 par = 10 | deplacements  |        0         |
 |   P8   | this = 10 par = 20 | this = 1 par = 2 | this = 5 par = 10  | deplacements  |        -5        |
+
+<hr>
+
+* Choix de la partition : Il y a deux partitions, soit ChQueteFaites est vide soit elle possède une quete actuelle.
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : ajouterDeplacement()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "ajouterDeplacement() en utilisant la méthode des boites noires."</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |       chQuetesFaites       |                        Résultat attendu                        |
+|:------:|:--------------------------:|:--------------------------------------------------------------:|
+|   P0   |       ensemble vide        |                    parquete(pos y + pos x )                    |
+|   P1   | possède une quete actuelle | abs(parquete(actuelle(pos x + pos y)-ancienne(pos x + pos y))) | 
+
+Parquete position = (2,2)
+Queteactuelle position = (4,1)
+ancien dépalcement = 4
+
+| Classe |     chQuetesFaites     | Résultat attendu |
+|:------:|:----------------------:|:----------------:|
+|   P0   |     ensemble vide      |        4         |
+|   P1   | possède quete actuelle |        7         |
+
 
 #### **CLASSE Classement.java :**
 
@@ -1452,6 +1492,33 @@ clé_parcours = 20
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>ajouterDeplacement()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>31/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
