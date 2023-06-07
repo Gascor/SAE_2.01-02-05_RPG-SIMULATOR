@@ -425,6 +425,33 @@ public class Algorithme {
      * @param objectifsolution    L'objectif de la solution (1 pour speedrun, 2 pour déplacement efficace, 3 pour nombre de quêtes).
      */
     public static void choixAlgo(Scenario parScenario,int typesolution, int objectifsolution) {
-        ;
+        if (typesolution == 1) {
+            switch (objectifsolution) {
+                case 1:
+                    solutionSpeedrunEfficace(parScenario);
+                    break;
+                case 2:
+                    solutionDeplacementEfficace(parScenario);
+                    break;
+                case 3:
+                    solutionEfficaceNbQuete(parScenario);
+                    break;
+                default:
+            }
+        }
+        else {
+            switch (objectifsolution) {
+                case 1:
+                    solutionSpeedrunExhaustive(parScenario);
+                    break;
+                case 2:
+                    solutionDeplacementExhaustive(parScenario);
+                    break;
+                case 3:
+                    solutionExhaustiveNbQuete(parScenario);
+                    break;
+                default:
+            }
+        }
     }
 }
