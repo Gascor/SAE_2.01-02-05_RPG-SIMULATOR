@@ -229,7 +229,13 @@ public class Parcours {
      * @param parquete la quete à faire
      */
     public void ajouterDeplacement(Quete parquete){
-        ;
+        Quete queteActuelle = getQueteActuelle();
+        if (queteActuelle.getNumero() == -10){
+            chdeplacements = parquete.getPos()[0] + parquete.getPos()[1];
+        }
+        else{
+            chdeplacements = chdeplacements + queteActuelle.distanceQuete(parquete);
+        }
     }
     /**
      * renvoi une clé correspondant au comparatif du parcours.
