@@ -104,9 +104,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 
 ### 3.2 Tests
 
-
-
-#### <a id=class0></a><p style="font-weight: bold">*CLASSE "Quete.java" :*</p>
+#### <a id=classTest0></a><p style="font-weight: bold">*CLASSE "Quete.java" :*</p>
 
 ##### <a id=test00></a>**METHODE "extraitPrecond()" :**
 
@@ -155,6 +153,8 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 
 <hr>
 
+##### <a id=test01></a>**METHODE "extraitPos()" :**
+
 * Choix de partition : l'ensemble des entiers naturels n'a pas besoin d'être partitionné.
 
 <table>
@@ -188,6 +188,8 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 
 <hr>
 
+##### <a id=test02></a>**METHODE "testprecondition()" :**
+
 * Choix de partition : le tableau precond peut etre  partionné en trois ensembles, A1 ne contient que des 0, A2 ne contient pas que des 0 et A3 ne contient 0.
 
 <table>
@@ -220,6 +222,8 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 |   P0   | "(2,4)" |  [2,4]   |
 
 <hr>
+
+##### <a id=test03></a>**METHODE "distanceQuete()" :**
 
 * Choix de partition : Pour les deux colonnes ont peut les partitionnés en 3 parties, on considère que x et y sont des entiers positifs, x1 est égale à x2, x1 est inférieur à x2, x1 est supérieur à x2 et y1 est égale à y2, y1 est inférieur à y2, y1 est supérieur à y2.
 
@@ -270,6 +274,8 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 
 <hr>
 
+##### <a id=test04></a>**METHODE "queteProche()" :**
+
 * Choix de partition : On considère que la distance est un entier positif! Elle peut être partitionné en 3. Distance Q1 = Distance Q2 ou Distance Q1 > Distance Q2 ou Distance Q1 < Distance Q2.
 
 <table>
@@ -306,6 +312,8 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 |   P2   | Q1 = 2, Q2 = 1 |   (Q2)   |
 
 <hr>
+
+##### <a id=test05></a>**METHODE "quetePossible()" :**
 
 * Choix de la partition : I0, I1, I2 et I3 représente chacun un indice du tableau précondition. On considère dans ce choix de partition que true veut dire que l'id de la quête necessaire est faite.
 
@@ -358,6 +366,8 @@ liste id = {1,2,3,4}
 
 <hr>
 
+##### <a id=test06></a>**METHODE "compareTo()" :**
+
 * Choix de la partition : Les ID sont des entiers positif. Il peut être partitionné en 3 parties. l'ID de this est égale a la quete pointé qui est this. l'ID de la quete this est inférieur a la quete pointé. l'ID de la quete this est supérieur a la quete pointé.
 
 <table>
@@ -393,7 +403,9 @@ liste id = {1,2,3,4}
 |   P1   | this = 2 par = 2 |        =0        |
 |   P2   | this= 1 par = 2  |        -1        |
 
-#### **CLASSE Parcours.java :**
+#### <a id=classTest1></a><p style="font-weight: bold">*CLASSE "Parcours.java" :*</p>
+
+##### <a id=test07></a>**METHODE "extraitQuete()" :**
 
 * Choix de la partition : Une TreeSet de toute les quetes du Scénario.
 
@@ -429,6 +441,8 @@ quete 0 = quete fin
 |   P0   | "(q0,q1,q2)" | (q1,q2)  |
 
 <hr>
+
+##### <a id=test08></a>**METHODE "queteFinPossibleEfficace()" :**
 
 * Choix de la partition : l'experience acqueri par le joueur et une liste de quete possible. Une partie ou l'experience est infèrieure au prérequis de la quete, un ou elle est égale et une autre ou elle est supérieure. Avec des parties ou des quetes sont possibles ou non.
 
@@ -471,6 +485,8 @@ liste id = {1,2,3}
 
 <hr>
 
+##### <a id=test09></a>**METHODE "compareTo()" :**
+
 * Choix de la partition : comparaison de durée, this inférieur a la durée du parcours, this égale a la duree du parcours et this supérieur a la durée du parcours.
 
 <table>
@@ -507,6 +523,8 @@ liste id = {1,2,3}
 |    P2    |           this= 10 par = 20            |               -10                |
 
 <hr>
+
+##### <a id=test10></a>**METHODE "quetesPossibles()" :**
 
 * Choix de la partition : On regarde les quêtes réalisables et on regarde s'il sont rajouter dans les quêtes possibles
 
@@ -551,6 +569,8 @@ ensQueteNonFaite = (Quete3,Quete4,Quete2)
 
 * Choix de la partition : On ajoute le temps de la quete en terme de distance par rapport a la quete precedente et de durée.
 
+##### <a id=test11></a>**METHODE "ajouteDuree()" :**
+
 <table>
     <tbody>
         <tr>
@@ -589,6 +609,8 @@ Ancienne duree = 10
 
 <hr>
 
+##### <a id=test12></a>**METHODE "getQueteActuelle()" :**
+
 * Choix de la partition : recupère un entier positif lorsque une quete est prise.
 
 <table>
@@ -623,6 +645,8 @@ Ancienne duree = 10
 |   P1   | chQueteFaite = {1.Q1} |        1         |
 
 <hr>
+
+##### <a id=test13></a>**METHODE "queteFinPossibleExhaustive()" :**
 
 * Choix de la partition : Analyse en fonction de l'experience si la quete est possible. L'expérience est divisé en 3 partition d'équivalence. La situation ou l'expérience actuelle est supérieur a la quete de fin. Celle ou elle est égale ou celle ou elle est inférieure. Elle regarde si la quete est possible ou non et regarde si le nombre de quete du scénario moins un est supérieur ou égale au nombre de quete deja faite.
 
@@ -667,6 +691,8 @@ Ancienne duree = 10
 
 <hr>
 
+##### <a id=test14></a>**METHODE "getCle()" :**
+
 * Choix de la partition : parComparatif est un string. On peut le partionné en 3. Soit parCompartif est égal à "duree", soit "nbQuete" ou soit "deplacements".
 
 <table>
@@ -707,6 +733,8 @@ parcours.quetesfaites.size() = 5
 |   P2   | parcomparatif ="deplacements" |    20    |
 
 <hr>
+
+##### <a id=test15></a>**METHODE "compareTo()" :**
 
 * Choix de la partition : nbduree ,nbQueteFaite, nbDeplacements sont tous des entiers positifs. durée peut etre partionné en 3, this inférieur a la durée du parcours, this égale a la duree du parcours et this supérieur a la durée du parcours.( meme chose pour nbQueteFaite et Deplacements) et pour parComparatif c'est un string. Il peut etre partionné en 3: Soit parCompartif est égal à "duree", soit "nbQuete" ou soit "deplacements".
 
@@ -757,6 +785,8 @@ parcours.quetesfaites.size() = 5
 
 <hr>
 
+##### <a id=test16></a>**METHODE "ajouterDeplacement()" :**
+
 * Choix de la partition : Il y a deux partitions, soit ChQueteFaites est vide soit elle possède une quete actuelle.
 
 <table>
@@ -794,8 +824,9 @@ ancien dépalcement = 4
 |   P0   |     ensemble vide      |        4         |
 |   P1   | possède quete actuelle |        7         |
 
+#### <a id=classTest2></a><p style="font-weight: bold">*CLASSE "Classement.java" :*</p>
 
-#### **CLASSE Classement.java :**
+##### <a id=test17></a>**METHODE "ajout()" :**
 
 * Choix de la partition : Les clés ne sont que des entiers positifs. Et on peut les partitionnés en deux, soit la clé du parcours est deja dans le classement sois il n'est pas déja présent.
 
@@ -834,6 +865,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=test18></a>**METHODE "afficherClassement()" :**
+
 * Choix de la partition : un ou des parcours qui on la plus petite clé
 
 <table>
@@ -865,6 +898,8 @@ clé_parcours = 20
 - **/!\ abscence de tableau de données, ceci est un test visuel! /!\**
 
 <hr>
+
+##### <a id=test19></a>**METHODE "afficherClassement()" :**
 
 * Choix de la partition : un ou des parcours qui on la plus petite clé. parchoix == 1 ou 2.
 
@@ -899,7 +934,9 @@ clé_parcours = 20
 
 - **/!\ abscence de tableau de données, ceci est un test visuel! /!\**
 
-#### **CLASSE Algorithme.java :**
+#### <a id=classTest3></a><p style="font-weight: bold">*CLASSE "Algorithme.java" :*</p>
+
+##### <a id=test20></a>**METHODE "solutionGloutonneEfficace()" :**
 
 * Choix de la partition : Il y a deux partitions, soit il y a plusieurs possibilités de parcours glouton, soit il n'y en a qu'un.
 
@@ -936,6 +973,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=test21></a>**METHODE "solutionGloutonneExhaustive()" :**
+
 * Choix de la partition : Il y a deux partitions, soit il y a plusieurs possibilités de parcours glouton, soit il n'y en a qu'un.
 
 <table>
@@ -971,6 +1010,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=test22></a>**METHODE "solutionSpeedrunEfficace()" :**
+
 * Choix de la partition : Pour tous les autres méthodes de SolutionsAlgorithme . On va considérer qu'il n'a pas vraiment de partition (Ce qui est vrai avec les scénarios donnés) . On va vérifier grace aux résultats de David Auger si à chaque Algorithme. La méthode trouve la valeur minimale (durée, déplacements , nbQuete) et la valeur maximale sur les 5 premiers Scenarios. Donc il n'y aura pas de premiers tableaux de partitions on passera directement au tableaux de données. (Désolé on pas trouvé d'autres façon).
 
 <table>
@@ -1004,6 +1045,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=test23></a>**METHODE "SolutionSpeedrunExhaustive()" :**
+
 * Choix de la partition : Voir ici
 
 <table>
@@ -1036,6 +1079,8 @@ clé_parcours = 20
 |   P4   | scenario 4 | minduree = 115 , maxduree =171 |
 
 <hr>
+
+##### <a id=test24></a>**METHODE "SolutionEfficaceNbQuete()" :**
 
 * Choix de la partition : Voir ici
 
@@ -1072,6 +1117,8 @@ clé_parcours = 20
 
 * Choix de la partition : Voir ici
 
+##### <a id=test25></a>**METHODE "SolutionExhaustiveNbQuete()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1102,6 +1149,8 @@ clé_parcours = 20
 |   P4   | scenario 4 | minnbQuete = 10 ,  maxnbQuete =10 |
 
 <hr>
+
+##### <a id=test26></a>**METHODE "SolutionDeplacementEfficace()" :**
 
 * Choix de la partition : Voir ici
 
@@ -1136,6 +1185,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=test27></a>**METHODE "SolutionDeplacementExhaustive()" :**
+
 * Choix de la partition : Voir ici
 
 <table>
@@ -1168,6 +1219,8 @@ clé_parcours = 20
 |   P4   | scenario 4 | minDeplacements = 55 ,  maxDeplacements =111 |
 
 <hr>
+
+##### <a id=test28></a>**METHODE "choixAlgo()" :**
 
 * Choix de la partition : la partition est que le type de solution est soit Efficace ou exhaustive, donc soit 1 soit 2, puis l'objectif est soit de speedrun soit le deplacement et soit le nombre de quete, respectivement 1, 2 ou 3.
 
