@@ -165,5 +165,19 @@ public class Algorithme {
         listparcours.add(new Parcours(parScenario, "duree"));
         Algorithme.recursiviteSpeedrunEfficace(parScenario, listparcours);
     }
-
+    /**
+     * permet de determiner tout les parcours les plus optimale en terme de durée de manière exhaustif.
+     * @param parScenario (Scenario): scenario qu'utilise les parcours
+     * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     */
+    public static void recursiviteSpeedrunExhaustive(Scenario parScenario,ArrayList<Parcours> listparcours){
+        ;
+    }
+    /**
+     * permet de lancer l'algorithme speedrun exhaustive.
+     * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
+     */
+    public static void solutionSpeedrunExhaustive(Scenario parScenario){
+        ;
+    }
 }
