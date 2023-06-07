@@ -16,6 +16,37 @@ public class ScenarioBox extends VBox implements ConstantesScenario {
 
     private Scenario scenarioActuelle;
     /**
+     * Constructeur de la classe ScenarioBox.
+     * Initialise et configure les éléments de la boîte de scénario.
+     */
+    public ScenarioBox() {
+        setSpacing(20);
+        Launcher.scenarioLoader();
+        listeScenario = Launcher.getListeScenario();
+        labelScenario = new Label();
+        tableQuete = new TableView<>();
+        tableQuete.setMaxWidth(557);
+        scenarioActuelle = listeScenario[0];
+
+        // Configuration des colonnes de la table des quêtes
+        TableColumn<Quete, Integer> numeroColonne = new TableColumn<>("Id");
+        setupColumn(numeroColonne, "Numero", 25);
+        TableColumn<Quete, String> posColonne = new TableColumn<>("Position");
+        setupColumn(posColonne, "StringPos", 65);
+        TableColumn<Quete, String> precondColonne = new TableColumn<>("Preconditions");
+        setupColumn(precondColonne, "StringPrecond", 90);
+        TableColumn<Quete, Integer> dureeColonne = new TableColumn<>("Durée");
+        setupColumn(dureeColonne, "Duree", 65);
+        TableColumn<Quete, Integer> experienceColonne = new TableColumn<>("Expérience");
+        setupColumn(experienceColonne, "Experience", 85);
+        TableColumn<Quete, String> intituleColonne = new TableColumn<>("Intitulé");
+        setupColumn(intituleColonne, "Intitule", 225);
+        tableQuete.getColumns().addAll(numeroColonne, posColonne, precondColonne, dureeColonne, experienceColonne, intituleColonne);
+
+        afficher(0);
+        getChildren().addAll(labelScenario, tableQuete);
+    }
+    /**
      * Configuration d'une colonne de la table des quêtes.
      *
      * @param col    La colonne à configurer.
