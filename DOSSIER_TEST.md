@@ -897,12 +897,12 @@ clé_parcours = 20
 <table>
     <tbody>
         <tr>
-            <td style='border: 1px solid black;text-align: left'>Identification du test : p()</td>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : solutionSpeedrunEfficace()</td>
             <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "solutionGloutonneExhaustive()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "solutionSpeedrunEfficace()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -1498,7 +1498,7 @@ clé_parcours = 20
     <tbody>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
-            <td style='border: 1px solid black;text-align: left'>solutionGloutonneExhaustive()</td>
+            <td style='border: 1px solid black;text-align: left'>solutionSpeedrunEfficace()</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Responsable :</td>
