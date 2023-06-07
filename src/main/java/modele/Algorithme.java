@@ -11,14 +11,20 @@ public class Algorithme {
      */
     public static void recursiviteGloutonneEfficace(Scenario parScenario,ArrayList<Parcours> listparcours){
         Parcours parparcours = listparcours.get(listparcours.size() -1);
+        //regarde si la quete 0 est possible
         if ((parparcours.queteFinPossibleEfficace())){
+            // rajoute la quête et sa durée
             parparcours.ajouteDuree(parparcours.getQueteFin());
             parparcours.ajouteQueteFaite(parparcours.getQueteFin());
+            // rajoute le parcours finis au classement
             Classement.ajout(parparcours);
+
         }
         else{
             Quete QueteActuelle = parparcours.getQueteActuelle();
+            //regarde les quetes possibles
             parparcours.quetesPossibles();
+            //prend les quetes les plus proches de queteActuelle
             HashSet<Quete> ensQueteProche= QueteActuelle.queteProche(parparcours.getQuetePossible());
             for (Quete q: ensQueteProche){
                 parparcours.ajouteDuree(q);
@@ -26,21 +32,21 @@ public class Algorithme {
                 parparcours.ajouteQueteFaite(q);
                 Algorithme.recursiviteGloutonneEfficace(parScenario,listparcours);
                 parparcours = listparcours.get(listparcours.size() - 1);
+                // crée un nouveau parcours sur la base du parcours actuelle
                 listparcours.add(new Parcours(parScenario, parparcours.getChexp(), parparcours.getduree(),0, "duree", parparcours.getQuetesFaite(), parparcours.getQuetesNonFaite(), new HashSet<>()));
+                // enléve dans liste parcours le parcours inutile pour la récursivité
                 listparcours.remove(listparcours.size()-2);
                 parparcours = listparcours.get(listparcours.size() - 1);
+                // regarde si le parcours a fait la quete 0 pour l'enlever
                 if(parparcours.getQuetesFaite().containsKey(0)) {
                     parparcours.enleverQueteFaite(parparcours.getQueteFin());
                     parparcours.enleverDuree(parparcours.getQueteFin());
                 }
+                // enleve la quete q avec sa durée et son expérience
                 parparcours.enleverQueteFaite(q);
                 parparcours.enleverDuree(q);
                 parparcours.ajoutexp(-q.getExperience());
-
-
             }
-
-
         }
     }
     /**
