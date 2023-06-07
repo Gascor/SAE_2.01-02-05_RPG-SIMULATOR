@@ -157,7 +157,7 @@ public class Algorithme {
         }
     }
     /**
-     * permet de lancer l'algorithme speedrun efficace
+     * permet de lancer l'algorithme speedrun efficace.
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
      */
     public static void solutionSpeedrunEfficace(Scenario parScenario){
