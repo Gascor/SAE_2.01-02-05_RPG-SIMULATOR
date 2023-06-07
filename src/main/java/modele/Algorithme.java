@@ -369,13 +369,51 @@ public class Algorithme {
      * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
      */
     public static void recursiviteDeplacementExhaustive(Scenario parScenario,ArrayList<Parcours> listparcours){
-        ;
+        Parcours parparcours = listparcours.get(listparcours.size() -1);
+        if ((parparcours.queteFinPossibleExhaustive())){
+            // rajoute le deplacement
+            parparcours.ajouterDeplacement(parparcours.getQueteFin());
+            // rajoute la quête
+            parparcours.ajouteQueteFaite(parparcours.getQueteFin());
+            // rajoute le parcours finis au classement
+            Classement.ajout(parparcours);
+
+        }
+        else{
+            //regarde les quetes possibles
+            parparcours.quetesPossibles();
+            HashSet<Quete> ensQuetePossible=  new HashSet<>(parparcours.getQuetePossible());
+            for (Quete q: ensQuetePossible){
+                parparcours.ajouterDeplacement(q);
+                parparcours.ajoutexp(q.getExperience());
+                parparcours.ajouteQueteFaite(q);
+                Algorithme.recursiviteDeplacementExhaustive(parScenario,listparcours);
+                parparcours = listparcours.get(listparcours.size() - 1);
+                // crée un nouveau parcours sur la base du parcours actuelle
+                listparcours.add(new Parcours(parScenario, parparcours.getChexp(), 0, parparcours.getDeplacements(), "deplacements", parparcours.getQuetesFaite(), parparcours.getQuetesNonFaite(), new HashSet<>()));
+                // enléve dans liste parcours le parcours inutile pour la récursivité
+                listparcours.remove(listparcours.size()-2);
+                parparcours = listparcours.get(listparcours.size() - 1);
+                // regarde si le parcours a fait la quete 0 pour l'enlever
+                if(parparcours.getQuetesFaite().containsKey(0)) {
+                    parparcours.enleverQueteFaite(parparcours.getQueteFin());
+                    parparcours.enleverDeplacement(parparcours.getQueteFin());
+                }
+                // enleve la quete q avec  son expérience
+                parparcours.enleverQueteFaite(q);
+                // enleve le deplacement lié a la quete
+                parparcours.enleverDeplacement(q);
+                parparcours.ajoutexp(-q.getExperience());
+            }
+        }
     }
     /**
      * permet de lancer l'algorithme deplacement exhaustive.
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
      */
-    public static void solutionDeplacementExhaustive(Scenario parScenario){
-        ;
+    public static void solutionSpeedrunDeplacementExhaustive(Scenario parScenario){
+        ArrayList<Parcours> listparcours = new ArrayList<>();
+        listparcours.add(new Parcours(parScenario, "deplacements"));
+        Algorithme.recursiviteDeplacementExhaustive(parScenario, listparcours);
     }
 }
