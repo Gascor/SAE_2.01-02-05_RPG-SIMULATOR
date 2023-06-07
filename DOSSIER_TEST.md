@@ -63,38 +63,38 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
             <td style='border: 1px solid black;text-align: left'>
                 <ul>
                     <h4 style="font-weight: bold">CLASSE Quete.java <a href="#classtest0"> TESTS </a> / <a href="#classresult0">RESULTATS</a></h4>
-                    <li><a href="#test00">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result00">Résultat ici</a></li>
-                    <li><a href="#test01">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result01">Résultat ici</a></li>
-                    <li><a href="#test02">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result02">Résultat ici</a></li>
-                    <li><a href="#test03">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result03">Résultat ici</a></li>
-                    <li><a href="#test04">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result04">Résultat ici</a></li>
-                    <li><a href="#test05">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result05">Résultat ici</a></li>
-                    <li><a href="#test06">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result06">Résultat ici</a></li>
+                    <li><a href="#test00">Test</a> unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result00">Résultat ici</a></li>
+                    <li><a href="#test01">Test</a> unitaire sur la méthode "extraitPos()" en utilisant la méthode des boites noires. <a href="#result01">Résultat ici</a></li>
+                    <li><a href="#test02">Test</a> unitaire sur la méthode "testprecondition() en utilisant la méthode des boites noires. <a href="#result02">Résultat ici</a></li>
+                    <li><a href="#test03">Test</a> unitaire sur la méthode "distanceQuete()" en utilisant la méthode des boites noires. <a href="#result03">Résultat ici</a></li>
+                    <li><a href="#test04">Test</a> unitaire sur la méthode "queteProche()" en utilisant la méthode des boites noires. <a href="#result04">Résultat ici</a></li>
+                    <li><a href="#test05">Test</a> unitaire sur la méthode "quetePossible()" en utilisant la méthode des boites noires. <a href="#result05">Résultat ici</a></li>
+                    <li><a href="#test06">Test</a> unitaire sur la méthode "compareTo()" en utilisant la méthode des boites noires. <a href="#result06">Résultat ici</a></li>
                     <h4 style="font-weight: bold">CLASSE Parcours.java <a href="#classTest1"> TESTS </a> / <a href="#classResult1">RESULTATS</a></h4>
-                    <li><a href="#test07">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result07">Résultat ici</a></li>
-                    <li><a href="#test08">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result08">Résultat ici</a></li>
-                    <li><a href="#test09">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result09">Résultat ici</a></li>
-                    <li><a href="#test10">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result10">Résultat ici</a></li>
-                    <li><a href="#test11">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result11">Résultat ici</a></li>
-                    <li><a href="#test12">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result12">Résultat ici</a></li>
-                    <li><a href="#test13">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result13">Résultat ici</a></li>
-                    <li><a href="#test14">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result14">Résultat ici</a></li>
-                    <li><a href="#test15">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result15">Résultat ici</a></li>
-                    <li><a href="#test16">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result16">Résultat ici</a></li>
+                    <li><a href="#test07">Test</a> unitaire sur la méthode "extraitQuete()" en utilisant la méthode des boites noires. <a href="#result07">Résultat ici</a></li>
+                    <li><a href="#test08">Test</a> unitaire sur la méthode "queteFinPossibleEfficace()" en utilisant la méthode des boites noires. <a href="#result08">Résultat ici</a></li>
+                    <li><a href="#test09">Test</a> unitaire sur la méthode "compareTo()" en utilisant la méthode des boites noires. <a href="#result09">Résultat ici</a></li>
+                    <li><a href="#test10">Test</a> unitaire sur la méthode "quetesPossibles()" en utilisant la méthode des boites noires. <a href="#result10">Résultat ici</a></li>
+                    <li><a href="#test11">Test</a> unitaire sur la méthode "ajouteDuree()" en utilisant la méthode des boites noires. <a href="#result11">Résultat ici</a></li>
+                    <li><a href="#test12">Test</a> unitaire sur la méthode "getQueteActuelle()" en utilisant la méthode des boites noires. <a href="#result12">Résultat ici</a></li>
+                    <li><a href="#test13">Test</a> unitaire sur la méthode "queteFinPossibleExhaustive()" en utilisant la méthode des boites noires. <a href="#result13">Résultat ici</a></li>
+                    <li><a href="#test14">Test</a> unitaire sur la méthode "getCle()" en utilisant la méthode des boites noires. <a href="#result14">Résultat ici</a></li>
+                    <li><a href="#test15">Test</a> unitaire sur la méthode "compareTo()" en utilisant la méthode des boites noires. VERSION 2.0<a href="#result15">Résultat ici</a></li>
+                    <li><a href="#test16">Test</a> unitaire sur la méthode "ajouterDeplacement()" en utilisant la méthode des boites noires. <a href="#result16">Résultat ici</a></li>
                     <h4 style="font-weight: bold">CLASSE Classement.java <a href="#classTest2"> TESTS </a> / <a href="#classResult2">RESULTATS</a></h4>
-                    <li><a href="#test17">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result17">Résultat ici</a></li>
-                    <li><a href="#test18">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result18">Résultat ici</a></li>
-                    <li><a href="#test19">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result19">Résultat ici</a></li>
+                    <li><a href="#test17">Test</a> unitaire sur la méthode "ajout()" en utilisant la méthode des boites noires. <a href="#result17">Résultat ici</a></li>
+                    <li><a href="#test18">Test</a> unitaire sur la méthode "afficherClassement()" en utilisant la méthode des boites noires. <a href="#result18">Résultat ici</a></li>
+                    <li><a href="#test19">Test</a> unitaire sur la méthode "afficherClassement()" en utilisant la méthode des boites noires. VERSION 2.0<a href="#result19">Résultat ici</a></li>
                     <h4 style="font-weight: bold">CLASSE Algorithme.java <a href="#classTest3"> TESTS </a> / <a href="#classResult3">RESULTATS</a></h4>
-                    <li><a href="#test20">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result20">Résultat ici</a></li>
-                    <li><a href="#test21">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result21">Résultat ici</a></li>
-                    <li><a href="#test22">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result22">Résultat ici</a></li>
-                    <li><a href="#test23">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result23">Résultat ici</a></li>
-                    <li><a href="#test24">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result24">Résultat ici</a></li>
-                    <li><a href="#test25">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result25">Résultat ici</a></li>
-                    <li><a href="#test26">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result26">Résultat ici</a></li>
-                    <li><a href="#test27">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result27">Résultat ici</a></li>
-                    <li><a href="#test28">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result28">Résultat ici</a></li>
+                    <li><a href="#test20">Test</a> unitaire sur la méthode "solutionGloutonneEfficace()" en utilisant la méthode des boites noires. <a href="#result20">Résultat ici</a></li>
+                    <li><a href="#test21">Test</a> unitaire sur la méthode "solutionGloutonneExhaustive()" en utilisant la méthode des boites noires. <a href="#result21">Résultat ici</a></li>
+                    <li><a href="#test22">Test</a> unitaire sur la méthode "solutionSpeedrunEfficace()" en utilisant la méthode des boites noires. <a href="#result22">Résultat ici</a></li>
+                    <li><a href="#test23">Test</a> unitaire sur la méthode "SolutionSpeedrunExhaustive()" en utilisant la méthode des boites noires. <a href="#result23">Résultat ici</a></li>
+                    <li><a href="#test24">Test</a> unitaire sur la méthode "SolutionEfficaceNbQuete()" en utilisant la méthode des boites noires. <a href="#result24">Résultat ici</a></li>
+                    <li><a href="#test25">Test</a> unitaire sur la méthode "SolutionExhaustiveNbQuete()" en utilisant la méthode des boites noires. <a href="#result25">Résultat ici</a></li>
+                    <li><a href="#test26">Test</a> unitaire sur la méthode "SolutionDeplacementEfficace()" en utilisant la méthode des boites noires. <a href="#result26">Résultat ici</a></li>
+                    <li><a href="#test27">Test</a> unitaire sur la méthode "SolutionDeplacementExhaustive()" en utilisant la méthode des boites noires. <a href="#result27">Résultat ici</a></li>
+                    <li><a href="#test28">Test</a> unitaire sur la méthode "choixAlgo()" en utilisant la méthode des boites noires. <a href="#result28">Résultat ici</a></li>
                 </ul>
             </td>
         </tr>
@@ -244,7 +244,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test unitaire  sur la méthode "distanceQuete() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "distanceQuete()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -297,7 +297,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "queteProche() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "queteProche()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -338,7 +338,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "quetePossible() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "quetePossible()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -393,7 +393,7 @@ liste id = {1,2,3,4}
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "compareTo() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "compareTo()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -434,7 +434,7 @@ liste id = {1,2,3,4}
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "extraitQuete() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "extraitQuete()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -473,7 +473,7 @@ quete 0 = quete fin
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "queteFinPossibleEfficace() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "queteFinPossibleEfficace()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -518,7 +518,7 @@ liste id = {1,2,3}
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "compareTo() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "compareTo()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -559,7 +559,7 @@ liste id = {1,2,3}
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "quetesPossibles() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "quetesPossibles()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -604,7 +604,7 @@ ensQueteNonFaite = (Quete3,Quete4,Quete2)
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "ajouteDuree() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "ajouteDuree()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -779,7 +779,7 @@ parcours.quetesfaites.size() = 5
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "compareTo() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "compareTo()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -832,7 +832,7 @@ parcours.quetesfaites.size() = 5
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "ajouterDeplacement() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "ajouterDeplacement()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -1217,7 +1217,7 @@ clé_parcours = 20
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test unitaire  sur la méthode "SolutionDeplacementEfficace()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "SolutionDeplacementEfficace()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
