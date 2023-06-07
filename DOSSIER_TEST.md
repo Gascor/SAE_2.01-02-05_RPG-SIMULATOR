@@ -62,7 +62,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
             <td style='border: 1px solid black;text-align: left'>Tests à appliquer : </td>
             <td style='border: 1px solid black;text-align: left'>
                 <ul>
-                    <h4 style="font-weight: bold">CLASSE <a href="#classTest0">Quete.java </a> / <a href="#classResult0">Resultats de la classe</a></h4>
+                    <h4 style="font-weight: bold">CLASSE Quete.java <a href="#classTest0"> TESTS </a> / <a href="#classResult0">RESULTATS</a></h4>
                     <li><a href="#test00">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result00">Résultat ici</a></li>
                     <li><a href="#test01">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result01">Résultat ici</a></li>
                     <li><a href="#test02">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result02">Résultat ici</a></li>
@@ -70,7 +70,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
                     <li><a href="#test04">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result04">Résultat ici</a></li>
                     <li><a href="#test05">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result05">Résultat ici</a></li>
                     <li><a href="#test06">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result06">Résultat ici</a></li>
-                    <h4 style="font-weight: bold">CLASSE <a href="#class1">Parcours.java :</a></h4>
+                    <h4 style="font-weight: bold">CLASSE Parcours.java <a href="#classTest1"> TESTS </a> / <a href="#classResult1">RESULTATS</a></h4>
                     <li><a href="#test07">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result07">Résultat ici</a></li>
                     <li><a href="#test08">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result08">Résultat ici</a></li>
                     <li><a href="#test09">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result09">Résultat ici</a></li>
@@ -78,11 +78,11 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
                     <li><a href="#test11">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result11">Résultat ici</a></li>
                     <li><a href="#test12">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result12">Résultat ici</a></li>
                     <li><a href="#test13">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result13">Résultat ici</a></li>
-                    <h4 style="font-weight: bold">CLASSE <a href="#class2">Classement.java :</a></h4>
+                    <h4 style="font-weight: bold">CLASSE Classement.java <a href="#classTest2"> TESTS </a> / <a href="#classResult2">RESULTATS</a></h4>
                     <li><a href="#test14">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result14">Résultat ici</a></li>
                     <li><a href="#test15">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result15">Résultat ici</a></li>
                     <li><a href="#test16">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result16">Résultat ici</a></li>
-                    <h4 style="font-weight: bold">CLASSE <a href="#class3">Algorithme.java :</a></h4>
+                    <h4 style="font-weight: bold">CLASSE Algorithme.java <a href="#classTest3"> TESTS </a> / <a href="#classResult3">RESULTATS</a></h4>
                     <li><a href="#test17">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result17">Résultat ici</a></li>
                     <li><a href="#test18">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result18">Résultat ici</a></li>
                     <li><a href="#test19">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result19">Résultat ici</a></li>
