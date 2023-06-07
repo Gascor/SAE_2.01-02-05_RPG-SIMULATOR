@@ -271,4 +271,28 @@ import static org.junit.jupiter.api.Assertions.*;
         Parcours p3 = new Parcours(s1,0,30,20,"deplacements",quetefaite,new TreeSet<>(),new HashSet<>());
         assertEquals(20,p3.getCle());
     }
+    @Test @Order(1)
+    public void ajouterDeplacement(){
+        System.out.println("Test méthode ajouteDeplacement");
+        Scenario scenario = new Scenario("test1");
+        Quete quete1 = new Quete("1|(2, 2)|()|10|100|explorer pic de Bhanborim");
+        Quete quete2 = new Quete("2|(1, 0)|()|2|100|explorer pic de Bhanborim");
+        Quete quete3 = new Quete("3|(4, 1)|((4,),)|2|100|explorer pic de Bhanborim");
+        Quete quete4 = new Quete("4|(1, 0)|((5,),)|6|100|explorer pic de Bhanborim");
+        scenario.ajout(quete1);
+        scenario.ajout(quete2);
+        scenario.ajout(quete3);
+        scenario.ajout(quete4);
+        Parcours parcours = new Parcours(scenario,"duree");
+        parcours.ajouterDeplacement(quete1);
+        assertEquals( 4,parcours.getDeplacements());
+        LinkedHashMap<Integer,Quete> QueteFaite = new LinkedHashMap<>();
+        QueteFaite.put(1,quete4);
+        QueteFaite.put(2,quete2);
+        QueteFaite.put(3,quete3);
+        //probleme
+        Parcours parcours1 = new Parcours(scenario,10,0,4,"duree",QueteFaite,new TreeSet<Quete>(),new HashSet<Quete>());
+        parcours1.ajouterDeplacement(quete1);
+        assertEquals(7,parcours1.getDeplacements());
+    }
 }
