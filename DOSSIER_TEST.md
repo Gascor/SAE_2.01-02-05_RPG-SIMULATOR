@@ -923,6 +923,39 @@ clé_parcours = 20
 |   P3   | scenario 3 | minduree = 53 , maxduree = 72  |
 |   P4   | scenario 4 | minduree = 95 , maxduree =167  | 
 
+<hr>
+
+* Choix de la partition : Voir ici
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : SolutionSpeedrunExhaustive()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "SolutionSpeedrunExhaustive()" en utilisant la méthode des boites noires.</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe | Scenario| Résultat  |
+|:------:|:--------:|:----------------:|
+|   P0   | scenario 0 |  minduree = 36 , maxduree = 40|
+|   P1   | scenario 1 |  minduree = 34 , maxduree =  40  |
+|   P2   | scenario 2  |  minduree = 91 , maxduree = 117 |
+|   P3   | scenario 3 |  minduree = 64 , maxduree = 74 |
+|   P4   | scenario 4 |  minduree = 115 , maxduree =171 |
+
 ### 3.3 Résultats
 
 #### **CLASSE Quete.java :**
@@ -1499,6 +1532,33 @@ clé_parcours = 20
         <tr>
             <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
             <td style='border: 1px solid black;text-align: left'>solutionSpeedrunEfficace()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>28/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>OK</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>SolutionSpeedrunExhaustive()</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Responsable :</td>
