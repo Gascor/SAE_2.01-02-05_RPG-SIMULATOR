@@ -1,8 +1,6 @@
 package modele;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Classement {
     private static TreeMap<Integer, ArrayList<Parcours>> chTreeParcours = new TreeMap<>();
@@ -73,7 +71,42 @@ public class Classement {
      * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
      *                                                                                                         : 2 represente les pires solutions
      */
-    public static void regulationParcours(int parsolutions,Parcours parparcours,int parChoix){
-        ;
+    public static void regulationParcours(int parsolutions,Parcours parparcours,int parChoix) {
+        if (parsolutions > chNbSolutionsTotales) {
+            Classement.ajout(parparcours);
+            chNbSolutionsTotales++;
+        } else {
+            if (parChoix == 1) {
+                Set<Integer> reversedKeySet = new TreeSet<>(Collections.reverseOrder());
+                reversedKeySet.addAll(Classement.chTreeParcours.keySet());
+                for (int longueur : reversedKeySet) {
+                    if (parparcours.getCle() <= chTreeParcours.get(longueur).get(0).getCle()) {
+                        chTreeParcours.get(longueur).remove(0);
+                        chNbSolutionsTotales--;
+                        if (chTreeParcours.get(longueur).size() == 0) {
+                            chTreeParcours.remove(longueur);
+                        }
+
+                        Classement.ajout(parparcours);
+                        chNbSolutionsTotales++;
+                        break;
+                    }
+                }
+            }
+            else{
+                for(int longueur : chTreeParcours.keySet()){
+                    if (parparcours.getCle() >=chTreeParcours.get(longueur).get(0).getCle()) {
+                        chTreeParcours.get(longueur).remove(0);
+                        chNbSolutionsTotales--;
+                        if (chTreeParcours.get(longueur).size() == 0) {
+                            chTreeParcours.remove(longueur);
+                        }
+                        Classement.ajout(parparcours);
+                        chNbSolutionsTotales++;
+                        break;
+                    }
+                }
+            }
+        }
     }
 }
