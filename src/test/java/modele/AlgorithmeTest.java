@@ -259,4 +259,44 @@ class AlgorithmeTest {
         firstKey = Classement.getChTreeParcours().lastKey();
         assertEquals(10,firstKey);
     }
+    @Test
+    void SolutionExhaustivenbQuete() {
+        //réinitialise le classement
+        Classement.getChTreeParcours().clear();
+        Scenario s0 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_0" + ".txt"));
+        Algorithme.solutionExhaustiveNbQuete(s0);
+        int firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(5,firstKey);
+
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(5,firstKey);
+        Classement.getChTreeParcours().clear();
+        Scenario s1 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_1" + ".txt"));
+        Algorithme.solutionExhaustiveNbQuete(s1);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(6,firstKey);
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(6,firstKey);
+        Classement.getChTreeParcours().clear();
+        Scenario s2 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_2" + ".txt"));
+        Algorithme.solutionExhaustiveNbQuete(s2);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(10,firstKey);
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(10,firstKey);
+        Classement.getChTreeParcours().clear();
+        Scenario s3 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_3" + ".txt"));
+        Algorithme.solutionExhaustiveNbQuete(s3);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(8,firstKey);
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(8,firstKey);
+        Classement.getChTreeParcours().clear();
+        Scenario s4 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_4" + ".txt"));
+        Algorithme.solutionExhaustiveNbQuete(s4);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(10,firstKey);
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(10,firstKey);
+    }
 }
