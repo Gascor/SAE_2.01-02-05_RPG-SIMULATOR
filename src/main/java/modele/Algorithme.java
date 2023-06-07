@@ -223,13 +223,45 @@ public class Algorithme {
      * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
      */
     public static void recursiviteEfficaceNbquete(Scenario parScenario,ArrayList<Parcours> listparcours){
-        ;
+        Parcours parparcours = listparcours.get(listparcours.size() -1);
+        if ((parparcours.queteFinPossibleEfficace())){
+            // rajoute la quête
+            parparcours.ajouteQueteFaite(parparcours.getQueteFin());
+            // rajoute le parcours finis au classement
+            Classement.ajout(parparcours);
+
+        }
+        else{
+            //regarde les quetes possibles
+            parparcours.quetesPossibles();
+            HashSet<Quete> ensQuetePossible=  new HashSet<>(parparcours.getQuetePossible());
+            for (Quete q: ensQuetePossible){
+                parparcours.ajoutexp(q.getExperience());
+                parparcours.ajouteQueteFaite(q);
+                Algorithme.recursiviteEfficaceNbquete(parScenario,listparcours);
+                parparcours = listparcours.get(listparcours.size() - 1);
+                // crée un nouveau parcours sur la base du parcours actuelle
+                listparcours.add(new Parcours(parScenario, parparcours.getChexp(), parparcours.getduree(),0, "nbQuete", parparcours.getQuetesFaite(), parparcours.getQuetesNonFaite(), new HashSet<>()));
+                // enléve dans liste parcours le parcours inutile pour la récursivité
+                listparcours.remove(listparcours.size()-2);
+                parparcours = listparcours.get(listparcours.size() - 1);
+                // regarde si le parcours a fait la quete 0 pour l'enlever
+                if(parparcours.getQuetesFaite().containsKey(0)) {
+                    parparcours.enleverQueteFaite(parparcours.getQueteFin());
+                }
+                // enleve la quete q avec  son expérience
+                parparcours.enleverQueteFaite(q);
+                parparcours.ajoutexp(-q.getExperience());
+            }
+        }
     }
     /**
      * permet de lancer l'algorithme efficace nbquete.
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
      */
     public static void solutionEfficaceNbQuete(Scenario parScenario) {
-        ;
+        ArrayList<Parcours> listparcours = new ArrayList<>();
+        listparcours.add(new Parcours(parScenario, "nbQuete"));
+        Algorithme.recursiviteEfficaceNbquete(parScenario, listparcours);
     }
 }
