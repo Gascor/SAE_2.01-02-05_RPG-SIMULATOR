@@ -62,7 +62,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
             <td style='border: 1px solid black;text-align: left'>Tests à appliquer : </td>
             <td style='border: 1px solid black;text-align: left'>
                 <ul>
-                    <h4 style="font-weight: bold">CLASSE Quete.java <a href="#classTest0"> TESTS </a> / <a href="#classResult0">RESULTATS</a></h4>
+                    <h4 style="font-weight: bold">CLASSE Quete.java <a href="#classtest0"> TESTS </a> / <a href="#classresult0">RESULTATS</a></h4>
                     <li><a href="#test00">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result00">Résultat ici</a></li>
                     <li><a href="#test01">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result01">Résultat ici</a></li>
                     <li><a href="#test02">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result02">Résultat ici</a></li>
@@ -107,7 +107,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
 
 ### 3.2. Tests
 
-#### <a id=classTest0></a><p style="font-weight: bold">*CLASSE "Quete.java" :*</p>
+#### <a id=classtest0></a><p style="font-weight: bold">*CLASSE "Quete.java" :*</p>
 
 ##### <a id=test00></a>**METHODE "extraitPrecond()" :**
 
@@ -406,7 +406,7 @@ liste id = {1,2,3,4}
 |   P1   | this = 2 par = 2 |        =0        |
 |   P2   | this= 1 par = 2  |        -1        |
 
-#### <a id=classTest1></a><p style="font-weight: bold">*CLASSE "Parcours.java" :*</p>
+#### <a id=classtest1></a><p style="font-weight: bold">*CLASSE "Parcours.java" :*</p>
 
 ##### <a id=test07></a>**METHODE "extraitQuete()" :**
 
@@ -827,7 +827,7 @@ ancien dépalcement = 4
 |   P0   |     ensemble vide      |        4         |
 |   P1   | possède quete actuelle |        7         |
 
-#### <a id=classTest2></a><p style="font-weight: bold">*CLASSE "Classement.java" :*</p>
+#### <a id=classtest2></a><p style="font-weight: bold">*CLASSE "Classement.java" :*</p>
 
 ##### <a id=test17></a>**METHODE "ajout()" :**
 
@@ -937,7 +937,7 @@ clé_parcours = 20
 
 - **/!\ abscence de tableau de données, ceci est un test visuel! /!\**
 
-#### <a id=classTest3></a><p style="font-weight: bold">*CLASSE "Algorithme.java" :*</p>
+#### <a id=classtest3></a><p style="font-weight: bold">*CLASSE "Algorithme.java" :*</p>
 
 ##### <a id=test20></a>**METHODE "solutionGloutonneEfficace()" :**
 
@@ -1260,7 +1260,7 @@ clé_parcours = 20
 ### 3.3. Résultats
 
 
-#### <a id=classResult0></a><p style="font-weight: bold">*CLASSE "Quete.java" :*</p>
+#### <a id=classresult0></a><p style="font-weight: bold">*CLASSE "Quete.java" :*</p>
 
 ##### <a id=result00></a>**METHODE "extraitPrecond()" :**
 
@@ -1463,7 +1463,7 @@ clé_parcours = 20
     </tbody>
 </table>
 
-#### <a id=classResult1></a><p style="font-weight: bold">*CLASSE "Parcours.java" :*</p>
+#### <a id=classresult1></a><p style="font-weight: bold">*CLASSE "Parcours.java" :*</p>
 
 ##### <a id=result07></a>**METHODE "extraitQuete()" :**
 
@@ -1753,7 +1753,7 @@ clé_parcours = 20
     </tbody>
 </table>
 
-#### <a id=classResult2></a><p style="font-weight: bold">*CLASSE "Classement.java" :*</p>
+#### <a id=classresult2></a><p style="font-weight: bold">*CLASSE "Classement.java" :*</p>
 
 ##### <a id=result17></a>**METHODE "ajout()" :**
 
@@ -1840,7 +1840,7 @@ clé_parcours = 20
     </tbody>
 </table>
 
-#### <a id=classResult3></a><p style="font-weight: bold">*CLASSE "Algorithme.java" :*</p>
+#### <a id=classresult3></a><p style="font-weight: bold">*CLASSE "Algorithme.java" :*</p>
 
 ##### <a id=result20></a>**METHODE "solutionGloutonneEfficace()" :**
 
