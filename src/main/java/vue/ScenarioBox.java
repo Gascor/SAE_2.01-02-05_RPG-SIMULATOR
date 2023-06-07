@@ -15,7 +15,19 @@ public class ScenarioBox extends VBox implements ConstantesScenario {
     private TableView<Quete> tableQuete;
 
     private Scenario scenarioActuelle;
-
+    /**
+     * Affiche les quêtes du scénario spécifié.
+     *
+     * @param scenarioNumero Le numéro du scénario.
+     */
+    public void afficher(int scenarioNumero) {
+        Scenario scenario = listeScenario[scenarioNumero];
+        labelScenario.setText(scenario.getNom());
+        tableQuete.getItems().clear();
+        for (Quete quete : scenario.getTreeQuete()) {
+            tableQuete.getItems().add(quete);
+        }
+    }
     /**
      * Retourne le scénario actuellement sélectionné.
      *
