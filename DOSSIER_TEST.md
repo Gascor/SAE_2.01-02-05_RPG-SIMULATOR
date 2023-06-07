@@ -1087,13 +1087,46 @@ clé_parcours = 20
     </tbody>
 </table>
 
-| Classe | Scenario| Résultat  |
-|:------:|:--------:|:----------------:|
-|   P0   | scenario 0 |  minDeplacements = 14 , maxDeplacements = 20|
-|   P1   | scenario 1 |  minDeplacements= 17,  maxDeplacements =  23  |
-|   P2   | scenario 2  |   minDeplacements = 35 ,  maxDeplacements= 57 |
-|   P3   | scenario 3 |   minDeplacements = 26 ,  maxDeplacements = 36 |
-|   P4   | scenario 4 |   minDeplacements = 49 ,  maxDeplacements =107 |
+| Classe |  Scenario  |                   Résultat                   |
+|:------:|:----------:|:--------------------------------------------:|
+|   P0   | scenario 0 | minDeplacements = 14 , maxDeplacements = 20  |
+|   P1   | scenario 1 | minDeplacements= 17,  maxDeplacements =  23  |
+|   P2   | scenario 2 | minDeplacements = 35 ,  maxDeplacements= 57  |
+|   P3   | scenario 3 | minDeplacements = 26 ,  maxDeplacements = 36 |
+|   P4   | scenario 4 | minDeplacements = 49 ,  maxDeplacements =107 |
+
+<hr>
+
+* Choix de la partition : Voir ici
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : SolutionDeplacementExhaustive()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "SolutionDeplacementExhaustive()" en utilisant la méthode des boites noires.</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |  Scenario  |                   Résultat                   |
+|:------:|:----------:|:--------------------------------------------:|
+|   P0   | scenario 0 | minDeplacements = 20 , maxDeplacements = 24  |
+|   P1   | scenario 1 | minDeplacements= 17,  maxDeplacements =  23  |
+|   P2   | scenario 2 | minDeplacements = 39 ,  maxDeplacements= 65  |
+|   P3   | scenario 3 | minDeplacements = 28 ,  maxDeplacements = 38 |
+|   P4   | scenario 4 | minDeplacements = 55 ,  maxDeplacements =111 |
 
 ### 3.3 Résultats
 
@@ -1822,6 +1855,33 @@ clé_parcours = 20
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : </td>
+            <td style='border: 1px solid black;text-align: left'>SolutionDeplacementExhaustive()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>01/06/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
