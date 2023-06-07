@@ -60,4 +60,12 @@ public class VBoxRoot extends VBox {
     public static ClassementBox getClassementBox() {
         return classementBox;
     }
+    /**
+     * Retourne la barre de menu de l'interface utilisateur.
+     *
+     * @return L'instance de MenuBarre utilisée dans l'interface utilisateur.
+     */
+    public static MenuBarre getMenuBarre() {
+        return menuBarre;
+    }
 }
