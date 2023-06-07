@@ -989,6 +989,39 @@ clé_parcours = 20
 |   P3   | scenario 3 | minnbQuete = 6 ,  maxnbQuete = 8 |
 |   P4   | scenario 4 | minnbQuete = 7 ,  maxnbQuete =10 | 
 
+<hr>
+
+* Choix de la partition : Voir ici
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : SolutionExhaustiveNbQuete()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "SolutionExhaustiveNbQuete()" en utilisant la méthode des boites noires.</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |  Scenario  |             Résultat              |
+|:------:|:----------:|:---------------------------------:|
+|   P0   | scenario 0 |  minnbQuete = 5 , maxbQuete = 5   |
+|   P1   | scenario 1 | minnbQuete= 6 ,  maxnbQuete =  6  |
+|   P2   | scenario 2 | minnbQuete = 10 ,  maxnbQuete= 10 |
+|   P3   | scenario 3 | minnbQuete = 8 ,  maxnbQuete = 8  |
+|   P4   | scenario 4 | minnbQuete = 10 ,  maxnbQuete =10 |
+
 ### 3.3 Résultats
 
 #### **CLASSE Quete.java :**
@@ -1638,4 +1671,32 @@ clé_parcours = 20
         </tr>
     </tbody>
 </table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>SolutionExhaustiveNbQuete()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>31/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>OK</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
 ### 3.4 Conclusions
