@@ -225,6 +225,13 @@ public class Parcours {
         chduree = chduree - queteActuelle.distanceQuete(parquete) - parquete.getDuree();
     }
     /**
+     * ajoute la duree de la quete à faire et le déplacement pour atteindre cette quete
+     * @param parquete la quete à faire
+     */
+    public void ajouterDeplacement(Quete parquete){
+        ;
+    }
+    /**
      * renvoi une clé correspondant au comparatif du parcours.
      * @return cle (int): retourne la durée du parcours: si this.parComparatif = duree
      *                  :retourne le nombre de quetes faites: si this.parComparatif = nbQuete
