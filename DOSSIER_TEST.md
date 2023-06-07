@@ -25,10 +25,10 @@ author: Lucas DA SILVA FERREIRA & Baptiste FOURNIE
     - [1. Introduction](#1-introduction)
     - [2. Description de la procédure de test](#2-description-de-la-procédure-de-test)
     - [3. Description des informations à enregistrer pour le test](#3-description-des-informations-à-enregistrer-pour-le-test)
-        - [3.1. Campagne de test](#3.1-campagne-de-test)
-        - [3.2. Tests](#3.2-tests)
-        - [3.3. Résultats](#3.3-résultats)
-        - [3.4. Conclusions](#3.4-conclusions)
+        - [3.1. Campagne de test](#3.1.-campagne-de-test)
+        - [3.2. Tests](#3.2.-tests)
+        - [3.3. Résultats](#3.3.-résultats)
+        - [3.4. Conclusions](#3.4.-conclusions)
 
 ## 1. Introduction
 Ce travail est un projet lié a la SAE 2.01, 2.02 et 2.05. Il consiste à la réalisation d'un simulateur de RPG, ce document est un dossier de test qui consiste a decrire les procédures de tests mises en oeuvre pour le projet uniquement sur le package modèle comme il à été demandé. Le but de ce dossier de test est de verifier si les classes et méthodes ne comportent pas d'erreurs et correspondent a la spécification demandé.
