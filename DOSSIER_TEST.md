@@ -1259,7 +1259,8 @@ clé_parcours = 20
 
 ### 3.3 Résultats
 
-#### **CLASSE Quete.java :**
+
+#### <a id=classResult0></a><p style="font-weight: bold">*CLASSE "Quete.java" :*</p>
 
 ##### <a id=result00></a>**METHODE "extraitPrecond()" :**
 
@@ -1462,7 +1463,7 @@ clé_parcours = 20
     </tbody>
 </table>
 
-#### **CLASSE Parcours.java :**
+#### <a id=classResult1></a><p style="font-weight: bold">*CLASSE "Parcours.java" :*</p>
 
 ##### <a id=result07></a>**METHODE "extraitQuete()" :**
 
@@ -1752,7 +1753,7 @@ clé_parcours = 20
     </tbody>
 </table>
 
-#### **CLASSE Classement.java :**
+#### <a id=classResult2></a><p style="font-weight: bold">*CLASSE "Classement.java" :*</p>
 
 ##### <a id=result17></a>**METHODE "ajout()" :**
 
@@ -1839,7 +1840,7 @@ clé_parcours = 20
     </tbody>
 </table>
 
-#### **CLASSE Algorithme.java :**
+#### <a id=classResult3></a><p style="font-weight: bold">*CLASSE "Algorithme.java" :*</p>
 
 ##### <a id=result20></a>**METHODE "solutionGloutonneEfficace()" :**
 
