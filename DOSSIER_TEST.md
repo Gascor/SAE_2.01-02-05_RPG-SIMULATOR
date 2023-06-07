@@ -890,6 +890,39 @@ clé_parcours = 20
 |   P0   | Scenario0 |  Parcours(1,2,4,3,0)  |
 |   P1   | Scenario1 | Parcours(1,4,3,2,5,0) |
 
+<hr>
+
+* Choix de la partition : Pour tous les autres méthodes de SolutionsAlgorithme . On va considérer qu'il n'a pas vraiment de partition (Ce qui est vrai avec les scénarios donnés) . On va vérifier grace aux résultats de David Auger si à chaque Algorithme. La méthode trouve la valeur minimale (durée, déplacements , nbQuete) et la valeur maximale sur les 5 premiers Scenarios. Donc il n'y aura pas de premiers tableaux de partitions on passera directement au tableaux de données. (Désolé on pas trouvé d'autres façon).
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : p()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "solutionGloutonneExhaustive()" en utilisant la méthode des boites noires.</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe |  Scenario  |            Résultat            |
+|:------:|:----------:|:------------------------------:|
+|   P0   | scenario 0 | minduree = 27 , maxduree = 30  |
+|   P1   | scenario 1 | minduree = 34 , maxduree =  40 |
+|   P2   | scenario 2 | minduree = 80 , maxduree = 106 |
+|   P3   | scenario 3 | minduree = 53 , maxduree = 72  |
+|   P4   | scenario 4 | minduree = 95 , maxduree =167  | 
+
 ### 3.3 Résultats
 
 #### **CLASSE Quete.java :**
@@ -1455,6 +1488,33 @@ clé_parcours = 20
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>solutionGloutonneExhaustive()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>28/05/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
