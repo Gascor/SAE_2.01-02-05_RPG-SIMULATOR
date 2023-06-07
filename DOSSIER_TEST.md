@@ -78,20 +78,23 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
                     <li><a href="#test11">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result11">Résultat ici</a></li>
                     <li><a href="#test12">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result12">Résultat ici</a></li>
                     <li><a href="#test13">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result13">Résultat ici</a></li>
-                    <h4 style="font-weight: bold">CLASSE Classement.java <a href="#classTest2"> TESTS </a> / <a href="#classResult2">RESULTATS</a></h4>
                     <li><a href="#test14">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result14">Résultat ici</a></li>
                     <li><a href="#test15">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result15">Résultat ici</a></li>
                     <li><a href="#test16">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result16">Résultat ici</a></li>
-                    <h4 style="font-weight: bold">CLASSE Algorithme.java <a href="#classTest3"> TESTS </a> / <a href="#classResult3">RESULTATS</a></h4>
+                    <h4 style="font-weight: bold">CLASSE Classement.java <a href="#classTest2"> TESTS </a> / <a href="#classResult2">RESULTATS</a></h4>
                     <li><a href="#test17">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result17">Résultat ici</a></li>
                     <li><a href="#test18">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result18">Résultat ici</a></li>
                     <li><a href="#test19">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result19">Résultat ici</a></li>
+                    <h4 style="font-weight: bold">CLASSE Algorithme.java <a href="#classTest3"> TESTS </a> / <a href="#classResult3">RESULTATS</a></h4>
                     <li><a href="#test20">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result20">Résultat ici</a></li>
                     <li><a href="#test21">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result21">Résultat ici</a></li>
                     <li><a href="#test22">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result22">Résultat ici</a></li>
                     <li><a href="#test23">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result23">Résultat ici</a></li>
                     <li><a href="#test24">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result24">Résultat ici</a></li>
                     <li><a href="#test25">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result25">Résultat ici</a></li>
+                    <li><a href="#test26">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result26">Résultat ici</a></li>
+                    <li><a href="#test27">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result27">Résultat ici</a></li>
+                    <li><a href="#test28">Test</a> Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires. <a href="#result28">Résultat ici</a></li>
                 </ul>
             </td>
         </tr>
@@ -1258,6 +1261,8 @@ clé_parcours = 20
 
 #### **CLASSE Quete.java :**
 
+##### <a id=result00></a>**METHODE "extraitPrecond()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1284,6 +1289,8 @@ clé_parcours = 20
 </table>
 
 <hr>
+
+##### <a id=result01></a>**METHODE "extraitPos()" :**
 
 <table>
     <tbody>
@@ -1312,6 +1319,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=result02></a>**METHODE "testprecondition()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1338,6 +1347,8 @@ clé_parcours = 20
 </table>
 
 <hr>
+
+##### <a id=result03></a>**METHODE "distanceQuete()" :**
 
 <table>
     <tbody>
@@ -1366,6 +1377,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=result04></a>**METHODE "queteProche()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1392,6 +1405,8 @@ clé_parcours = 20
 </table>
 
 <hr>
+
+##### <a id=result05></a>**METHODE "quetePossible()" :**
 
 <table>
     <tbody>
@@ -1420,6 +1435,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=result06></a>**METHODE "compareTo()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1446,6 +1463,8 @@ clé_parcours = 20
 </table>
 
 #### **CLASSE Parcours.java :**
+
+##### <a id=result07></a>**METHODE "extraitQuete()" :**
 
 <table>
     <tbody>
@@ -1474,6 +1493,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=result08></a>**METHODE "queteFinPossibleEfficace()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1500,6 +1521,8 @@ clé_parcours = 20
 </table>
 
 <hr>
+
+##### <a id=result09></a>**METHODE "compareTo()" :**
 
 <table>
     <tbody>
@@ -1528,6 +1551,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=result10></a>**METHODE "quetesPossibles()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1554,6 +1579,8 @@ clé_parcours = 20
 </table>
 
 <hr>
+
+##### <a id=result11></a>**METHODE "ajouteDuree()" :**
 
 <table>
     <tbody>
@@ -1582,6 +1609,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=result12></a>**METHODE "getQueteActuelle()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1608,6 +1637,8 @@ clé_parcours = 20
 </table>
 
 <hr>
+
+##### <a id=result13></a>**METHODE "queteFinPossibleExhaustive()" :**
 
 <table>
     <tbody>
@@ -1636,6 +1667,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=result14></a>**METHODE "getCle()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1662,6 +1695,8 @@ clé_parcours = 20
 </table>
 
 <hr>
+
+##### <a id=result15></a>**METHODE "compareTo()" :**
 
 <table>
     <tbody>
@@ -1690,6 +1725,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=result16></a>**METHODE "ajouterDeplacement()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1716,6 +1753,8 @@ clé_parcours = 20
 </table>
 
 #### **CLASSE Classement.java :**
+
+##### <a id=result17></a>**METHODE "ajout()" :**
 
 <table>
     <tbody>
@@ -1744,6 +1783,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=result18></a>**METHODE "afficherClassement()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1770,6 +1811,8 @@ clé_parcours = 20
 </table>
 
 <hr>
+
+##### <a id=result19></a>**METHODE "afficherClassement()" :**
 
 <table>
     <tbody>
@@ -1798,6 +1841,8 @@ clé_parcours = 20
 
 #### **CLASSE Algorithme.java :**
 
+##### <a id=result20></a>**METHODE "solutionGloutonneEfficace()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1824,6 +1869,8 @@ clé_parcours = 20
 </table>
 
 <hr>
+
+##### <a id=result21></a>**METHODE "solutionGloutonneExhaustive()" :**
 
 <table>
     <tbody>
@@ -1852,6 +1899,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=result22></a>**METHODE "solutionSpeedrunEfficace()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1878,6 +1927,8 @@ clé_parcours = 20
 </table>
 
 <hr>
+
+##### <a id=result23></a>**METHODE "SolutionSpeedrunExhaustive()" :**
 
 <table>
     <tbody>
@@ -1906,6 +1957,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=result24></a>**METHODE "SolutionEfficaceNbQuete()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1932,6 +1985,8 @@ clé_parcours = 20
 </table>
 
 <hr>
+
+##### <a id=result25></a>**METHODE "SolutionExhaustiveNbQuete()" :**
 
 <table>
     <tbody>
@@ -1960,6 +2015,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=result26></a>**METHODE "SolutionDeplacementEfficace()" :**
+
 <table>
     <tbody>
         <tr>
@@ -1987,6 +2044,8 @@ clé_parcours = 20
 
 <hr>
 
+##### <a id=result27></a>**METHODE "SolutionDeplacementExhaustive()" :**
+
 <table>
     <tbody>
         <tr>
@@ -2013,6 +2072,8 @@ clé_parcours = 20
 </table>
 
 <hr>
+
+##### <a id=result28></a>**METHODE "choixAlgo()" :**
 
 <table>
     <tbody>
