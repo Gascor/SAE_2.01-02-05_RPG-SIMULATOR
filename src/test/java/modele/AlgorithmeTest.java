@@ -344,5 +344,44 @@ class AlgorithmeTest {
         firstKey = Classement.getChTreeParcours().lastKey();
         assertEquals(107,firstKey);
     }
+    @Test
+    void solutionDeplacementExhaustive() {
+        //réinitialise le classement
+        Classement.getChTreeParcours().clear();
+        Scenario s0 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_0" + ".txt"));
+        Algorithme.solutionDeplacementExhaustive(s0);
+        int firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(20,firstKey);
 
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(24,firstKey);
+        Classement.getChTreeParcours().clear();
+        Scenario s1 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_1" + ".txt"));
+        Algorithme.solutionDeplacementExhaustive(s1);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(17,firstKey);
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(23,firstKey);
+        Classement.getChTreeParcours().clear();
+        Scenario s2 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_2" + ".txt"));
+        Algorithme.solutionDeplacementExhaustive(s2);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(39,firstKey);
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(65,firstKey);
+        Classement.getChTreeParcours().clear();
+        Scenario s3 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_3" + ".txt"));
+        Algorithme.solutionDeplacementExhaustive(s3);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(28,firstKey);
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(38,firstKey);
+        Classement.getChTreeParcours().clear();
+        Scenario s4 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_4" + ".txt"));
+        Algorithme.solutionDeplacementExhaustive(s4);
+        firstKey = Classement.getChTreeParcours().firstKey();
+        assertEquals(55,firstKey);
+        firstKey = Classement.getChTreeParcours().lastKey();
+        assertEquals(111,firstKey);
+    }
 }
