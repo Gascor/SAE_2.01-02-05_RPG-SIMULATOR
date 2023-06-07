@@ -363,4 +363,19 @@ public class Algorithme {
         listparcours.add(new Parcours(parScenario, "deplacements"));
         Algorithme.recursiviteDeplacementEfficace(parScenario, listparcours);
     }
+    /**
+     * permet de determiner tout les parcours les plus optimales en terme de nombre de deplacement de manière exhaustive.
+     * @param parScenario (Scenario): scenario qu'utilise les parcours
+     * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     */
+    public static void recursiviteDeplacementExhaustive(Scenario parScenario,ArrayList<Parcours> listparcours){
+        ;
+    }
+    /**
+     * permet de lancer l'algorithme deplacement exhaustive.
+     * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
+     */
+    public static void solutionDeplacementExhaustive(Scenario parScenario){
+        ;
+    }
 }
