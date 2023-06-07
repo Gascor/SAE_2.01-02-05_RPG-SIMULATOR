@@ -142,6 +142,7 @@ class AlgorithmeTest {
     @Test
     void solutionSpeedrunEfficace() {
         //réinitialise le classement
+        System.out.println("Test de la méthode solution speedrun efficace");
         Classement.getChTreeParcours().clear();
         Scenario s0 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_0" + ".txt"));
         Algorithme.solutionSpeedrunEfficace(s0);
@@ -182,6 +183,7 @@ class AlgorithmeTest {
     @Test
     void solutionSpeedrunExhaustive() {
         //réinitialise le classement
+        System.out.println("Test de la méthode solution speedrun exhaustive");
         Classement.getChTreeParcours().clear();
         Scenario s0 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_0" + ".txt"));
         Algorithme.solutionSpeedrunExhaustive(s0);
@@ -222,6 +224,7 @@ class AlgorithmeTest {
     @Test
     void solutionEfficaceNbQuete() {
         //réinitialise le classement
+        System.out.println("Test de la méthode solution efficace nbquete");
         Classement.getChTreeParcours().clear();
         Scenario s0 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_0" + ".txt"));
         Algorithme.solutionEfficaceNbQuete(s0);
@@ -262,6 +265,7 @@ class AlgorithmeTest {
     @Test
     void SolutionExhaustivenbQuete() {
         //réinitialise le classement
+        System.out.println("Test de la méthode solution exhaustive nbquete");
         Classement.getChTreeParcours().clear();
         Scenario s0 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_0" + ".txt"));
         Algorithme.solutionExhaustiveNbQuete(s0);
@@ -302,6 +306,7 @@ class AlgorithmeTest {
     @Test
     void solutionSpeedrunDeplacement() {
         //réinitialise le classement
+        System.out.println("Test de la méthode solution Speedrun deplacement");
         Classement.getChTreeParcours().clear();
         Scenario s0 = LectureFichierTexte.lecture(new File("scenario" + File.separator + "scenario_0" + ".txt"));
         Algorithme.solutionSpeedrunDeplacement(s0);
