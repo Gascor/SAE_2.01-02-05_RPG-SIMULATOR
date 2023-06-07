@@ -84,4 +84,34 @@ public class Launcher {
     public static Scenario[] getListeScenario() {
         return listeScenario;
     }
+    /**
+     * Méthode principale qui affiche la vue principale du programme.
+     *
+     * @throws LauncherException si une erreur se produit pendant l'exécution.
+     */
+    public static void mainView() throws LauncherException {
+        scenarioLoader();
+        int entier = Launcher.choixUtilisateur("▌Dialog▐ ► Quel scénario voulez-vous analyser? :",0,10,0);
+        Scenario scenario = listeScenario[entier];
+        entier = Launcher.choixUtilisateur("▌Dialog▐ ► Quelles est la solution que vous voulez utiliser:" + "\n\n1- Solution efficace" + "\n\n2- Solution exhaustive",1,2,1);
+        int typeSolution = entier;
+        if(typeSolution == 1){
+            entier = Launcher.choixUtilisateur("▌Dialog▐ ► Quel type d'objectif voulez vous:" + "\n\n1- Durée" + "\n\n2- Déplacements"+ "\n\n3- NbQuete",1,3,2);
+        }
+        else{
+            entier = Launcher.choixUtilisateur("▌Dialog▐ ► Quel type d'objectif voulez vous:" + "\n\n1- Durée" + "\n\n2- Déplacements",1,2,1);
+        }
+        int objectif = entier;
+        entier = Launcher.choixUtilisateur2("▌Dialog▐  ► Combien de solutions voulez vous ?",1,3);
+        int nbSolutions = entier;
+        entier = Launcher.choixUtilisateur("▌Dialog▐ ► Choisissez entre les meilleurs solutions ou les pires solutions:" + "\n\n1- Meilleurs choix" + "\n\n2- Pires choix",1,2,1);
+        int nbChoix = entier;
+        Algorithme.choixAlgo(scenario,typeSolution,objectif);
+        try {
+            Classement.afficherClassement(nbSolutions,nbChoix);
+        }
+        catch (ClassementException e){
+            System.out.println(e.getCodeErreur());
+        }
+    }
 }
