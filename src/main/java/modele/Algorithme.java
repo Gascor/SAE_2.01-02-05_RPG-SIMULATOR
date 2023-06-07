@@ -99,4 +99,11 @@ public class Algorithme {
         listparcours.add(new Parcours(parScenario,"duree"));
         Algorithme.recursiviteGlutonneExhaustive(parScenario,listparcours);
     }
+    /**
+     * permet de lancer l'algorithme speedrun efficace
+     * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
+     */
+    public static void solutionSpeedrunEfficace(Scenario parScenario){
+        ;
+    }
 }
