@@ -59,6 +59,12 @@ public class Classement {
         if (parcoursaffiche !=nbSolutions) {
             throw new ClassementException(0);
         }
+    }/**
+     * permet de changer la valeur de NBSolutionsTotales
+     * @param chNbSolutionsTotales: nouvelle valeur de chNbSolutionsTotales
+     */
+    public static void setChNbSolutionsTotales(int chNbSolutionsTotales) {
+        Classement.chNbSolutionsTotales = chNbSolutionsTotales;
     }
     /**
      * permet d'enlever des parcours au Classement s'ils ne correspondent plus à nos critéres
