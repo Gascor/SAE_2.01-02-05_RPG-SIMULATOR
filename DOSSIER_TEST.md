@@ -1128,6 +1128,40 @@ clé_parcours = 20
 |   P3   | scenario 3 | minDeplacements = 28 ,  maxDeplacements = 38 |
 |   P4   | scenario 4 | minDeplacements = 55 ,  maxDeplacements =111 |
 
+<hr>
+
+* Choix de la partition : la partition est que le type de solution est soit Efficace ou exhaustive, donc soit 1 soit 2, puis l'objectif est soit de speedrun soit le deplacement et soit le nombre de quete, respectivement 1, 2 ou 3.
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : choixAlgo()</td>
+            <td style='border: 1px solid black;text-align: left'>Version : 1.0</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Description du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "choixAlgo()" en utilisant la méthode des boites noires.</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
+            <td style='border: 1px solid black;text-align: left'>IntelliJ IDEA 2022.3.2, la machine cité plus haut </td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable de la campagne de test : </td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+    </tbody>
+</table>
+
+| Classe | typesolution | objectifsolution |                  Résultat                  |
+|:------:|:------------:|:----------------:|:------------------------------------------:|
+|   P0   |      1       |        1         |   solutionSpeedrunEfficace(parScenario)    |
+|   P1   |      1       |        2         |  solutionDeplacementEfficace(parScenario)  |
+|   P2   |      1       |        3         |    solutionEfficaceNbQuete(parScenario)    |
+|   P3   |      2       |        1         |  solutionSpeedrunExhaustive(parScenario)   |
+|   P4   |      2       |        2         | solutionDeplacementExhaustive(parScenario) |
+|   P5   |      2       |        3         |   solutionExhaustiveNbQuete(parScenario)   |
+
 ### 3.3 Résultats
 
 #### **CLASSE Quete.java :**
@@ -1882,6 +1916,33 @@ clé_parcours = 20
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
             <td style='border: 1px solid black;text-align: left'>Systématique</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : </td>
+            <td style='border: 1px solid black;text-align: left'>choixAlgo()</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Responsable :</td>
+            <td style='border: 1px solid black;text-align: left'>Lucas DA SILVA FERREIRA & Baptiste FOURNIE</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Date d'application du test :</td>
+            <td style='border: 1px solid black;text-align: left'>03/06/2023</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Résultat :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
+            <td style='border: 1px solid black;text-align: left'>non fait</td>
         </tr>
     </tbody>
 </table>
