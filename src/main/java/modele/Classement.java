@@ -6,6 +6,7 @@ import java.util.TreeMap;
 
 public class Classement {
     private static TreeMap<Integer, ArrayList<Parcours>> chTreeParcours = new TreeMap<>();
+    private static int chNbSolutionsTotales = 0;
 
     /**
      * ajoute le parcours finis dans le classement
