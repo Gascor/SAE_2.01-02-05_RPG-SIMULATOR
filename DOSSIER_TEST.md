@@ -1677,7 +1677,7 @@ clé_parcours = 20
 <table>
     <tbody>
         <tr>
-            <td style='border: 1px solid black;text-align: left'>Identification du test :</td>
+            <td style='border: 1px solid black;text-align: left'>Identification du test : </td>
             <td style='border: 1px solid black;text-align: left'>SolutionExhaustiveNbQuete()</td>
         </tr>
         <tr>
@@ -1690,11 +1690,11 @@ clé_parcours = 20
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Résultat :</td>
-            <td style='border: 1px solid black;text-align: left'>OK</td>
+            <td style='border: 1px solid black;text-align: left'>OK </td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Occurences des résultats :</td>
-            <td style='border: 1px solid black;text-align: left'>Systématique</td>
+            <td style='border: 1px solid black;text-align: left'>Systématique </td>
         </tr>
     </tbody>
 </table>
