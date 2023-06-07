@@ -90,7 +90,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test Unitaire sur la méthode "extraitPrecond()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -135,7 +135,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "extraitPos()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "extraitPos()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -168,7 +168,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "testprecondition() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "testprecondition() en utilisant la méthode des boites noires."</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -201,7 +201,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "distanceQuete() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire  sur la méthode "distanceQuete() en utilisant la méthode des boites noires."</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -250,7 +250,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "queteProche() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "queteProche() en utilisant la méthode des boites noires."</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -287,7 +287,7 @@ Ces tests seront appliqué de manière récursif à chaque ajout de méthode, il
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "quetePossible() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "quetePossible() en utilisant la méthode des boites noires."</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -338,7 +338,7 @@ liste id = {1,2,3,4}
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "compareTo() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "compareTo() en utilisant la méthode des boites noires."</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -375,7 +375,7 @@ liste id = {1,2,3,4}
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "extraitQuete() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "extraitQuete() en utilisant la méthode des boites noires."</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -410,7 +410,7 @@ quete 0 = quete fin
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "queteFinPossibleEfficace() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "queteFinPossibleEfficace() en utilisant la méthode des boites noires."</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -451,7 +451,7 @@ liste id = {1,2,3}
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "compareTo() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "compareTo() en utilisant la méthode des boites noires."</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -488,7 +488,7 @@ liste id = {1,2,3}
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "quetesPossibles() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "quetesPossibles() en utilisant la méthode des boites noires."</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -529,7 +529,7 @@ ensQueteNonFaite = (Quete3,Quete4,Quete2)
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "ajouteDuree() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "ajouteDuree() en utilisant la méthode des boites noires."</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -569,7 +569,7 @@ Ancienne duree = 10
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "getQueteActuelle()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "getQueteActuelle()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -604,7 +604,7 @@ Ancienne duree = 10
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "queteFinPossibleExhaustive()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "queteFinPossibleExhaustive()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -647,7 +647,7 @@ Ancienne duree = 10
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "getCle()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "getCle()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -688,7 +688,7 @@ parcours.quetesfaites.size() = 5
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "compareTo() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "compareTo() en utilisant la méthode des boites noires."</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -737,7 +737,7 @@ parcours.quetesfaites.size() = 5
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "ajouterDeplacement() en utilisant la méthode des boites noires."</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "ajouterDeplacement() en utilisant la méthode des boites noires."</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -777,7 +777,7 @@ ancien dépalcement = 4
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "ajout()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "ajout()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -814,7 +814,7 @@ clé_parcours = 20
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "afficherClassement()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "afficherClassement()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -846,7 +846,7 @@ clé_parcours = 20
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "afficherClassement()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "afficherClassement()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -881,7 +881,7 @@ clé_parcours = 20
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "solutionGloutonneEfficace()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "solutionGloutonneEfficace()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -914,7 +914,7 @@ clé_parcours = 20
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "solutionGloutonneExhaustive()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "solutionGloutonneExhaustive()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -949,7 +949,7 @@ clé_parcours = 20
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "solutionSpeedrunEfficace()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "solutionSpeedrunEfficace()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -982,7 +982,7 @@ clé_parcours = 20
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "SolutionSpeedrunExhaustive()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "SolutionSpeedrunExhaustive()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -1015,7 +1015,7 @@ clé_parcours = 20
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "SolutionEfficaceNbQuete()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "SolutionEfficaceNbQuete()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -1048,7 +1048,7 @@ clé_parcours = 20
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "SolutionExhaustiveNbQuete()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "SolutionExhaustiveNbQuete()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -1081,7 +1081,7 @@ clé_parcours = 20
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "SolutionDeplacementEfficace()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire  sur la méthode "SolutionDeplacementEfficace()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -1114,7 +1114,7 @@ clé_parcours = 20
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "SolutionDeplacementExhaustive()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "SolutionDeplacementExhaustive()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
@@ -1147,7 +1147,7 @@ clé_parcours = 20
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Description du test :</td>
-            <td style='border: 1px solid black;text-align: left'>Test sur la méthode "choixAlgo()" en utilisant la méthode des boites noires.</td>
+            <td style='border: 1px solid black;text-align: left'>Test unitaire sur la méthode "choixAlgo()" en utilisant la méthode des boites noires.</td>
         </tr>
         <tr>
             <td style='border: 1px solid black;text-align: left'>Ressources requises : </td>
