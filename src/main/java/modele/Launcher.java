@@ -76,4 +76,12 @@ public class Launcher {
         }
         return entier;
     }
+    /**
+     * Renvoie la liste des scénarios chargés en mémoire.
+     *
+     * @return La liste des scénarios chargés en mémoire.
+     */
+    public static Scenario[] getListeScenario() {
+        return listeScenario;
+    }
 }
