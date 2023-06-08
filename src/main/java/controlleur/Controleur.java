@@ -28,6 +28,7 @@ public class Controleur implements EventHandler<ActionEvent> {
                 int[] tabChoix = VBoxRoot.getFormulaire().getChoix();
                 if (tabChoix != null) {
                     Classement.getChTreeParcours().clear();
+                    Classement.setChNbSolutionsTotales(0);
                     Algorithme.choixAlgo(scenario, tabChoix[1], tabChoix[2],tabChoix[0],tabChoix[3]);
                     VBoxRoot.getClassementBox().afficher(tabChoix[0], tabChoix[3], tabChoix[2]);
                 }
