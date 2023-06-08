@@ -6,4 +6,5 @@ public interface ConstantesErreurs {
     };
     String [] ERREURS_LAUNCHER = {"le nombre n'est pas entre 0 et 10 inclus","le nombre n'est pas entre 1 et 2 inclus","le nombre n'est pas entre 1 et 3 inclus","le nombre doit être positif"
     };
+    String [] ERREURS_FORMULAIRE = {"le nombre mis n'est pas du tout positif!"};
 }
