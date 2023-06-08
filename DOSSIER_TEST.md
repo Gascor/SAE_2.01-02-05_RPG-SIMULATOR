@@ -2292,3 +2292,5 @@ parcours dans le classement se nommera parcoursClass
 <a href="#home">retour au sommaire</a>
 
 ### 3.4. Conclusions
+
+Chacune des méthodes des classes du package modéle testé marchent . Ils n’y  pas de bugs qui ont été trouvés. Les tests unitaires sont finies.Aucune erreur à été détécté. Nous pouvons passé à la crétion de l'interface utilisateur.
