@@ -175,4 +175,16 @@ public class Quete implements Comparable <Quete> {
     public int getExperience() {
         return experience;
     }
+    /**
+     * Retourne la représentation sous forme de chaîne de caractères des préconditions de la quête.
+     *
+     * @return Une chaîne de caractères représentant les préconditions de la quête.
+     */
+    public String getStringPrecond(){ return Arrays.toString(precond);}
+    /**
+     * Retourne la représentation sous forme de chaîne de caractères de la position de la quête sur la carte.
+     *
+     * @return Une chaîne de caractères représentant la position de la quête sur la carte.
+     */
+    public String getStringPos(){ return Arrays.toString(pos);}
 }
