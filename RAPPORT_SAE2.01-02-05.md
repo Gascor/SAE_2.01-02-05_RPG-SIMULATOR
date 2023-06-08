@@ -78,15 +78,17 @@ Le diagramme de bas niveau permet de voir toutes les classes avec leur attributs
 
 [![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/MODELE2.png)]()
 
-
 **LES CLASSES DE LA VUE :**
 
 [![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/VUE2.png)]()
+
+On peut également voir que le diagramme de classe du package "vue", On voit que VboxRoot est la classe majeure de rue . Elle posséde des attributs  de toutes les autres classes de vue. RPG Application peremet de lancer l'application.
 
 **LES CLASSES DU CONTROLEUR :**
 
 [![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/CONTROLEUR2.png)]()
 
+Pour finir on voit que le diagramme de classe du package "controlleur", Elle  hérite de EventHander et ne posséde qu'une méthode handle qui permet à l'utilisateur d'intéragir avec utilisateur. Elle ne posséde pas d'attribut.
 
 **Structure de données et stratégies algorithmiques :**
 
@@ -186,7 +188,11 @@ Classement.ajout(parparcours);
     }
 }
 </code>
-* 
+
+On voit ici qu'il y a deux contextes, l'efficace et l'exhaustive, et que la solution gloutonne est le contexte dans lequel le joueur fait tout les quetes les plus proches. Il y a une méthode pour une paire (contexte/objectif). ici respectivement (efficace/glouton) et (exhaustif/glouton).
+
+Cette méthodologie d'algorithmie (efficace/exhaustif) est faite pour tout les objectifs combiné par un choix entre le pire ou les meilleurs solutions.
+
 <hr>
 
 ## <a id="part3"></a>**Conclusion Générale**
