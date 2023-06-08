@@ -3,7 +3,6 @@ package vue;
 
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import modele.Launcher;
 import modele.Quete;
