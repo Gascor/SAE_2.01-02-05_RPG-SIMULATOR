@@ -77,11 +77,11 @@ Le diagramme de bas niveau permet de voir toutes les classes avec leur attributs
 
 MODELE :
 
-[![](mdsrc/MODELE2.PNG)]()
+[![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/MODELE2.png)]()
 
 VUE :
 
-[![](mdsrc/VUE2.PNG)]()
+[![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/VUE2.png)]()
 
 CONTROLEUR :
 
