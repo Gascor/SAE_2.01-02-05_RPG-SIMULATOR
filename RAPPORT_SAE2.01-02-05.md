@@ -59,31 +59,31 @@ Méthodes agiles : Les méthodes agiles, telles que Scrum ou Kanban, mettent l'a
 
 Le diagramme de haut niveau permet de voir toutes les classes mais sans leur attributs, ni leurs méthodes.
 
-MODELE :
+**LES CLASSES DU MODELE :**
 
-[![](mdsrc/MODELE1.PNG)]()
+[![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/MODELE1.png)]()
 
-VUE :
+**LES CLASSES DE LA VUE :**
 
-[![](mdsrc/VUE1.PNG)]()
+[![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/VUE1.png)]()
 
-CONTROLEUR :
+**LES CLASSES DU CONTROLEUR :**
 
-[![](mdsrc/CONTROLEUR1.PNG)]()
+[![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/CONTROLEUR1.png)]()
 
-**Diagramme de Bas Niveau :**
+### **Diagramme de Bas Niveau :**
 
 Le diagramme de bas niveau permet de voir toutes les classes avec leur attributs et leurs méthodes.
 
-MODELE :
+**LES CLASSES DU MODELE :**
 
 [![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/MODELE2.png)]()
 
-VUE :
+**LES CLASSES DE LA VUE :**
 
 [![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/VUE2.png)]()
 
-CONTROLEUR :
+**LES CLASSES DU CONTROLEUR :**
 
 [![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/CONTROLEUR2.png)]()
 
