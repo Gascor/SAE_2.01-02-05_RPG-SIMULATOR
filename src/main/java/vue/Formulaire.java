@@ -79,6 +79,41 @@ public class Formulaire extends GridPane {
         add(labelErreur, 2, 12, 6, 2);
     }
     /**
+     * Récupère les choix spécifiés par l'utilisateur dans le formulaire.
+     *
+     * @return Un tableau d'entiers représentant les choix spécifiés (nombre de solutions, type de solutions, objectif, choix).
+     * @throws FormulaireException Si une erreur se produit lors de la récupération des choix.
+     */
+    public int[] getChoix() throws FormulaireException {
+        int[] tabChoix = new int[4];
+        try {
+            String stringSolutions = fieldSolutions.getText();
+            int nbSolutions = Integer.parseInt(stringSolutions);
+            if (nbSolutions <= 0) {
+                throw new FormulaireException(0);
+            }
+            tabChoix[0] = nbSolutions;
+        } catch (NumberFormatException e) {
+            labelErreur.setText("Veuillez entrer un nombre positif.");
+            return null;
+        } catch (FormulaireException e) {
+            labelErreur.setText(e.getCodeErreur());
+        }
+        Object solutionsObj = this.groupeSolutions.getSelectedToggle().getUserData();
+        int solutions = (int) solutionsObj;
+        System.out.println(solutions);
+        tabChoix[1] = solutions;
+        Object objectifObj = this.groupeObjectif.getSelectedToggle().getUserData();
+        int objectif = (int) objectifObj;
+        System.out.println(objectif);
+        tabChoix[2] = objectif;
+        Object choixObj = this.groupeChoix.getSelectedToggle().getUserData();
+        int choix = (int) choixObj;
+        System.out.println(choix);
+        tabChoix[3] = choix;
+        return tabChoix;
+    }
+    /**
      * Réinitialise les valeurs du formulaire.
      */
     public void reset() {
