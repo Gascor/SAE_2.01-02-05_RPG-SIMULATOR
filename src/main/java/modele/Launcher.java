@@ -106,7 +106,7 @@ public class Launcher {
         int nbSolutions = entier;
         entier = Launcher.choixUtilisateur("▌Dialog▐ ► Choisissez entre les meilleurs solutions ou les pires solutions:" + "\n\n1- Meilleurs choix" + "\n\n2- Pires choix",1,2,1);
         int nbChoix = entier;
-        Algorithme.choixAlgo(scenario,typeSolution,objectif);
+        Algorithme.choixAlgo(scenario,typeSolution,objectif,nbSolutions,nbChoix);
         try {
             Classement.afficherClassement(nbSolutions,nbChoix);
         }
