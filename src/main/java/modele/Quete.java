@@ -3,7 +3,7 @@ package modele;
 import java.util.*;
 /**
  * Cette classe représente une quête.
- * Elle implémente l'interface Comparable<Quete> pour permettre la comparaison entre les quêtes.
+ * Elle implémente l'interface Comparable Quete  pour permettre la comparaison entre les quêtes.
  */
 public class Quete implements Comparable <Quete> {
 
@@ -129,9 +129,9 @@ public class Quete implements Comparable <Quete> {
     /**
      * compare les id entre les deux quetes
      * @param parquete : une autre quete
-     * @return <0: si l'id de this est inférieur a l'id de parquete
-     *         =0: si l'id de this est égale a l'id de parquete
-     *         >0: si l'id de this est supérieure a l'id de parquete
+     * @return inferieur à 0: si l'id de this est inférieur a l'id de parquete
+     *         égale à 0: si l'id de this est égale a l'id de parquete
+     *         supérieur à 0: si l'id de this est supérieure a l'id de parquete
      */
     public int compareTo(Quete parquete){
         return this.numero - parquete.numero;

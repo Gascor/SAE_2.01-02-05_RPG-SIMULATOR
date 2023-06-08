@@ -46,8 +46,8 @@ public class Parcours {
     }
     /**
      * crée un Treeset des quetes sans la quete 0
-     * @param treeq (TreeSet<Quete>) : est le treeSet de toutes les quetes du scénario
-     * @return treeQueteNonFaite ((TreeSet<Quete>): est l'ensemble des quetes non faites au début
+     * @param treeq (TreeSet Quete ) : est le treeSet de toutes les quetes du scénario
+     * @return treeQueteNonFaite ((TreeSet Quete ): est l'ensemble des quetes non faites au début
      */
     public TreeSet <Quete> extraitQuete(TreeSet<Quete> treeq){
         TreeSet<Quete> treeQueteNonFaite = new TreeSet<>(treeq);
@@ -76,7 +76,7 @@ public class Parcours {
     }
     /**
      * retoune les quetes non faites actuelles du parcours
-     * @return quetesNonFaite (TreeSet<Quete>): represenle les quetes non faites du parcours
+     * @return quetesNonFaite (TreeSet Quete ): represenle les quetes non faites du parcours
      */
     public TreeSet<Quete> getQuetesNonFaite() {
         return quetesNonFaite;
@@ -84,7 +84,7 @@ public class Parcours {
 
     /**
      * retoune les quetes non faites actuelles du parcours
-     * @return chQuetesFaite (LinkedHashMap<Integer,Quete>): represente les quetes faites du parcours
+     * @return chQuetesFaite (LinkedHashMap Integer,Quete ): represente les quetes faites du parcours
      */
     public LinkedHashMap<Integer,Quete> getQuetesFaite() {
         return chQuetesFaite;
@@ -134,9 +134,9 @@ public class Parcours {
     /**
      * compare les durées entre deux parcours
      * @param parparcours : un autre parcours
-     * @return <0: si la duree (ou nbQuete ou deplacements) de this est inférieur a la duree (ou nbQuete ou deplacements) de parparcours
-     *         =0: si la duree (ou nbQuete ou deplacements) de this est égale a la duree (ou nbQuete ou deplacements) de parparcours
-     *         >0: si la duree (ou nbQuete ou deplacements) de this est supérieure a la duree (ou nbQuete ou deplacements) de parparcours
+     * @return inférieur à 0: si la duree (ou nbQuete ou deplacements) de this est inférieur a la duree (ou nbQuete ou deplacements) de parparcours
+     *         égale à 0: si la duree (ou nbQuete ou deplacements) de this est égale a la duree (ou nbQuete ou deplacements) de parparcours
+     *         supérieur à 0: si la duree (ou nbQuete ou deplacements) de this est supérieure a la duree (ou nbQuete ou deplacements) de parparcours
      */
     public int compareTo(Parcours parparcours) {
         if (chComparatif.equals("duree")) {
@@ -168,7 +168,7 @@ public class Parcours {
     }
     /**
      * retourne les quetes qui sont possibles à faire pour le parcours
-     * @return ensQuetePossible ( HashSet<Quete>): les quetes possibles à faire pour le parcours
+     * @return ensQuetePossible ( HashSet Quete ): les quetes possibles à faire pour le parcours
      */
     public HashSet<Quete> getQuetePossible() {
         return ensQuetePossible;

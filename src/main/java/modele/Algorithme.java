@@ -10,7 +10,7 @@ public class Algorithme {
     /**
      * permet de déterminer tous les parcours gloutons du scenario
      * @param parScenario (Scenario): scenario qu'utilise les parcours
-     * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     * @param listparcours ( ArrayList Parcours ): liste chronologique des parcours ajoutés
      */
     public static void recursiviteGloutonneEfficace(Scenario parScenario,ArrayList<Parcours> listparcours){
         Parcours parparcours = listparcours.get(listparcours.size() -1);
@@ -65,7 +65,7 @@ public class Algorithme {
     /**
      * permet de déterminer le chemin le plus court en faisant toutes les quêtes
      * @param parScenario (Scenario): scenario qu'utilise les parcours
-     * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     * @param listparcours ( ArrayList Parcours ): liste chronologique des parcours ajoutés
      */
     public static void recursiviteGlutonneExhaustive(Scenario parScenario,ArrayList<Parcours> listparcours){
         Parcours parparcours = listparcours.get(listparcours.size() -1);
@@ -119,7 +119,7 @@ public class Algorithme {
     /**
      * permet de determiner tout les parcours les plus optimale en terme de durée de manière efficace.
      * @param parScenario (Scenario): scenario qu'utilise les parcours
-     * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     * @param listparcours ( ArrayList Parcours ): liste chronologique des parcours ajoutés
      * @param parsolutions (int): nombre de solutions voulues
      * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
      *                                                                                                         : 2 represente les pires solutions
@@ -177,7 +177,7 @@ public class Algorithme {
     /**
      * permet de determiner tout les parcours les plus optimale en terme de durée de manière exhaustif.
      * @param parScenario (Scenario): scenario qu'utilise les parcours
-     * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     * @param listparcours ( ArrayList Parcours ): liste chronologique des parcours ajoutés
      * @param parsolutions (int): nombre de solutions voulues
      * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
      *                                                                                                        : 2 represente les pires solutions
@@ -235,7 +235,7 @@ public class Algorithme {
     /**
      * permet de determiner tout les parcours les plus optimales en terme de nombre de quete de manière efficace.
      * @param parScenario (Scenario): scenario qu'utilise les parcours
-     * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     * @param listparcours ( ArrayList Parcours ): liste chronologique des parcours ajoutés
      * @param parsolutions (int): nombre de solutions voulues
      * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
      *                                                                                                         : 2 represente les pires solutions
@@ -288,7 +288,7 @@ public class Algorithme {
     /**
      * permet de determiner tout les parcours les plus optimales en terme de nombre de quete de manière exhaustive.
      * @param parScenario (Scenario): scenario qu'utilise les parcours
-     * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     * @param listparcours ( ArrayList Parcours ): liste chronologique des parcours ajoutés
      * @param parsolutions (int): nombre de solutions voulues
      * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
      *                                                                                                         : 2 represente les pires solutions
@@ -341,7 +341,7 @@ public class Algorithme {
     /**
      * permet de determiner tout les parcours les plus optimales en terme de nombre de deplacement de manière efficace.
      * @param parScenario (Scenario): scenario qu'utilise les parcours
-     * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     * @param listparcours ( ArrayList Parcours ): liste chronologique des parcours ajoutés
      * @param parsolutions (int): nombre de solutions voulues
      * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
      *                                                                                                         : 2 represente les pires solutions
@@ -399,7 +399,7 @@ public class Algorithme {
     /**
      * permet de determiner tout les parcours les plus optimales en terme de nombre de deplacement de manière exhaustive.
      * @param parScenario (Scenario): scenario qu'utilise les parcours
-     * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     * @param listparcours ( ArrayList Parcours ): liste chronologique des parcours ajoutés
      * @param parsolutions (int): nombre de solutions voulues
      * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
      *                                                                                                         : 2 represente les pires solutions

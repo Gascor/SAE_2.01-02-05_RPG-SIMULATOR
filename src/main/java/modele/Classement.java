@@ -26,7 +26,7 @@ public class Classement {
     }
     /**
      * retourne les parcours triées selon une caractériqtique précise
-     * @return chTreeParcours (TreeMap<Integer, ArrayList<Parcours>>): les parcours triées selon une caractériqtique précise
+     * @return chTreeParcours (TreeMap Integer, ArrayList Parcours  ): les parcours triées selon une caractériqtique précise
      */
     public static TreeMap<Integer, ArrayList<Parcours>> getChTreeParcours() {
         return chTreeParcours;

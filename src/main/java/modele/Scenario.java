@@ -29,7 +29,7 @@ public class Scenario {
     }
     /**
      * retoune tous les quetes triées par leur id dans l'ordre croissant
-     * @return treeQuete (TreeSet<Quete>): represente les quetes triées dans l'ordre par leur id
+     * @return treeQuete (TreeSet Quete ): represente les quetes triées dans l'ordre par leur id
      */
     public TreeSet<Quete> getTreeQuete() {
         return treeQuete;
