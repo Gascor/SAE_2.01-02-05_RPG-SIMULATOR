@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * Cette classe permet de lire les fichiers de Scenario. Elle génére les scenerio.
+ */
 public class LectureFichierTexte {
     /**
      * lis un fichier scenario. Crée le scénario avec ses quetes

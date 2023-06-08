@@ -2,6 +2,9 @@ package modele;
 
 import java.util.*;
 
+/**
+ *  Cette classe permet de classifier et réguler les parcours
+ */
 public class Classement {
     private static TreeMap<Integer, ArrayList<Parcours>> chTreeParcours = new TreeMap<>();
     private static int chNbSolutionsTotales = 0;

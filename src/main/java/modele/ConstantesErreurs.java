@@ -1,5 +1,7 @@
 package modele;
-
+/**
+ * L'interface ConstantesErreur définit les constantes liées aux erreurs du système.
+ */
 public interface ConstantesErreurs {
     String [] ERREURS_CLASSEMENTS = {
             "le nombre de solutions voulu est inférieure au nombre de parcours possibles!"

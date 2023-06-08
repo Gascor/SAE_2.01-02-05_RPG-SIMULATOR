@@ -2,6 +2,9 @@ package modele;
 
 import java.util.TreeSet;
 
+/**
+ * Cette classe permet de répresenter sous formes de quetes un fichier scenario.
+ */
 public class Scenario {
     private final TreeSet<Quete> treeQuete;
     private int nbQuete;

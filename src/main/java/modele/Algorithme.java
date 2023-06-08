@@ -3,6 +3,9 @@ package modele;
 import java.util.ArrayList;
 import java.util.HashSet;
 
+/**
+ * Classe qui permet de lancer les algorithmes. Elle va génerer des parcours
+ */
 public class Algorithme {
     /**
      * permet de déterminer tous les parcours gloutons du scenario

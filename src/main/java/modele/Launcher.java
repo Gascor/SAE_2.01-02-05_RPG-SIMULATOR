@@ -3,6 +3,9 @@ package modele;
 import java.io.File;
 import java.util.Scanner;
 
+/**
+ * Cette classe permet de lancer Un algorithme selon le choix de l'utilisateur
+ */
 public class Launcher {
     /**
      * Liste des scénarios chargés en mémoire.
