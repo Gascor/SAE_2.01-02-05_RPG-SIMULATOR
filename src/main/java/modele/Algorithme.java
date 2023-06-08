@@ -117,8 +117,11 @@ public class Algorithme {
      * permet de determiner tout les parcours les plus optimale en terme de durée de manière efficace.
      * @param parScenario (Scenario): scenario qu'utilise les parcours
      * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     * @param parsolutions (int): nombre de solutions voulues
+     * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
+     *                                                                                                         : 2 represente les pires solutions
      */
-    public static void recursiviteSpeedrunEfficace(Scenario parScenario,ArrayList<Parcours> listparcours){
+    public static void recursiviteSpeedrunEfficace(Scenario parScenario,ArrayList<Parcours> listparcours,int parsolutions,int parChoix){
         Parcours parparcours = listparcours.get(listparcours.size() -1);
         //regarde si la quete 0 est possible
         if ((parparcours.queteFinPossibleEfficace())){
@@ -126,7 +129,7 @@ public class Algorithme {
             parparcours.ajouteDuree(parparcours.getQueteFin());
             parparcours.ajouteQueteFaite(parparcours.getQueteFin());
             // rajoute le parcours finis au classement
-            Classement.ajout(parparcours);
+            Classement.regulationParcours(parsolutions,parparcours,parChoix);
 
         }
         else{
@@ -137,7 +140,7 @@ public class Algorithme {
                 parparcours.ajouteDuree(q);
                 parparcours.ajoutexp(q.getExperience());
                 parparcours.ajouteQueteFaite(q);
-                Algorithme.recursiviteSpeedrunEfficace(parScenario,listparcours);
+                Algorithme.recursiviteSpeedrunEfficace(parScenario,listparcours, parsolutions, parChoix);
                 parparcours = listparcours.get(listparcours.size() - 1);
                 // crée un nouveau parcours sur la base du parcours actuelle
                 listparcours.add(new Parcours(parScenario, parparcours.getChexp(), parparcours.getduree(),0, "duree", parparcours.getQuetesFaite(), parparcours.getQuetesNonFaite(), new HashSet<>()));
@@ -159,18 +162,24 @@ public class Algorithme {
     /**
      * permet de lancer l'algorithme speedrun efficace.
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
+     *@param parsolutions (int): nombre de solutions voulues
+     *@param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
+     *                                                                                                        : 2 represente les pires solutions
      */
-    public static void solutionSpeedrunEfficace(Scenario parScenario){
+    public static void solutionSpeedrunEfficace(Scenario parScenario, int parsolutions, int parChoix){
         ArrayList<Parcours> listparcours = new ArrayList<>();
         listparcours.add(new Parcours(parScenario, "duree"));
-        Algorithme.recursiviteSpeedrunEfficace(parScenario, listparcours);
+        Algorithme.recursiviteSpeedrunEfficace(parScenario, listparcours,parsolutions,parChoix);
     }
     /**
      * permet de determiner tout les parcours les plus optimale en terme de durée de manière exhaustif.
      * @param parScenario (Scenario): scenario qu'utilise les parcours
      * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     * @param parsolutions (int): nombre de solutions voulues
+     * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
+     *                                                                                                        : 2 represente les pires solutions
      */
-    public static void recursiviteSpeedrunExhaustive(Scenario parScenario,ArrayList<Parcours> listparcours){
+    public static void recursiviteSpeedrunExhaustive(Scenario parScenario,ArrayList<Parcours> listparcours,int parsolutions,int parChoix){
         Parcours parparcours = listparcours.get(listparcours.size() -1);
         //regarde si la quete 0 est possible
         if ((parparcours.queteFinPossibleExhaustive())){
@@ -178,7 +187,7 @@ public class Algorithme {
             parparcours.ajouteDuree(parparcours.getQueteFin());
             parparcours.ajouteQueteFaite(parparcours.getQueteFin());
             // rajoute le parcours finis au classement
-            Classement.ajout(parparcours);
+            Classement.regulationParcours(parsolutions,parparcours,parChoix);
 
         }
         else{
@@ -189,7 +198,7 @@ public class Algorithme {
                 parparcours.ajouteDuree(q);
                 parparcours.ajoutexp(q.getExperience());
                 parparcours.ajouteQueteFaite(q);
-                Algorithme.recursiviteSpeedrunExhaustive(parScenario,listparcours);
+                Algorithme.recursiviteSpeedrunExhaustive(parScenario,listparcours, parsolutions, parChoix);
                 parparcours = listparcours.get(listparcours.size() - 1);
                 // crée un nouveau parcours sur la base du parcours actuelle
                 listparcours.add(new Parcours(parScenario, parparcours.getChexp(), parparcours.getduree(),0, "duree", parparcours.getQuetesFaite(), parparcours.getQuetesNonFaite(), new HashSet<>()));
@@ -211,24 +220,30 @@ public class Algorithme {
     /**
      * permet de lancer l'algorithme speedrun exhaustive.
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
+     * @param parsolutions (int): nombre de solutions voulues
+     * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
+     *                                                                                                         : 2 represente les pires solutions
      */
-    public static void solutionSpeedrunExhaustive(Scenario parScenario){
+    public static void solutionSpeedrunExhaustive(Scenario parScenario, int parsolutions, int parChoix){
         ArrayList<Parcours> listparcours = new ArrayList<>();
         listparcours.add(new Parcours(parScenario, "duree"));
-        Algorithme.recursiviteSpeedrunExhaustive(parScenario, listparcours);
+        Algorithme.recursiviteSpeedrunExhaustive(parScenario,listparcours, parsolutions, parChoix);
     }
     /**
      * permet de determiner tout les parcours les plus optimales en terme de nombre de quete de manière efficace.
      * @param parScenario (Scenario): scenario qu'utilise les parcours
      * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     * @param parsolutions (int): nombre de solutions voulues
+     * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
+     *                                                                                                         : 2 represente les pires solutions
      */
-    public static void recursiviteEfficaceNbquete(Scenario parScenario,ArrayList<Parcours> listparcours){
+    public static void recursiviteEfficaceNbquete(Scenario parScenario,ArrayList<Parcours> listparcours,int parsolutions,int parChoix){
         Parcours parparcours = listparcours.get(listparcours.size() -1);
         if ((parparcours.queteFinPossibleEfficace())){
             // rajoute la quête
             parparcours.ajouteQueteFaite(parparcours.getQueteFin());
             // rajoute le parcours finis au classement
-            Classement.ajout(parparcours);
+            Classement.regulationParcours(parsolutions,parparcours,parChoix);
 
         }
         else{
@@ -238,7 +253,7 @@ public class Algorithme {
             for (Quete q: ensQuetePossible){
                 parparcours.ajoutexp(q.getExperience());
                 parparcours.ajouteQueteFaite(q);
-                Algorithme.recursiviteEfficaceNbquete(parScenario,listparcours);
+                Algorithme.recursiviteEfficaceNbquete(parScenario,listparcours, parsolutions, parChoix);
                 parparcours = listparcours.get(listparcours.size() - 1);
                 // crée un nouveau parcours sur la base du parcours actuelle
                 listparcours.add(new Parcours(parScenario, parparcours.getChexp(), parparcours.getduree(),0, "nbQuete", parparcours.getQuetesFaite(), parparcours.getQuetesNonFaite(), new HashSet<>()));
@@ -258,24 +273,30 @@ public class Algorithme {
     /**
      * permet de lancer l'algorithme efficace nbquete.
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
+     * @param parsolutions (int): nombre de solutions voulues
+     * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
+     *                                                                                                         : 2 represente les pires solutions
      */
-    public static void solutionEfficaceNbQuete(Scenario parScenario) {
+    public static void solutionEfficaceNbQuete(Scenario parScenario, int parsolutions, int parChoix) {
         ArrayList<Parcours> listparcours = new ArrayList<>();
         listparcours.add(new Parcours(parScenario, "nbQuete"));
-        Algorithme.recursiviteEfficaceNbquete(parScenario, listparcours);
+        Algorithme.recursiviteEfficaceNbquete(parScenario,listparcours, parsolutions, parChoix);
     }
     /**
      * permet de determiner tout les parcours les plus optimales en terme de nombre de quete de manière exhaustive.
      * @param parScenario (Scenario): scenario qu'utilise les parcours
      * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     * @param parsolutions (int): nombre de solutions voulues
+     * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
+     *                                                                                                         : 2 represente les pires solutions
      */
-    public static void recursiviteExhaustiveNbquete(Scenario parScenario,ArrayList<Parcours> listparcours){
+    public static void recursiviteExhaustiveNbquete(Scenario parScenario,ArrayList<Parcours> listparcours,int parsolutions,int parChoix){
         Parcours parparcours = listparcours.get(listparcours.size() -1);
         if ((parparcours.queteFinPossibleExhaustive())){
             // rajoute la quête
             parparcours.ajouteQueteFaite(parparcours.getQueteFin());
             // rajoute le parcours finis au classement
-            Classement.ajout(parparcours);
+            Classement.regulationParcours(parsolutions,parparcours,parChoix);
 
         }
         else{
@@ -285,7 +306,7 @@ public class Algorithme {
             for (Quete q: ensQuetePossible){
                 parparcours.ajoutexp(q.getExperience());
                 parparcours.ajouteQueteFaite(q);
-                Algorithme.recursiviteExhaustiveNbquete(parScenario,listparcours);
+                Algorithme.recursiviteExhaustiveNbquete(parScenario,listparcours, parsolutions, parChoix);
                 parparcours = listparcours.get(listparcours.size() - 1);
                 // crée un nouveau parcours sur la base du parcours actuelle
                 listparcours.add(new Parcours(parScenario, parparcours.getChexp(), parparcours.getduree(),0, "nbQuete", parparcours.getQuetesFaite(), parparcours.getQuetesNonFaite(), new HashSet<>()));
@@ -305,18 +326,24 @@ public class Algorithme {
     /**
      * permet de lancer l'algorithme exhaustif nbquete.
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
+     * @param parsolutions (int): nombre de solutions voulues
+     * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
+     *                                                                                                         : 2 represente les pires solutions
      */
-    public static void solutionExhaustiveNbQuete(Scenario parScenario) {
+    public static void solutionExhaustiveNbQuete(Scenario parScenario, int parsolutions, int parChoix) {
         ArrayList<Parcours> listparcours = new ArrayList<>();
         listparcours.add(new Parcours(parScenario, "nbQuete"));
-        Algorithme.recursiviteExhaustiveNbquete(parScenario, listparcours);
+        Algorithme.recursiviteExhaustiveNbquete(parScenario,listparcours, parsolutions, parChoix);
     }
     /**
      * permet de determiner tout les parcours les plus optimales en terme de nombre de deplacement de manière efficace.
      * @param parScenario (Scenario): scenario qu'utilise les parcours
      * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     * @param parsolutions (int): nombre de solutions voulues
+     * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
+     *                                                                                                         : 2 represente les pires solutions
      */
-    public static void recursiviteDeplacementEfficace(Scenario parScenario,ArrayList<Parcours> listparcours){
+    public static void recursiviteDeplacementEfficace(Scenario parScenario,ArrayList<Parcours> listparcours,int parsolutions,int parChoix){
         Parcours parparcours = listparcours.get(listparcours.size() -1);
         if ((parparcours.queteFinPossibleEfficace())){
             // rajoute le deplacement
@@ -324,7 +351,7 @@ public class Algorithme {
             // rajoute la quête
             parparcours.ajouteQueteFaite(parparcours.getQueteFin());
             // rajoute le parcours finis au classement
-            Classement.ajout(parparcours);
+            Classement.regulationParcours(parsolutions,parparcours,parChoix);
         }
         else{
             //regarde les quetes possibles
@@ -334,7 +361,7 @@ public class Algorithme {
                 parparcours.ajouterDeplacement(q);
                 parparcours.ajoutexp(q.getExperience());
                 parparcours.ajouteQueteFaite(q);
-                Algorithme.recursiviteDeplacementEfficace(parScenario,listparcours);
+                Algorithme.recursiviteDeplacementEfficace(parScenario,listparcours, parsolutions, parChoix);
                 parparcours = listparcours.get(listparcours.size() - 1);
                 // crée un nouveau parcours sur la base du parcours actuelle
                 listparcours.add(new Parcours(parScenario, parparcours.getChexp(), 0, parparcours.getDeplacements(), "deplacements", parparcours.getQuetesFaite(), parparcours.getQuetesNonFaite(), new HashSet<>()));
@@ -357,18 +384,24 @@ public class Algorithme {
     /**
      * permet de lancer l'algorithme deplacement efficace.
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
+     * @param parsolutions (int): nombre de solutions voulues
+     * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
+     *                                                                                                         : 2 represente les pires solutions
      */
-    public static void solutionDeplacementEfficace(Scenario parScenario){
+    public static void solutionDeplacementEfficace(Scenario parScenario, int parsolutions, int parChoix){
         ArrayList<Parcours> listparcours = new ArrayList<>();
         listparcours.add(new Parcours(parScenario, "deplacements"));
-        Algorithme.recursiviteDeplacementEfficace(parScenario, listparcours);
+        Algorithme.recursiviteDeplacementEfficace(parScenario,listparcours, parsolutions, parChoix);
     }
     /**
      * permet de determiner tout les parcours les plus optimales en terme de nombre de deplacement de manière exhaustive.
      * @param parScenario (Scenario): scenario qu'utilise les parcours
      * @param listparcours ( ArrayList<Parcours>): liste chronologique des parcours ajoutés
+     * @param parsolutions (int): nombre de solutions voulues
+     * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
+     *                                                                                                         : 2 represente les pires solutions
      */
-    public static void recursiviteDeplacementExhaustive(Scenario parScenario,ArrayList<Parcours> listparcours){
+    public static void recursiviteDeplacementExhaustive(Scenario parScenario,ArrayList<Parcours> listparcours,int parsolutions,int parChoix){
         Parcours parparcours = listparcours.get(listparcours.size() -1);
         if ((parparcours.queteFinPossibleExhaustive())){
             // rajoute le deplacement
@@ -376,7 +409,7 @@ public class Algorithme {
             // rajoute la quête
             parparcours.ajouteQueteFaite(parparcours.getQueteFin());
             // rajoute le parcours finis au classement
-            Classement.ajout(parparcours);
+            Classement.regulationParcours(parsolutions,parparcours,parChoix);
 
         }
         else{
@@ -387,7 +420,7 @@ public class Algorithme {
                 parparcours.ajouterDeplacement(q);
                 parparcours.ajoutexp(q.getExperience());
                 parparcours.ajouteQueteFaite(q);
-                Algorithme.recursiviteDeplacementExhaustive(parScenario,listparcours);
+                Algorithme.recursiviteDeplacementExhaustive(parScenario,listparcours, parsolutions, parChoix);
                 parparcours = listparcours.get(listparcours.size() - 1);
                 // crée un nouveau parcours sur la base du parcours actuelle
                 listparcours.add(new Parcours(parScenario, parparcours.getChexp(), 0, parparcours.getDeplacements(), "deplacements", parparcours.getQuetesFaite(), parparcours.getQuetesNonFaite(), new HashSet<>()));
@@ -410,11 +443,14 @@ public class Algorithme {
     /**
      * permet de lancer l'algorithme deplacement exhaustive.
      * @param parScenario (Scenario): Scenario utilisé pour lancer l'algorithme
+     * @param parsolutions (int): nombre de solutions voulues
+     * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
+     *                                                                                                         : 2 represente les pires solutions
      */
-    public static void solutionDeplacementExhaustive(Scenario parScenario){
+    public static void solutionDeplacementExhaustive(Scenario parScenario, int parsolutions, int parChoix){
         ArrayList<Parcours> listparcours = new ArrayList<>();
         listparcours.add(new Parcours(parScenario, "deplacements"));
-        Algorithme.recursiviteDeplacementExhaustive(parScenario, listparcours);
+        Algorithme.recursiviteDeplacementExhaustive(parScenario,listparcours, parsolutions, parChoix);
     }
 
     /**
@@ -423,18 +459,21 @@ public class Algorithme {
      * @param parScenario         Le scénario pour lequel l'algorithme doit être appliqué.
      * @param typesolution        Le type de solution (1 pour efficace, autre valeur pour exhaustive).
      * @param objectifsolution    L'objectif de la solution (1 pour speedrun, 2 pour déplacement efficace, 3 pour nombre de quêtes).
+     * @param parsolutions (int): nombre de solutions voulues
+     * @param parChoix (int): represente le choix de l'utilisateur entre les meilleures et les pires solutions : 1 represente les meilleures solutions
+     *                                                                                                         : 2 represente les pires solutions
      */
-    public static void choixAlgo(Scenario parScenario,int typesolution, int objectifsolution) {
+    public static void choixAlgo(Scenario parScenario,int typesolution, int objectifsolution,int parsolutions, int parChoix) {
         if (typesolution == 1) {
             switch (objectifsolution) {
                 case 1:
-                    solutionSpeedrunEfficace(parScenario);
+                    solutionSpeedrunEfficace(parScenario,parsolutions,parChoix);
                     break;
                 case 2:
-                    solutionDeplacementEfficace(parScenario);
+                    solutionDeplacementEfficace(parScenario,parsolutions,parChoix);
                     break;
                 case 3:
-                    solutionEfficaceNbQuete(parScenario);
+                    solutionEfficaceNbQuete(parScenario,parsolutions,parChoix);
                     break;
                 default:
             }
@@ -442,13 +481,13 @@ public class Algorithme {
         else {
             switch (objectifsolution) {
                 case 1:
-                    solutionSpeedrunExhaustive(parScenario);
+                    solutionSpeedrunExhaustive(parScenario,parsolutions,parChoix);
                     break;
                 case 2:
-                    solutionDeplacementExhaustive(parScenario);
+                    solutionDeplacementExhaustive(parScenario,parsolutions,parChoix);
                     break;
                 case 3:
-                    solutionExhaustiveNbQuete(parScenario);
+                    solutionExhaustiveNbQuete(parScenario,parsolutions,parChoix);
                     break;
                 default:
             }
