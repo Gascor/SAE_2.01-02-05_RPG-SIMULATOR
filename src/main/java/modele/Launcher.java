@@ -98,12 +98,7 @@ public class Launcher {
         Scenario scenario = listeScenario[entier];
         entier = Launcher.choixUtilisateur("▌Dialog▐ ► Quelles est la solution que vous voulez utiliser:" + "\n\n1- Solution efficace" + "\n\n2- Solution exhaustive",1,2,1);
         int typeSolution = entier;
-        if(typeSolution == 1){
-            entier = Launcher.choixUtilisateur("▌Dialog▐ ► Quel type d'objectif voulez vous:" + "\n\n1- Durée" + "\n\n2- Déplacements"+ "\n\n3- NbQuete",1,3,2);
-        }
-        else{
-            entier = Launcher.choixUtilisateur("▌Dialog▐ ► Quel type d'objectif voulez vous:" + "\n\n1- Durée" + "\n\n2- Déplacements",1,2,1);
-        }
+        entier = Launcher.choixUtilisateur("▌Dialog▐ ► Quel type d'objectif voulez vous:" + "\n\n1- Durée" + "\n\n2- Déplacements"+ "\n\n3- NbQuete",1,3,2);
         int objectif = entier;
         entier = Launcher.choixUtilisateur2("▌Dialog▐  ► Combien de solutions voulez vous ?",1,3);
         int nbSolutions = entier;
