@@ -59,17 +59,10 @@ Méthodes agiles : Les méthodes agiles, telles que Scrum ou Kanban, mettent l'a
 
 Le diagramme de haut niveau permet de voir toutes les classes mais sans leur attributs, ni leurs méthodes.
 
-**LES CLASSES DU MODELE :**
+**UML DE MODELE/VUE/CONTROLEUR :**
 
-[![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/MODELE1.png)]()
+[![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/UMLHN.png)]()
 
-**LES CLASSES DE LA VUE :**
-
-[![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/VUE1.png)]()
-
-**LES CLASSES DU CONTROLEUR :**
-
-[![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/CONTROLEUR1.png)]()
 
 ### **Diagramme de Bas Niveau :**
 
