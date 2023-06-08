@@ -1,6 +1,10 @@
 package modele;
 
 import java.util.*;
+/**
+ * Cette classe représente une quête.
+ * Elle implémente l'interface Comparable<Quete> pour permettre la comparaison entre les quêtes.
+ */
 public class Quete implements Comparable <Quete> {
 
     private int numero;

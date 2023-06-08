@@ -4,6 +4,9 @@ import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.TreeSet;
 
+/**
+ * Classe représentant un parcours dans un scénario.
+ */
 public class Parcours {
     private final Scenario chScenario;
     private int chexp;
@@ -263,6 +266,11 @@ public class Parcours {
         }
         return cle;
     }
+    /**
+     * Retourne le chemin du parcours sous la forme d'une chaîne de caractères.
+     *
+     * @return Le chemin du parcours.
+     */
     public String getChemin(){
         String str ="";
         for (Integer key : chQuetesFaite.keySet()){
