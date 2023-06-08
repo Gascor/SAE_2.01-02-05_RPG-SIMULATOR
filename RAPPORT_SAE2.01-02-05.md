@@ -78,6 +78,8 @@ Le diagramme de bas niveau permet de voir toutes les classes avec leur attributs
 
 [![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/MODELE2.png)]()
 
+On peut voir que le diagramme de classe du package "modéle" posséde 9 classes et une interface. On peut rajouter que Classement Exception est throws dans Classement (meme chose pour launcher exception avec la classe launcher=. On remarque Parcours et Quete posséde l'interface comparble car les deux seront mis dans des treeSet ou TreeMap.
+
 **LES CLASSES DE LA VUE :**
 
 [![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/VUE2.png)]()
