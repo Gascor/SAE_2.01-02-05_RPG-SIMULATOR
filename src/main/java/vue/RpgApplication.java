@@ -19,7 +19,7 @@ public class RpgApplication extends Application {
      */
     public void start(Stage stage) {
         VBoxRoot root = new VBoxRoot();
-        Scene scene = new Scene(root, 1300, 300);
+        Scene scene = new Scene(root, 1600, 300);
         root.setAlignment(Pos.CENTER);
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);

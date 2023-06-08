@@ -24,6 +24,9 @@ public class Formulaire extends GridPane {
     public Formulaire() {
         setHgap(10);
         setVgap(10);
+        setPrefWidth(450); // Définir une largeur préférée de 450 pixels
+        setPrefHeight(300); // Définir une hauteur préférée de 300 pixels
+
         Label lblSolutions = new Label("_Nombre de solutions");
         fieldSolutions = new TextField();
         lblSolutions.setLabelFor(fieldSolutions);
@@ -102,6 +105,7 @@ public class Formulaire extends GridPane {
             return null;
         } catch (FormulaireException e) {
             labelErreur.setText(e.getCodeErreur());
+            return null;
         }
         Object solutionsObj = this.groupeSolutions.getSelectedToggle().getUserData();
         int solutions = (int) solutionsObj;
