@@ -187,4 +187,13 @@ public class Quete implements Comparable <Quete> {
      * @return Une chaîne de caractères représentant la position de la quête sur la carte.
      */
     public String getStringPos(){ return Arrays.toString(pos);}
+
+    /**
+     * Retourne l'intitulé de la quête.
+     *
+     * @return L'intitulé de la quête.
+     */
+    public String getIntitule() {
+        return intitule;
+    }
 }
