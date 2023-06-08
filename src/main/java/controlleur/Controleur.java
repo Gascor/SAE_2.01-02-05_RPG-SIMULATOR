@@ -13,7 +13,16 @@ import modele.Scenario;
 import vue.FormulaireException;
 import vue.VBoxRoot;
 
+/**
+ * La classe Controleur est un gestionnaire d'événements qui gère les actions effectuées dans l'interface utilisateur.
+ * Elle implémente l'interface EventHandler et fournit l'implémentation de la méthode handle.
+ */
 public class Controleur implements EventHandler<ActionEvent> {
+    /**
+     * Gère l'événement d'action spécifié.
+     *
+     * @param event l'événement d'action à gérer
+     */
     @Override
     public void handle(ActionEvent event) {
         if (event.getSource() instanceof RadioMenuItem) {
