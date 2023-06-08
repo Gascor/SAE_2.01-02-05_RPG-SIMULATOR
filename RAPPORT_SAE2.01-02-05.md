@@ -88,6 +88,8 @@ A travers plusieurs extraits d'algorithmes
 
 ## <a id="part3"></a>**Conclusion Générale**
 
+Le projet aurait nécessité éventuellement l'ajout d'un css pour la présentation de l'application, ont à néanmoins espacés les éléments mais ce projet mériterait d'être plus approfondit sur ca présentation.
+
 
 
 <hr>
