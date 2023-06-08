@@ -27,15 +27,18 @@ Les scénarios fournies vont du "scénario_0.txt" au "scenario_10.txt", l'applic
 
 ## <a id="part1"></a>**Qualité de Développement**
 
-**Cycle de vie du projet :**
+### **Cycle de vie du projet :**
+
 Nous avons décider de réaliser ce projet dans cycle en V récursif, dans l'intêret d'avoir le plus agilité sur notre projet. Car la conception était pas sûre et le cycle en V récursif nous permettait de tester et réaliser le code méthode par méthode et si besoin, réaliser une modification du même nom mais en "VERSION 2.0".
 
-**Repartition des tâches :**
+### **Repartition des tâches :**
+
 Le projet à été réaliser par les deux membre du groupes, la base du programme telle ce qui défini les Quetes "Quete.java", les Scénarios "Scenario.java", la lecture des Scénarios "lectureFichierTexte.java", le Classement "Classement.java" et aussi la partie Interface Homme-Machine (IHM) ont été réalisés par les deux membres. Puis les Algorithmes ont été réalisés par Baptiste FOURNIE. Les tests en générale ont été réalisés par Lucas DA SILVA FERREIRA. La rédaction du dossier de test à été rédiger pour la quasi totalité par Lucas DA SILVA FERREIRA.
 
 Les commits sont visibles comme étant à 100% fait par Lucas DA SILVA FERREIRA, mais en réalités due a l'utilisation de la fonction "Code with me" de IntelliJ, les commits sont fait par Lucas DA SILVA FERREIRA (hôte de la session CODE WITH ME) mais pas forcément écris par ce dernier.
 
-**Outils utilisés :**
+### **Outils utilisés :**
+
 Le projet à necessité plusieurs outils et fonctionnalités, telles que :
 * <a href="https://junit.org/junit5/">JUnit 5</a> : Pour l'implementation des tests.
 * <a href="https://www.jetbrains.com/fr-fr/idea/">IntelliJ</a> : Pour sa fonctionnalité "Code With Me" très utile pour développer sur le même projet en temps réel.
@@ -43,19 +46,21 @@ Le projet à necessité plusieurs outils et fonctionnalités, telles que :
 * <a href="https://code.visualstudio.com/Download">Visual Studio Code</a> : Pour la réalisation des Markdowns et permettre que les changements soit visibles puis implémentation de chaque changement par copier/collés sur IntelliJ.
 * <a href="https://github.com/GitHub">GitHub</a> : Pour le versionnage du projet.
 
-**Méthode de développement :**
+### **Méthode de développement :**
+
 Nous avons préféré pour une meilleure agilité, de conduire notre projet sur une méthode de développement agiles et qu'elle soit piloté par les tests réalisés AVANT la progammation du code devant répondre au besoin. Cela permet d'adopter une agilité pratique dans l'eventualité de proceder à des changements en cas de problèmes et de pas perdre en tête la spécification à répondre au cours du projet.
 
-**Définitions liés à la "Méthode de développement" :**
-Développement piloté par les tests (Test-Driven Development, TDD) : Le TDD est une approche de développement qui consiste à écrire des tests automatisés avant d'écrire le code. Cette méthode met l'accent sur la qualité du code en veillant à ce qu'il réponde aux exigences spécifiées par les tests. Le TDD favorise une meilleure couverture de test et une réduction des erreurs introduites lors de l'écriture du code.
+### **Définitions liés à la "Méthode de développement" :**
 
-Méthodes agiles : Les méthodes agiles, telles que Scrum ou Kanban, mettent l'accent sur la collaboration, la flexibilité et l'itération rapide. Elles encouragent la communication régulière entre les membres de l'équipe de développement, la livraison fréquente de fonctionnalités fonctionnelles et l'adaptation aux changements. Les méthodes agiles favorisent une approche itérative de développement qui permet de détecter et de résoudre les problèmes de qualité plus tôt dans le processus.
+**Développement piloté par les tests (Test-Driven Development, TDD)** : Le TDD est une approche de développement qui consiste à écrire des tests automatisés avant d'écrire le code. Cette méthode met l'accent sur la qualité du code en veillant à ce qu'il réponde aux exigences spécifiées par les tests. Le TDD favorise une meilleure couverture de test et une réduction des erreurs introduites lors de l'écriture du code.
+
+**Méthodes agiles** : Les méthodes agiles, telles que Scrum ou Kanban, mettent l'accent sur la collaboration, la flexibilité et l'itération rapide. Elles encouragent la communication régulière entre les membres de l'équipe de développement, la livraison fréquente de fonctionnalités fonctionnelles et l'adaptation aux changements. Les méthodes agiles favorisent une approche itérative de développement qui permet de détecter et de résoudre les problèmes de qualité plus tôt dans le processus.
 
 <hr>
 
 ## <a id="part2"></a>**Conception Générale**
 
-**Diagramme de Haut Niveau :**
+### **Diagramme de Haut Niveau :**
 
 Le diagramme de haut niveau permet de voir toutes les classes mais sans leur attributs, ni leurs méthodes.
 
@@ -90,7 +95,7 @@ A travers plusieurs extraits d'algorithmes
 
 Le projet aurait nécessité éventuellement l'ajout d'un css pour la présentation de l'application, ont à néanmoins espacés les éléments mais ce projet mériterait d'être plus approfondit sur ca présentation.
 
-
+L'algorithme de djakista en itératif aurait aussi pu être un point à appronfondir également, il aurait été un moyen d'avoir une solution du scénario 10 en un temps record.
 
 <hr>
 
