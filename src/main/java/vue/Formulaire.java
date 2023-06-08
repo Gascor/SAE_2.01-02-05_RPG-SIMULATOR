@@ -121,7 +121,10 @@ public class Formulaire extends GridPane {
      * Réinitialise les valeurs du formulaire.
      */
     public void reset() {
-        ;
+        fieldSolutions.setText("");
+        groupeSolutions.selectToggle(btnEfficace);
+        groupeObjectif.selectToggle(btnDuree);
+        groupeChoix.selectToggle(btnMeilleurs);
     }
     /**
      * Obtient le label d'erreur associé au formulaire.
@@ -129,6 +132,6 @@ public class Formulaire extends GridPane {
      * @return Le label d'erreur.
      */
     public Label getLabelErreur() {
-        ;
+        return labelErreur;
     }
 }
