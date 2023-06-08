@@ -263,4 +263,11 @@ public class Parcours {
         }
         return cle;
     }
+    public String getChemin(){
+        String str ="";
+        for (Integer key : chQuetesFaite.keySet()){
+            str = str + key + " ";
+        }
+        return str;
+    }
 }
