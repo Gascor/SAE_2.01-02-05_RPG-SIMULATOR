@@ -68,6 +68,7 @@ Le diagramme de haut niveau permet de voir toutes les classes mais sans leur att
 
 [![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/UMLHN.png)]()
 
+on peut voir que UML Modele/vue/controleur respecte bien l'architecture du modéle Mcv. Aucue classe de modéle ne connait une classe de package vue ou controleur( les classes modéles ne possédent aucun attribut de cotroleur ou de vue). Par contre la vue Connait le modéle et le controleur. La VboxRoot est la racine de la vue donc elle posséde en attribut static toutes les classes de vue (à part Formulaire Exception et l'interface). A part menuBarres toutes les autres classes de vue possédent en attributs des classes de modéles. Presques toutes les classes héritent d'une classe de base de JavaFx(VBoxRoot héritent de VBOx, Formulaire de gridPane etc...)
 
 ### **Diagramme de Bas Niveau :**
 
@@ -76,6 +77,7 @@ Le diagramme de bas niveau permet de voir toutes les classes avec leur attributs
 **LES CLASSES DU MODELE :**
 
 [![](https://github.com/Gascor/SAE_2.01-02-05_RPG-SIMULATOR/blob/master/mdsrc/MODELE2.png)]()
+
 
 **LES CLASSES DE LA VUE :**
 
