@@ -60,7 +60,7 @@ public class ClassementBox extends VBox {
      */
     public void afficher(int nbSolutions, int parChoix, int parObjectif) throws ClassementException {
         tableParcours.getItems().clear();
-        Label labelErreur = VBoxRoot.getFormulaire().getLabelEreur();
+        Label labelErreur = VBoxRoot.getFormulaire().getLabelErreur();
         labelErreur.setText("");
         int parcoursAffiche = 0;
         if (parObjectif == 1) {
