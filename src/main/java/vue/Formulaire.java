@@ -3,6 +3,10 @@ package vue;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 
+/**
+ * Classe représentant le formulaire dans l'interface utilisateur.
+ * Il permet à l'utilisateur de spécifier les paramètres de recherche des solutions.
+ */
 public class Formulaire extends GridPane {
     private TextField fieldSolutions;
     private ToggleGroup groupeSolutions;
