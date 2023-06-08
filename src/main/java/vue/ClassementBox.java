@@ -17,10 +17,24 @@ import java.util.TreeMap;
  * Classe représentant la boîte de classement dans l'interface utilisateur.
  * Elle affiche le classement des parcours en fonction de différents critères.
  */
-public class ClassementBox {
+public class ClassementBox extends VBox {
     private TableView<Parcours> tableParcours;
     private TableColumn<Parcours, Integer> cleColonne;
-
+    /**
+     * Constructeur de la classe ClassementBox.
+     * Initialise et configure les éléments de la boîte de classement.
+     */
+    public ClassementBox() {
+        setSpacing(10);
+        Label labelClass = new Label("Classement");
+        tableParcours = new TableView<>();
+        cleColonne = new TableColumn<>("durée");
+        setupColumn(cleColonne, "Cle", 65);
+        TableColumn<Parcours, String> cheminColonne = new TableColumn<>("Chemin");
+        setupColumn(cheminColonne, "Chemin", 100);
+        tableParcours.getColumns().addAll(cleColonne, cheminColonne);
+        getChildren().addAll(labelClass, tableParcours);
+    }
     /**
      * Configuration d'une colonne de la table de classement.
      *
